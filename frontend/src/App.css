@@ -1,0 +1,150 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: #999999; */
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Welcome Page */
+
+.WelcomeBackground {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(./Images/Welcome4.jpg);
+  background-size: cover;
+  min-height: 100%;
+}
+
+.WelcomeName {
+  text-align: center;
+  font-size: 75px;
+  color: azure;
+  text-shadow: 3px 2px 5px rgb(0, 0, 0);
+  font-family: 'Playfair Display SC', serif;
+}
+
+.WelcomeTitle {
+  text-align: center;
+  font-size: 55px;
+  color: azure;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  font-family: 'Playball', cursive;
+  position: relative;
+  bottom: 30px;
+}
+
+.WelcomeNav {
+  text-align: center;
+  font-size: 50px;
+  color: azure;
+  position: relative;
+  bottom: 170px;
+}
+
+.WelcomeNav:active {
+  color: white;
+}
+
+.WelcomeNav:hover {
+  color: #8A8BE7;
+}
+
+
+/* Sidebar */
+
+.Sidebar {
+  height: 100%;
+  width: 200px;
+  background: linear-gradient(to left, #262d47, #111835);
+  display: inline-block;
+  box-shadow: 1px 5px 5px rgb(0, 0, 0);
+}
+
+.SidebarList {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  position: sticky;
+  top: 2rem;
+}
+
+.SidebarList .row {
+  width: 100%;
+  height: 50px;
+  list-style-type: none;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.SidebarList .row:hover {
+  cursor: pointer;
+  background-color: #344899;
+  box-shadow: 1px 2px 5px rgb(0, 0, 0);
+}
+
+.SidebarList #active {
+  background-color: #344899;
+  box-shadow: 1px 2px 5px rgb(0, 0, 0);
+
+}
+
+.row #icon {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+
+.row #title {
+  flex: 70%;
+}
+
+/* Header */
+
+.Header {
+  height: 8%;
+  background: linear-gradient(to left, rgb(255, 255, 255), #111835);
+  margin-bottom: 0;
+  box-shadow: 10px 2px 5px rgb(0, 0, 0);
+}
+
+header img {
+  max-width: 6%;
+  position: relative;
+  bottom: 25px;
+  left: 20px;
+}
+
+/* Footer */
+
+footer {
+  background: linear-gradient(to right, rgb(255, 255, 255), #111835);
+  box-shadow: 10px 2px 5px rgb(0, 0, 0);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.FooterFlex {
+  padding-right: 80px;
+  padding-left: 80px;
+ display: flex;
+ justify-content: space-between;
+}
+
+/* Home */
+
+.HomeBody {
+  display: inline-block;
+}
