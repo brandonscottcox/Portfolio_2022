@@ -1,7 +1,6 @@
 .App {
   width: 100vw;
   height: 100vh;
-  /* background-color: #999999; */
   overflow: hidden;
 }
 
@@ -27,6 +26,7 @@ body {
   color: azure;
   text-shadow: 3px 2px 5px rgb(0, 0, 0);
   font-family: 'Playfair Display SC', serif;
+  position: relative;
 }
 
 .WelcomeTitle {
@@ -117,6 +117,7 @@ body {
   background: linear-gradient(to left, rgb(255, 255, 255), #111835);
   margin-bottom: 0;
   box-shadow: 10px 2px 5px rgb(0, 0, 0);
+  position: sticky;
 }
 
 header img {
