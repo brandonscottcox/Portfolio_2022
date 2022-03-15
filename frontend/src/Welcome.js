@@ -14,7 +14,6 @@ export default function Welcome() {
     <Header sidebar={sidebar} setSidebar={setSidebar}/>
       <div>
         <body className="WelcomeBody">
-            {/* Sidebar isue is from these component */}
           <Name />
           <Title />
         </body>

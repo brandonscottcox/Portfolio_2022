@@ -1,13 +1,13 @@
-  .menu-bars {
+  /* .menu-bars {
     margin-left: 2rem;
     font-size: 2rem;
     background: none;
     transition: all 0.2s ease-in-out;
-  }
+  } */
   
-  .menu-bars:hover {
+  /* .menu-bars:hover {
     transform: scale(1.1);
-}
+} */
 
   .nav-menu {
     background: linear-gradient(to left, #262d47, #111835);

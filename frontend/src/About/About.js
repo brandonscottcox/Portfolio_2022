@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import "../App.css";
+import "./About.css";
 import Header from "../Header/Header";
 
 export default function Home() {
   const [sidebar, setSidebar] = useState(false);
 
   return (
-    <div className="WelcomeBackground">
+    <div className="AboutBackground">
       <Header sidebar={sidebar} setSidebar={setSidebar} />
       <div className={sidebar ? "move" : "origin"}>
       <body className="HomeBody">
