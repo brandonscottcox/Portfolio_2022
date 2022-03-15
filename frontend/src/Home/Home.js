@@ -1,16 +1,17 @@
 import React from "react";
 import "../App.css";
-import Sidebar from "../Sidebar/Sidebar";
 import Header from "../Header/Header";
-// import Footer from "../Footer/Footer"
-
 
 export default function Home() {
-    return(
-        <div className="App">
-        <Header />
-        <Sidebar />
-        <body className="HomeBody">Home</body>
-        </div>
-    )
+  return (
+    <div className="App">
+      <Header />
+      <body className="HomeBody">
+        <span content="H">H</span>
+        <span content="o">o</span>
+        <span content="m">m</span>
+        <span content="e">e</span>
+      </body>
+    </div>
+  );
 }

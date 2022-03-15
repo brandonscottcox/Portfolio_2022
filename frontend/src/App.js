@@ -23,3 +23,21 @@ function App() {
 }
 
 export default App;
+
+
+
+/*
+ function App() {
+  return (
+    <div className="WelcomeBackground">
+    <Test />
+    <Header />
+      <div>
+        <body>
+          <Name />
+          <Title />
+        </body>
+      </div>
+    </div>
+  );
+}*/
