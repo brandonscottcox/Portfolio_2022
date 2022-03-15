@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 import Header from "../Header/Header";
 
+export default function Home() {
+  const [sidebar, setSidebar] = useState(false);
 
-export default function About() {
-    return(
-        <div className="App">
-        <Header />
-        <body className="HomeBody">About</body>
-        </div>
-    )
+  return (
+    <div>
+      <Header sidebar={sidebar} setSidebar={setSidebar} />
+      <div className={sidebar ? "move" : "origin"}>
+      <body className="HomeBody">
+        <span content="A">A</span>
+        <span content="b">b</span>
+        <span content="o">o</span>
+        <span content="u">u</span>
+        <span content="t">t</span>
+
+
+      </body>
+      </div>
+    </div>
+  );
 }

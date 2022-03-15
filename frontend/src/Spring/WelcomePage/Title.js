@@ -19,7 +19,7 @@ export default function Title() {
   return (
     <div>
         <animated.h1 style={anim}>
-            <p className="WelcomeTitle">Front End Developer</p>
+            <p className="WelcomeTitle">Frontend Developer</p>
         </animated.h1>
     </div>
   )

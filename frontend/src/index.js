@@ -10,6 +10,8 @@ import {
 import Home from "./Home/Home"
 import About from "./About/About"
 import Contact from "./Contact/Contact"
+import Welcome from "./Welcome.js"
+
 
 
 
@@ -17,7 +19,7 @@ const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />} />
+      <Route path="/" element={<Welcome />} />
       <Route path="home" element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />

@@ -7,12 +7,13 @@ import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
 import "./Sidebar.css";
 import { IconContext } from "react-icons";
-import { sizeHeight } from "@mui/system";
 
-export default function Header() {
-  const [sidebar, setSidebar] = useState(false);
+export default function Header({sidebar, setSidebar}) {
+  
 
   const showSidebar = () => setSidebar(!sidebar);
+
+
   return (
     <header className="Header">
       <IconContext.Provider value={{ color: "#fff", size: '30px' }}>
@@ -42,9 +43,9 @@ export default function Header() {
         </nav>
 
       <div className="Renew">
-        <a href="/" title="Refresh">
+        <Link to="/" title="Refresh">
           <AutorenewIcon style={{ fontSize: 50, color: "black" }} />
-        </a>
+        </Link>
       </div>
     </IconContext.Provider>
     </header>
