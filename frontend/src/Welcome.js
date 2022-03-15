@@ -13,7 +13,7 @@ export default function Welcome() {
     <WelcomeParallax />
     <Header sidebar={sidebar} setSidebar={setSidebar}/>
       <div>
-        <body>
+        <body className="WelcomeBody">
             {/* Sidebar isue is from these component */}
           <Name />
           <Title />
