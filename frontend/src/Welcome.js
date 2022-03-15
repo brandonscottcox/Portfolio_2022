@@ -6,12 +6,15 @@ import Title from "./Spring/WelcomePage/Title"
 import WelcomeParallax from "./Spring/WelcomePage/ParallaxText/WelcomeParallax"
 
 export default function Welcome() {
+    const [sidebar, setSidebar] = useState(false);
+
   return (
     <div className="WelcomeBackground">
     <WelcomeParallax />
-    <Header/>
+    <Header sidebar={sidebar} setSidebar={setSidebar}/>
       <div>
         <body>
+            {/* Sidebar isue is from these component */}
           <Name />
           <Title />
         </body>
