@@ -39,12 +39,8 @@ export default function Home() {
           </div>
           <div className="mapImg">
             <div className="mapPosition">
-              <a
-                href="https://www.google.com/maps/place/Boulder,+CO/@40.0293703,-105.2750826,13z/data=!3m1!4b1!4m5!3m4!1s0x876b8d4e278dafd3:0xc8393b7ca01b8058!8m2!3d40.0149856!4d-105.2705456"
-                target="_blank"
-              >
                 <ColoradoMap />
-              </a>
+
             </div>
           </div>
           <div className={sidebar ? "origin" : "origin"}>

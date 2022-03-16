@@ -8,18 +8,25 @@
     overflow-x: hidden;
   }
 
+  .mapZoom {
+    display: inline-block;
+    position: relative;
+    right: 200px;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+  }
+
+  .mapZoom:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+  }
+
   .mapImg {
     display: inline-block;
     position: relative;
     left: 1300px;
     top: 100px;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
-    transition: 850ms;
-  }
-
-  .mapImg:hover {
-    cursor: pointer;
-    transform: scale(0.97);
   }
 
   .mapPosition {
@@ -44,7 +51,7 @@
     padding: 0;
     position: sticky;
     top: 943px;
-    filter: drop-shadow(16px 16px 20px rgba(185, 185, 185, 0.603))
+    filter: drop-shadow(16px 16px 20px rgba(47, 47, 47, 0.5))
       brightness(0.8);
     display: inline-block;
     transition: 600ms;
@@ -52,12 +59,12 @@
 
   .ProfileImg:hover {
     cursor: pointer;
-    filter: drop-shadow(4px 10px 20px rgb(255, 255, 255)) brightness(1);
+    filter: drop-shadow(4px 10px 20px rgb(255, 255, 255, 0.6)) brightness(1);
     transition: 850ms;
   }
 
   .HomeBackground {
-    background-image: url(../Images/Home3.jpg);
+    background-image: url(../Images/Home6.jpg);
     background-size: cover;
     min-height: 100%;
   }
@@ -77,30 +84,32 @@
   }
 
   h1 {
+    color: azure;
+
     font-size: 85px;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+
   }
 
   p {
+    color: azure;
     font-size: 32px;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+
   }
 
   /* Sidebar */
 
   .origin {
-    /* width: 100vw;
-  height: 100vh; */
   }
 
   .originImg {
-    /* width: 100vw;
-    height: 100vh; */
+
     position: sticky;
     transition: 450ms;
   }
 
   .moveImg {
-    /* width: 100vw;
-    height: 100vh; */
     padding-left: 201px;
     transition: 850ms;
   }
@@ -189,27 +198,68 @@
 }
 
 @media all and (min-width: 481px) and (max-width: 768px) {
-  .flexImg {
-    position: relative;
-    bottom: 700px;
-    left: 1000px;
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
 
-  .Position {
-    display: inline;
+  .mapZoom {
+    display: inline-block;
     position: relative;
-    top: 62px;
+    right: 200px;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+  }
+
+  .mapZoom:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+  }
+
+  .mapImg {
+    display: inline-block;
+    position: relative;
+    left: 1050px;
+    top: 50px;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+  }
+
+  .mapPosition {
+    display: inline;
     background-attachment: fixed;
     align-self: flex-start;
+    margin: auto;
+  }
+
+  .ProfilePosition {
+    display: inline;
+    position: relative;
+    bottom: 652px;
+    background-attachment: fixed;
+    align-self: flex-start;
+    margin: auto;
+    
   }
 
   .ProfileImg {
     margin: 0;
     padding: 0;
     position: sticky;
-    top: 208px;
+    top: 865px;
     filter: drop-shadow(16px 16px 20px rgba(185, 185, 185, 0.603))
-      brightness(0.9);
+      brightness(0.8);
+    display: inline-block;
+    transition: 600ms;
+  }
+
+  .ProfileImg:hover {
+    cursor: pointer;
+    filter: drop-shadow(4px 10px 20px rgb(255, 255, 255)) brightness(1);
+    transition: 850ms;
   }
 
   .HomeBackground {
@@ -219,49 +269,128 @@
   }
 
   .IntroductionText {
-    text-align: center;
+    display: flex;
+    position: relative;
+    top: 90px;
+    left: 600px;
   }
 
   .Introduction {
     display: inline;
-    border: 5px solid red;
     text-align: center;
     position: relative;
     top: 0px;
   }
 
-  html,
-  body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  h1 {
+    font-size: 85px;
+  }
+
+  p {
+    font-size: 32px;
+  }
+
+  /* Sidebar */
+
+  .origin {
+  }
+
+  .originImg {
+
+    position: sticky;
+    transition: 450ms;
+  }
+
+  .moveImg {
+    padding-left: 201px;
+    transition: 850ms;
+  }
+  .originPic {
+    position:relative;
+    top: 0;
+    transition: 850ms;
+  }
+
+  .originPic div {
+    position:fixed;
+
+  }
+  .movePic {
+    position: relative;
+    top: 525px;
+    transition: 850ms;
+  }
+  .movePic div {
+    position:fixed;
+  }
+  .profileInline{
+    display: inline;
   }
 }
 
 @media all and (min-width: 769px) and (max-width: 1024px) {
-  .flexImg {
-    position: relative;
-    bottom: 700px;
-    left: 1000px;
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
 
-  .Position {
-    display: inline;
+  .mapZoom {
+    display: inline-block;
     position: relative;
-    top: 62px;
+    right: 200px;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+  }
+
+  .mapZoom:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+  }
+
+  .mapImg {
+    display: inline-block;
+    position: relative;
+    left: 1050px;
+    top: 50px;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+  }
+
+  .mapPosition {
+    display: inline;
     background-attachment: fixed;
     align-self: flex-start;
+    margin: auto;
+  }
+
+  .ProfilePosition {
+    display: inline;
+    position: relative;
+    bottom: 652px;
+    background-attachment: fixed;
+    align-self: flex-start;
+    margin: auto;
+    
   }
 
   .ProfileImg {
     margin: 0;
     padding: 0;
     position: sticky;
-    top: 208px;
+    top: 865px;
     filter: drop-shadow(16px 16px 20px rgba(185, 185, 185, 0.603))
-      brightness(0.9);
+      brightness(0.8);
+    display: inline-block;
+    transition: 600ms;
+  }
+
+  .ProfileImg:hover {
+    cursor: pointer;
+    filter: drop-shadow(4px 10px 20px rgb(255, 255, 255)) brightness(1);
+    transition: 850ms;
   }
 
   .HomeBackground {
@@ -271,88 +400,65 @@
   }
 
   .IntroductionText {
-    text-align: center;
+    display: flex;
+    position: relative;
+    top: 90px;
+    left: 600px;
   }
 
   .Introduction {
     display: inline;
-    border: 5px solid red;
     text-align: center;
     position: relative;
     top: 0px;
   }
 
-  html,
-  body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  h1 {
+    font-size: 85px;
   }
+
+  p {
+    font-size: 32px;
+  }
+
   /* Sidebar */
 
   .origin {
-    /* width: 100vw;
-  height: 100vh; */
   }
 
   .originImg {
-    /* width: 100vw;
-    height: 100vh; */
+
     position: sticky;
+    transition: 450ms;
   }
 
   .moveImg {
-    /* width: 100vw;
-    height: 100vh; */
-    padding-left: 200px;
+    padding-left: 201px;
     transition: 850ms;
+  }
+  .originPic {
+    position:relative;
+    top: 0;
+    transition: 850ms;
+  }
+
+  .originPic div {
+    position:fixed;
+
+  }
+  .movePic {
+    position: relative;
+    top: 525px;
+    transition: 850ms;
+  }
+  .movePic div {
+    position:fixed;
+  }
+  .profileInline{
+    display: inline;
   }
 }
-
 @media all and (min-width: 1025px) and (max-width: 1200px) {
-  .flexImg {
-    position: relative;
-    bottom: 700px;
-    left: 1000px;
-  }
-
-  .Position {
-    display: inline;
-    position: relative;
-    top: 62px;
-    background-attachment: fixed;
-    align-self: flex-start;
-  }
-
-  .ProfileImg {
-    margin: 0;
-    padding: 0;
-    position: sticky;
-    top: 208px;
-    filter: drop-shadow(16px 16px 20px rgba(185, 185, 185, 0.603))
-      brightness(0.9);
-  }
-
-  .HomeBackground {
-    background-image: url(../Images/Home3.jpg);
-    background-size: cover;
-    min-height: 100%;
-  }
-
-  .IntroductionText {
-    text-align: center;
-  }
-
-  .Introduction {
-    display: inline;
-    border: 5px solid red;
-    text-align: center;
-    position: relative;
-    top: 0px;
-  }
-
   html,
   body {
     width: 100%;
@@ -362,69 +468,128 @@
     overflow-x: hidden;
   }
 
+  .mapZoom {
+    display: inline-block;
+    position: relative;
+    right: 200px;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+  }
+
+  .mapZoom:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+  }
+
+  .mapImg {
+    display: inline-block;
+    position: relative;
+    left: 1050px;
+    top: 50px;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+  }
+
+  .mapPosition {
+    display: inline;
+    background-attachment: fixed;
+    align-self: flex-start;
+    margin: auto;
+  }
+
+  .ProfilePosition {
+    display: inline;
+    position: relative;
+    bottom: 652px;
+    background-attachment: fixed;
+    align-self: flex-start;
+    margin: auto;
+    
+  }
+
+  .ProfileImg {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 865px;
+    filter: drop-shadow(16px 16px 20px rgba(185, 185, 185, 0.603))
+      brightness(0.8);
+    display: inline-block;
+    transition: 600ms;
+  }
+
+  .ProfileImg:hover {
+    cursor: pointer;
+    filter: drop-shadow(4px 10px 20px rgb(255, 255, 255)) brightness(1);
+    transition: 850ms;
+  }
+
+  .HomeBackground {
+    background-image: url(../Images/Home3.jpg);
+    background-size: cover;
+    min-height: 100%;
+  }
+
+  .IntroductionText {
+    display: flex;
+    position: relative;
+    top: 90px;
+    left: 600px;
+  }
+
+  .Introduction {
+    display: inline;
+    text-align: center;
+    position: relative;
+    top: 0px;
+  }
+
+  h1 {
+    font-size: 85px;
+  }
+
+  p {
+    font-size: 32px;
+  }
+
   /* Sidebar */
 
   .origin {
-    /* width: 100vw;
-  height: 100vh; */
   }
 
   .originImg {
-    /* width: 100vw;
-    height: 100vh; */
+
     position: sticky;
+    transition: 450ms;
   }
 
   .moveImg {
-    /* width: 100vw;
-    height: 100vh; */
-    padding-left: 200px;
+    padding-left: 201px;
     transition: 850ms;
+  }
+  .originPic {
+    position:relative;
+    top: 0;
+    transition: 850ms;
+  }
+
+  .originPic div {
+    position:fixed;
+
+  }
+  .movePic {
+    position: relative;
+    top: 525px;
+    transition: 850ms;
+  }
+  .movePic div {
+    position:fixed;
+  }
+  .profileInline{
+    display: inline;
   }
 }
 
 @media all and (min-width: 1201px) and (max-width: 1999px) {
-  .flexImg {
-    position: relative;
-    bottom: 700px;
-    left: 1000px;
-  }
-
-  .Position {
-    display: inline;
-    position: relative;
-    top: 62px;
-    background-attachment: fixed;
-    align-self: flex-start;
-  }
-
-  .ProfileImg {
-    margin: 0;
-    padding: 0;
-    position: sticky;
-    top: 208px;
-    filter: drop-shadow(16px 16px 20px rgba(185, 185, 185, 0.603))
-      brightness(0.9);
-  }
-
-  .HomeBackground {
-    background-image: url(../Images/Home3.jpg);
-    background-size: cover;
-    min-height: 100%;
-  }
-
-  .IntroductionText {
-    text-align: center;
-  }
-
-  .Introduction {
-    display: inline;
-    border: 5px solid red;
-    text-align: center;
-    position: relative;
-    top: 0px;
-  }
-
   html,
   body {
     width: 100%;
@@ -434,23 +599,123 @@
     overflow-x: hidden;
   }
 
+  .mapZoom {
+    display: inline-block;
+    position: relative;
+    right: 200px;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+  }
+
+  .mapZoom:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+  }
+
+  .mapImg {
+    display: inline-block;
+    position: relative;
+    left: 1050px;
+    top: 50px;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+  }
+
+  .mapPosition {
+    display: inline;
+    background-attachment: fixed;
+    align-self: flex-start;
+    margin: auto;
+  }
+
+  .ProfilePosition {
+    display: inline;
+    position: relative;
+    bottom: 652px;
+    background-attachment: fixed;
+    align-self: flex-start;
+    margin: auto;
+    
+  }
+
+  .ProfileImg {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 865px;
+    filter: drop-shadow(16px 16px 20px rgba(185, 185, 185, 0.603))
+      brightness(0.8);
+    display: inline-block;
+    transition: 600ms;
+  }
+
+  .ProfileImg:hover {
+    cursor: pointer;
+    filter: drop-shadow(4px 10px 20px rgb(255, 255, 255)) brightness(1);
+    transition: 850ms;
+  }
+
+  .HomeBackground {
+    background-image: url(../Images/Home6.jpg);
+    background-size: cover;
+    min-height: 100%;
+  }
+
+  .IntroductionText {
+    display: flex;
+    position: relative;
+    top: 90px;
+    left: 600px;
+  }
+
+  .Introduction {
+    display: inline;
+    text-align: center;
+    position: relative;
+    top: 0px;
+  }
+
+  h1 {
+    font-size: 85px;
+  }
+
+  p {
+    font-size: 32px;
+  }
+
   /* Sidebar */
 
   .origin {
-    /* width: 100vw;
-  height: 100vh; */
   }
 
   .originImg {
-    /* width: 100vw;
-    height: 100vh; */
+
     position: sticky;
+    transition: 450ms;
   }
 
   .moveImg {
-    /* width: 100vw;
-    height: 100vh; */
-    padding-left: 200px;
+    padding-left: 201px;
     transition: 850ms;
+  }
+  .originPic {
+    position:relative;
+    top: 0;
+    transition: 850ms;
+  }
+
+  .originPic div {
+    position:fixed;
+
+  }
+  .movePic {
+    position: relative;
+    top: 525px;
+    transition: 850ms;
+  }
+  .movePic div {
+    position:fixed;
+  }
+  .profileInline{
+    display: inline;
   }
 }

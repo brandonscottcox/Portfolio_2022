@@ -1,7 +1,7 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
 import "../../Home/Home.css";
-import ProfilePicture from "../../Images/SlackEditTrans2.png";
+import ProfilePicture from "../../Images/SlackEditTrans3.png";
 
 export default function Name() {
   const anim = useSpring({
