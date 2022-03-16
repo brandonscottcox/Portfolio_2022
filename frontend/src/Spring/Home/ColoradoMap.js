@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import "../../Home/Home.css";
-import ProfilePicture from "../../Images/SlackEditTrans2.png";
+import ProfilePicture from "../../Images/BoulderMapEditTrans.png";
 
-export default function Name() {
+export default function ColoradoMap() {
   const anim = useSpring({
     from: {
       opacity: 0,
@@ -12,18 +12,17 @@ export default function Name() {
       opacity: 1,
     },
     config: {
-      delay: 2000,
       duration: 2000,
     },
   });
 
+  const [picture, setPicture] = useState(false);
+
+  const showPicture = () => setPicture(!picture);
+
   return (
     <animated.h1 style={anim}>
-      <img
-        height="700"
-        width="700"
-        src={ProfilePicture}
-      />
+        <img height="450" src={ProfilePicture} />
     </animated.h1>
   );
 }

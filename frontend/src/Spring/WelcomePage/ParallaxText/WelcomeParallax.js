@@ -122,7 +122,11 @@ export default function Test() {
             className={`${styles.card} ${styles.parallax} ${styles.links} ${styles.ScrollImg}`}
           >
             <div className={`${styles.Github}`}>
-              <a href="https://github.com/brandonscottcox" title="Github">
+              <a
+                href="https://github.com/brandonscottcox"
+                title="Github"
+                target="_blank"
+              >
                 <img src={Github} alt="Github" />
               </a>
             </div>
@@ -130,6 +134,7 @@ export default function Test() {
               <a
                 href="https://www.linkedin.com/in/brandonscottcox/"
                 title="Linkedin"
+                target="_blank"
               >
                 <img src={Linkedin} alt="Linkdin" />
               </a>

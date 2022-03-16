@@ -17,8 +17,8 @@ export default function Header({sidebar, setSidebar}) {
   return (
     <header className="Header">
       <IconContext.Provider value={{ color: "#fff", size: '30px' }}>
-        <div className="navbar">
-          <Link to="#" className="menu-bars">
+        <div>
+          <Link to="#" >
             <img src={HeaderLogo} alt="Brandon Cox" onClick={showSidebar} />
           </Link>
         </div>

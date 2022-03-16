@@ -1,83 +1,139 @@
 @media all and (min-width: 2000px) {
-html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
 
-.flexImg {
-  position: relative;
-  bottom: 700px;
-  left: 1000px;
-}
+  .mapImg {
+    display: inline-block;
+    position: relative;
+    left: 1300px;
+    top: 100px;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+  }
 
-.Position {
-  display: inline;
-  position: relative;
-  top: 62px;
-  background-attachment: fixed;
-  align-self: flex-start;
-      margin: auto;
+  .mapImg:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+  }
 
-}
+  .mapPosition {
+    display: inline;
+    background-attachment: fixed;
+    align-self: flex-start;
+    margin: auto;
+  }
 
-.ProfileImg {
-  margin: 0;
-  padding: 0;
-  position: sticky;
-  top: 362px;
-  filter: drop-shadow(16px 16px 20px rgba(185, 185, 185, 0.603)) brightness(0.9);
-  
-}
+  .ProfilePosition {
+    display: inline;
+    position: relative;
+    bottom: 576px;
+    background-attachment: fixed;
+    align-self: flex-start;
+    margin: auto;
+    
+  }
 
-.HomeBackground {
-  /* width: 100vw;
-    height: 100vh; */
-  background-image: url(../Images/Home3.jpg);
-  background-size: cover;
-  min-height: 100%;
-}
+  .ProfileImg {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 943px;
+    filter: drop-shadow(16px 16px 20px rgba(185, 185, 185, 0.603))
+      brightness(0.8);
+    display: inline-block;
+    transition: 600ms;
+  }
 
-.IntroductionText {
-  text-align: center;
-}
+  .ProfileImg:hover {
+    cursor: pointer;
+    filter: drop-shadow(4px 10px 20px rgb(255, 255, 255)) brightness(1);
+    transition: 850ms;
+  }
 
-.Introduction {
-  display: inline;
-  border: 5px solid red;
-  text-align: center;
-  position: relative;
-  /* right: 100px; */
-  top: 0px;
-}
+  .HomeBackground {
+    background-image: url(../Images/Home3.jpg);
+    background-size: cover;
+    min-height: 100%;
+  }
 
-/* Sidebar */
+  .IntroductionText {
+    display: flex;
+    position: relative;
+    top: 90px;
+    left: 600px;
+  }
 
-.origin {
-  /* width: 100vw;
+  .Introduction {
+    display: inline;
+    text-align: center;
+    position: relative;
+    top: 0px;
+  }
+
+  h1 {
+    font-size: 85px;
+  }
+
+  p {
+    font-size: 32px;
+  }
+
+  /* Sidebar */
+
+  .origin {
+    /* width: 100vw;
   height: 100vh; */
+  }
+
+  .originImg {
+    /* width: 100vw;
+    height: 100vh; */
+    position: sticky;
+    transition: 450ms;
+  }
+
+  .moveImg {
+    /* width: 100vw;
+    height: 100vh; */
+    padding-left: 201px;
+    transition: 850ms;
+  }
+  .originPic {
+    position:relative;
+    top: 0;
+    transition: 850ms;
+  }
+
+  .originPic div {
+    position:fixed;
+
+  }
+  .movePic {
+    position: relative;
+    top: 525px;
+    transition: 850ms;
+  }
+  .movePic div {
+    position:fixed;
+  }
+  .profileInline{
+    display: inline;
+  }
 }
 
-.originImg {
-  /* width: 100vw;
-    height: 100vh; */
-  position: sticky;
-}
-
-.moveImg {
-  /* width: 100vw;
-    height: 100vh; */
-  padding-left: 200px;
-  transition: 850ms;
-}
-}
 @media all and (min-width: 240px) and (max-width: 480px) {
   .HomeBackground img {
     margin: auto;
-    top: 0; left: 0; bottom: 0; right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     max-width: 500px;
     max-height: 500px;
   }
@@ -133,7 +189,6 @@ body {
 }
 
 @media all and (min-width: 481px) and (max-width: 768px) {
-
   .flexImg {
     position: relative;
     bottom: 700px;
@@ -186,7 +241,6 @@ body {
 }
 
 @media all and (min-width: 769px) and (max-width: 1024px) {
-
   .flexImg {
     position: relative;
     bottom: 700px;
@@ -238,27 +292,26 @@ body {
   }
   /* Sidebar */
 
-.origin {
-  /* width: 100vw;
+  .origin {
+    /* width: 100vw;
   height: 100vh; */
-}
+  }
 
-.originImg {
-  /* width: 100vw;
+  .originImg {
+    /* width: 100vw;
     height: 100vh; */
-  position: sticky;
-}
+    position: sticky;
+  }
 
-.moveImg {
-  /* width: 100vw;
+  .moveImg {
+    /* width: 100vw;
     height: 100vh; */
-  padding-left: 200px;
-  transition: 850ms;
-}
+    padding-left: 200px;
+    transition: 850ms;
+  }
 }
 
 @media all and (min-width: 1025px) and (max-width: 1200px) {
-
   .flexImg {
     position: relative;
     bottom: 700px;
@@ -311,27 +364,26 @@ body {
 
   /* Sidebar */
 
-.origin {
-  /* width: 100vw;
+  .origin {
+    /* width: 100vw;
   height: 100vh; */
-}
+  }
 
-.originImg {
-  /* width: 100vw;
+  .originImg {
+    /* width: 100vw;
     height: 100vh; */
-  position: sticky;
-}
+    position: sticky;
+  }
 
-.moveImg {
-  /* width: 100vw;
+  .moveImg {
+    /* width: 100vw;
     height: 100vh; */
-  padding-left: 200px;
-  transition: 850ms;
-}
+    padding-left: 200px;
+    transition: 850ms;
+  }
 }
 
 @media all and (min-width: 1201px) and (max-width: 1999px) {
-
   .flexImg {
     position: relative;
     bottom: 700px;
@@ -384,22 +436,21 @@ body {
 
   /* Sidebar */
 
-.origin {
-  /* width: 100vw;
+  .origin {
+    /* width: 100vw;
   height: 100vh; */
-}
+  }
 
-.originImg {
-  /* width: 100vw;
+  .originImg {
+    /* width: 100vw;
     height: 100vh; */
-  position: sticky;
-}
+    position: sticky;
+  }
 
-.moveImg {
-  /* width: 100vw;
+  .moveImg {
+    /* width: 100vw;
     height: 100vh; */
-  padding-left: 200px;
-  transition: 850ms;
+    padding-left: 200px;
+    transition: 850ms;
+  }
 }
-}
-
