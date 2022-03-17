@@ -25,7 +25,7 @@
     display: inline-block;
     position: relative;
     left: 1300px;
-    top: 100px;
+    bottom: 240px;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
   }
 
@@ -36,23 +36,25 @@
     margin: auto;
   }
 
+  .profileInline {
+    display: inline;
+  }
+
   .ProfilePosition {
     display: inline;
     position: relative;
-    bottom: 576px;
+    bottom: 589px;
     background-attachment: fixed;
     align-self: flex-start;
     margin: auto;
-    
   }
 
   .ProfileImg {
     margin: 0;
     padding: 0;
     position: sticky;
-    top: 943px;
-    filter: drop-shadow(16px 16px 20px rgba(47, 47, 47, 0.5))
-      brightness(0.8);
+    top: 956px;
+    filter: drop-shadow(16px 16px 20px rgba(47, 47, 47, 0.5)) brightness(0.8);
     display: inline-block;
     transition: 600ms;
   }
@@ -76,26 +78,30 @@
     left: 600px;
   }
 
-  .Introduction {
+  .MapText {
     display: inline;
-    text-align: center;
+    /* movement issue caused from text-align */
+    text-align: right;
     position: relative;
-    top: 0px;
+    bottom: 290px;
+    right: 210px;
   }
 
   h1 {
     color: azure;
-
+    font-family: "Archivo", sans-serif;
     font-size: 85px;
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
-
   }
 
   p {
     color: azure;
-    font-size: 32px;
+    font-size: 26px;
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
-
+    position: relative;
+    bottom: 30px;
+    margin: 0;
+    font-family: "Heebo", sans-serif;
   }
 
   /* Sidebar */
@@ -104,7 +110,6 @@
   }
 
   .originImg {
-
     position: sticky;
     transition: 450ms;
   }
@@ -114,14 +119,13 @@
     transition: 850ms;
   }
   .originPic {
-    position:relative;
+    position: relative;
     top: 0;
     transition: 850ms;
   }
 
   .originPic div {
-    position:fixed;
-
+    position: fixed;
   }
   .movePic {
     position: relative;
@@ -129,10 +133,7 @@
     transition: 850ms;
   }
   .movePic div {
-    position:fixed;
-  }
-  .profileInline{
-    display: inline;
+    position: fixed;
   }
 }
 
@@ -242,7 +243,6 @@
     background-attachment: fixed;
     align-self: flex-start;
     margin: auto;
-    
   }
 
   .ProfileImg {
@@ -296,7 +296,6 @@
   }
 
   .originImg {
-
     position: sticky;
     transition: 450ms;
   }
@@ -306,14 +305,13 @@
     transition: 850ms;
   }
   .originPic {
-    position:relative;
+    position: relative;
     top: 0;
     transition: 850ms;
   }
 
   .originPic div {
-    position:fixed;
-
+    position: fixed;
   }
   .movePic {
     position: relative;
@@ -321,9 +319,9 @@
     transition: 850ms;
   }
   .movePic div {
-    position:fixed;
+    position: fixed;
   }
-  .profileInline{
+  .profileInline {
     display: inline;
   }
 }
@@ -373,7 +371,6 @@
     background-attachment: fixed;
     align-self: flex-start;
     margin: auto;
-    
   }
 
   .ProfileImg {
@@ -427,7 +424,6 @@
   }
 
   .originImg {
-
     position: sticky;
     transition: 450ms;
   }
@@ -437,14 +433,13 @@
     transition: 850ms;
   }
   .originPic {
-    position:relative;
+    position: relative;
     top: 0;
     transition: 850ms;
   }
 
   .originPic div {
-    position:fixed;
-
+    position: fixed;
   }
   .movePic {
     position: relative;
@@ -452,9 +447,9 @@
     transition: 850ms;
   }
   .movePic div {
-    position:fixed;
+    position: fixed;
   }
-  .profileInline{
+  .profileInline {
     display: inline;
   }
 }
@@ -503,7 +498,6 @@
     background-attachment: fixed;
     align-self: flex-start;
     margin: auto;
-    
   }
 
   .ProfileImg {
@@ -557,7 +551,6 @@
   }
 
   .originImg {
-
     position: sticky;
     transition: 450ms;
   }
@@ -567,14 +560,13 @@
     transition: 850ms;
   }
   .originPic {
-    position:relative;
+    position: relative;
     top: 0;
     transition: 850ms;
   }
 
   .originPic div {
-    position:fixed;
-
+    position: fixed;
   }
   .movePic {
     position: relative;
@@ -582,9 +574,9 @@
     transition: 850ms;
   }
   .movePic div {
-    position:fixed;
+    position: fixed;
   }
-  .profileInline{
+  .profileInline {
     display: inline;
   }
 }
@@ -634,7 +626,6 @@
     background-attachment: fixed;
     align-self: flex-start;
     margin: auto;
-    
   }
 
   .ProfileImg {
@@ -675,11 +666,17 @@
   }
 
   h1 {
+    color: azure;
+    font-family: "Archivo", sans-serif;
     font-size: 85px;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
   }
 
   p {
-    font-size: 32px;
+    color: azure;
+    font-size: 26px;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    margin: 1px;
   }
 
   /* Sidebar */
@@ -688,7 +685,6 @@
   }
 
   .originImg {
-
     position: sticky;
     transition: 450ms;
   }
@@ -698,14 +694,13 @@
     transition: 850ms;
   }
   .originPic {
-    position:relative;
+    position: relative;
     top: 0;
     transition: 850ms;
   }
 
   .originPic div {
-    position:fixed;
-
+    position: fixed;
   }
   .movePic {
     position: relative;
@@ -713,9 +708,9 @@
     transition: 850ms;
   }
   .movePic div {
-    position:fixed;
+    position: fixed;
   }
-  .profileInline{
+  .profileInline {
     display: inline;
   }
 }

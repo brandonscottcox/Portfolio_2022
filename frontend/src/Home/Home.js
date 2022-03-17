@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../Scrollbar.css";
 import "./Home.css";
 import Header from "../Header/Header";
 import ProfilePicture from "../Spring/Home/ProfilePicture";
@@ -23,9 +24,15 @@ export default function Home() {
           <div className="IntroductionText">
             <div>
               <h1>Brandon Cox</h1>
-              <p>I'm a Frontend React Developer from Boulder, Colorado.</p>
+              <div className="p">
+                <p>I'm a Frontend Developer from Boulder, Colorado.</p>
+                <p>I specialize in JavaScript and React development</p>
+                <p>and have a passion for creating/designing </p>
+                <p>Frontend Applications.</p>
+              </div>
             </div>
           </div>
+
           <div className="profileInline">
             <div className="ProfileImg">
               <div className="ProfilePosition">
@@ -39,19 +46,21 @@ export default function Home() {
           </div>
           <div className="mapImg">
             <div className="mapPosition">
-                <ColoradoMap />
-
+              <ColoradoMap />
             </div>
           </div>
+          <div className="MapText">
+            <p>-Boulder, CO</p>
+          </div>
           <div className={sidebar ? "origin" : "origin"}>
-            <div>
+            {/* <div>
               <body>
-                {/* <span content="H">H</span>
+                <span content="H">H</span>
               <span content="o">o</span>
               <span content="m">m</span>
-              <span content="e">e</span> */}
+              <span content="e">e</span>
               </body>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

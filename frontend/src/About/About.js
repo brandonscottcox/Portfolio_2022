@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../Scrollbar.css"
 import "./About.css";
 import Header from "../Header/Header";
 

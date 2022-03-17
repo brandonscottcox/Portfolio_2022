@@ -1,0 +1,128 @@
+.divider {
+  display: flex;
+  flex: 1;
+}
+
+header {
+  height: 8vh;
+}
+
+.Header {
+  background: linear-gradient(to left, #6976ac, #111835);
+  margin-bottom: 0;
+  box-shadow: 10px 2px 5px rgb(0, 0, 0);
+  position: relative;
+}
+
+.HeaderFlex {
+  display: flex;
+  flex-direction: row;
+  height: 8vh;
+}
+
+.HeaderImgFlex {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.Linkedin {
+  display: flex;
+  position: relative;
+  right: 50px;
+  align-items: center;
+}
+
+.Linkedin a {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+}
+
+.Linkedin Img {
+  max-height: 73%;
+  position: relative;
+  display: inline-block;
+  right: 40px;
+  
+}
+
+.Github {
+  display: flex;
+  position: relative;
+  right: 50px;
+}
+
+.Github a {
+  display: flex;
+}
+
+.Github Img {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  right: 60px;
+}
+
+button {
+  border-radius: 10%;
+  height: 60%;
+  width: 100px;
+  color: #00f7ff;
+  font-family: "Heebo", sans-serif;
+  background: #6774a9;
+  border: 2px solid #00f7ff;
+  transition: 400ms;
+}
+
+button:hover {
+  background: #ffffff36;
+  transition: 300ms;
+  box-shadow: 1px 1px 25px rgb(255, 255, 255);
+}
+
+button:active {
+  border: 0px solid #000000;
+  box-shadow: 1px 1px 25px rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+.Resume a:visited {
+  text-decoration: none;
+  color: #00f7ff;
+  transition: 400ms;
+}
+
+.Resume {
+  position: relative;
+  right: 50px;
+  top: 17px;
+}
+
+.HeaderLogoFlex img {
+  max-width: 12%;
+  position: relative;
+  bottom: 22px;
+  left: 25px;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 0;
+}
+
+.HeaderLogoFlex img:hover {
+  background-color: #344899a9;
+  border-radius: 500px;
+  box-shadow: 2px 2px 100px rgb(0, 0, 0);
+  transform: scale(1.1);
+}
+
+.Renew {
+  position: fixed;
+  right: 50px;
+  top: 13px;
+  display: flex;
+  justify-content: flex-end;
+  transition: transform 0.7s ease-in-out;
+}
+
+.Renew:hover {
+  transform: rotate(360deg);
+}
