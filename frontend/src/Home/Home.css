@@ -43,7 +43,8 @@
   .ProfilePosition {
     display: inline;
     position: relative;
-    bottom: 589px;
+    bottom: 553px;
+    left: 0px;
     background-attachment: fixed;
     align-self: flex-start;
     margin: auto;
@@ -78,6 +79,13 @@
     left: 600px;
   }
 
+  .SkillsText {
+    display: flex;
+    position: relative;
+    left: 600px;
+  }
+
+
   .MapText {
     display: inline;
     /* movement issue caused from text-align */
@@ -87,7 +95,23 @@
     right: 210px;
   }
 
-  h1 {
+  .SkillsText h1 {
+    color: azure;
+    font-family: "Archivo", sans-serif;
+    font-size: 50px;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    position: relative;
+    top: 520px;
+    left: 80px;
+  }
+
+  .SkillsText p {
+    position: relative;
+    top: 520px;
+    left: 80px;
+  }
+
+  .IntroductionText h1 {
     color: azure;
     font-family: "Archivo", sans-serif;
     font-size: 85px;

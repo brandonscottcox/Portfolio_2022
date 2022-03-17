@@ -52,15 +52,14 @@ export default function Home() {
           <div className="MapText">
             <p>-Boulder, CO</p>
           </div>
+
           <div className={sidebar ? "origin" : "origin"}>
-            {/* <div>
-              <body>
-                <span content="H">H</span>
-              <span content="o">o</span>
-              <span content="m">m</span>
-              <span content="e">e</span>
-              </body>
-            </div> */}
+            <div className="SkillsText">
+              <h1>Interested in my skills?</h1>
+            </div>
+            <div className="SkillsText">
+              <p>Skills</p>
+            </div>
           </div>
         </div>
       </div>
