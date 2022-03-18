@@ -43,7 +43,7 @@ export default function Skills({ open, set }) {
     <div className={styles.wrapper} onClick={() => set((open) => !open)}>
       <animated.div
         style={{ ...rest, width: size, height: size }}
-        className={styles.container}
+        className={open ? styles.hidden: styles.container}
       >
         <div className={open ? "noText" : "text"}>
           <p className="SkillTitle">Skills</p>

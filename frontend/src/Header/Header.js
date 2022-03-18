@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 import HeaderLogo from "../Images/HeaderLogo.png";
-import Github from "../Images/GithubTrans.png";
+import Github from "../Images/GithubCropTrans.png";
 import Linkedin from "../Images/LinkedinTrans.png";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";

@@ -5,6 +5,7 @@ import Header from "../Header/Header";
 import ProfilePicture from "../Spring/Home/ProfilePicture";
 import ColoradoMap from "../Spring/Home/ColoradoMap";
 import Skills from "../Spring/Home/Skills/Skills.js";
+import Soundcloud from "../Images/SoundcloudTrans.png";
 
 export default function Home() {
   const [sidebar, setSidebar] = useState(false);
@@ -53,8 +54,11 @@ export default function Home() {
           <div className="MapText">
             <p>-Boulder, CO</p>
           </div>
-
           <div className={sidebar ? "origin" : "origin"}>
+            <div className="Music">
+              <p>I also make music</p>
+              <img src={Soundcloud} />
+            </div>
             <div className="SkillsText">
               <h1>Interested in my skills?</h1>
             </div>

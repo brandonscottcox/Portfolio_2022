@@ -8,7 +8,7 @@ body,
 .SkillTitle {
   position: relative;
   left: 45px;
-  top: 10px
+  top: 10px;
 }
 
 .SkillFlex {
@@ -17,7 +17,6 @@ body,
   justify-content: space-between;
   transition: 1000ms;
 }
-
 
 .flex {
   display: flex;
@@ -45,14 +44,12 @@ body,
 }
 
 .SkillsTextAnim {
-  
 }
 
 .React {
   position: relative;
   bottom: 100px;
   right: 330px;
-  
 }
 
 .CSS {
