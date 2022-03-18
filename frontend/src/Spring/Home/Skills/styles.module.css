@@ -1,0 +1,44 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border: 1px solid red;
+  display:contents;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-gap: 15px;
+  padding: 25px;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px rgb(36, 36, 36);
+  will-change: width, height;
+  border: 2px solid #ffffff;
+  transition: 300ms;
+}
+
+.container:hover {
+  box-shadow: 0px 1px 10px 1px #fbff00;
+  border: 2px solid #fbff00;
+  transition: 300ms;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 5px;
+  will-change: transform, opacity;
+  box-shadow: 0px 0px 5px 0px rgb(83, 83, 83);
+  border: 2px outset rgb(255, 255, 255);
+  transition: 1100ms;
+}
+
+.item:hover {
+  border: 2px outset #797979;
+  transition: 700ms;
+}

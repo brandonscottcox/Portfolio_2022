@@ -4,13 +4,14 @@ import "./Home.css";
 import Header from "../Header/Header";
 import ProfilePicture from "../Spring/Home/ProfilePicture";
 import ColoradoMap from "../Spring/Home/ColoradoMap";
-import BoulderMapEditTrans from "../Images/BoulderMapEditTrans.png";
-import ProfileClick from "./ProfileClick";
+import Skills from "../Spring/Home/Skills/Skills.js";
 
 export default function Home() {
   const [sidebar, setSidebar] = useState(false);
 
   const [picture, setPicture] = useState(false);
+
+  const [open, set] = useState(false);
 
   const showPicture = () => setPicture(!picture);
 
@@ -57,8 +58,8 @@ export default function Home() {
             <div className="SkillsText">
               <h1>Interested in my skills?</h1>
             </div>
-            <div className="SkillsText">
-              <p>Skills</p>
+            <div className="SkillsAnim">
+              <Skills open={open} set={set} />
             </div>
           </div>
         </div>

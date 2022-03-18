@@ -85,6 +85,14 @@
     left: 600px;
   }
 
+  .SkillsAnim {
+    position: relative;
+    top: 600px;
+    left: 800px;
+    height: 25%;
+    width: 35%;
+  }
+
 
   .MapText {
     display: inline;
