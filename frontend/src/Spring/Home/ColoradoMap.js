@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
-import "../../Home/Home.css";
+// import "../../Home/Home.css";
 import ProfilePicture from "../../Images/BoulderMapEdit1.png";
 import MapZoom from "../../Images/MapZoomTrans.png";
 
@@ -18,9 +18,9 @@ export default function ColoradoMap() {
     },
   });
 
-  const [picture, setPicture] = useState(false);
+  // const [picture, setPicture] = useState(false);
 
-  const showPicture = () => setPicture(!picture);
+  // const showPicture = () => setPicture(!picture);
 
   return (
     <animated.h1 style={anim}>

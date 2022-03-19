@@ -147,3 +147,37 @@ button:active {
 .Renew:hover {
   transform: rotate(360deg);
 }
+
+.MusicSound {
+  /* display: flex;
+  position: relative;
+  right: 50px; */
+}
+
+.MusicSound img {
+  height: 10vh;
+  position: relative;
+  display: inline-block;
+  right: 75px;
+  border-radius: 100%;
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  cursor: pointer;
+}
+
+.MusicSound img:hover {
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  cursor: pointer;
+}

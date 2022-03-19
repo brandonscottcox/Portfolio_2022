@@ -36,11 +36,8 @@
     margin: auto;
   }
 
-  
-
   .MapText {
     display: inline;
-    /* movement issue caused from text-align */
     position: relative;
     bottom: 250px;
     left: 1793px;
@@ -53,7 +50,7 @@
   .ProfilePosition {
     display: inline;
     position: relative;
-    bottom: 553px;
+    bottom: 403px;
     left: 0px;
     background-attachment: fixed;
     align-self: flex-start;
@@ -64,7 +61,7 @@
     margin: 0;
     padding: 0;
     position: sticky;
-    top: 956px;
+    top: 931px;
     filter: drop-shadow(16px 16px 20px rgba(47, 47, 47, 0.5)) brightness(0.8);
     display: inline-block;
     transition: 600ms;
@@ -77,7 +74,10 @@
   }
 
   .HomeBackground {
-    background-image: url(../Images/Home6.jpg);
+    /* background-image: url(../Images/Home6.jpg); */
+    background: linear-gradient(to left, #111835, #424a6d);
+    /* background: linear-gradient(to left, #6976ac, #111835); */
+
     background-size: cover;
     min-height: 100%;
   }
@@ -90,17 +90,22 @@
   }
 
   .SkillsText {
-    display: flex;
     position: relative;
+    bottom: 900px;
     left: 600px;
   }
 
   .SkillsAnim {
     position: relative;
-    top: 600px;
+    bottom: 350px;
     left: 800px;
-    height: 25%;
+    height: 25vh;
     width: 35%;
+    /* border: 1px solid red; */
+  }
+
+  .t {
+    height: 30vh;
   }
 
   .SkillsText h1 {
@@ -136,11 +141,12 @@
     font-family: "Heebo", sans-serif;
   }
 
-  .Music P {
+  .Music p {
     text-align: right;
     position: relative;
     top: 250px;
-    right: 400px;
+    left: 400px;
+    /* border: 1px solid red; */
   }
 
   .Music img {
@@ -149,21 +155,21 @@
     top: 300px;
     height: 10vh;
     border-radius: 100%;
-    transition: 0.70s;
-    -webkit-transition: 0.70s;
-    -moz-transition: 0.70s;
-    -ms-transition: 0.70s;
-    -o-transition: 0.70s;
-    
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+
     /* box-shadow: 1px 1px 25px rgb(0, 0, 0); */
   }
 
   .Music img:hover {
-    transition: 0.70s;
-    -webkit-transition: 0.70s;
-    -moz-transition: 0.70s;
-    -ms-transition: 0.70s;
-    -o-transition: 0.70s;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -o-transform: rotate(180deg);
@@ -175,16 +181,20 @@
   /* Sidebar */
 
   .origin {
+    border: 1px solid red;
   }
 
   .originImg {
+    /* border: 1px solid red; */
     position: sticky;
     transition: 450ms;
+    
   }
 
   .moveImg {
     padding-left: 201px;
     transition: 850ms;
+
   }
   .originPic {
     position: relative;
@@ -199,10 +209,13 @@
     position: relative;
     top: 525px;
     transition: 850ms;
+    /* height: 50vh; */
   }
+  
   .movePic div {
     position: fixed;
   }
+
 }
 
 @media all and (min-width: 240px) and (max-width: 480px) {
@@ -649,7 +662,8 @@
   }
 }
 
-@media all and (min-width: 1201px) and (max-width: 1999px) {
+  @media all and (min-width: 1201px) and (max-width: 1999px) {
+
   html,
   body {
     width: 100%;

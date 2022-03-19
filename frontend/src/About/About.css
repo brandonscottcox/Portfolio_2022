@@ -1,112 +1,23 @@
-.Skills {
-    height: 100%;
-    width: 100%;
-  }
+.AboutBackground {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../Images/About1.jpg);
+  background-size: cover;
+  min-height: 100%;
+}
 
+/* Sidebar */
 
+/* .origin {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.App {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
-  .AboutBackground {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background-image: url(../Images/About.jpg);
-    background-size: cover;
-    min-height: 100%;
-  }
-
-.HomeBody {
-    display: inline-block;
-    position: relative;
-  }
-  
-  span {
-    font-size: 3em;
-    position: relative;
-  }
-  span:after {
-    position: absolute;
-    content: attr(content);
-    top: 0;
-    left: 0;
-    -webkit-transition: all 750ms;
-    -moz-transition: all 750ms;
-    -o-transition: all 750ms;
-    transition: all 750ms;
-    -webkit-transform-origin: bottom left;
-    -ms-transform-origin: bottom left;
-    transform-origin: bottom left;
-  }
-  span:hover:after {
-    -webkit-transform: skew(10deg, 25deg);
-    -ms-transform: skew(10deg, 25deg);
-    transform: skew(10deg, 25deg);
-  }
-
-  /* Sidebar */
-
-.origin {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  .move {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    padding-left: 200px;
-  }
-
-  
+.move {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  padding-left: 200px;
+} */

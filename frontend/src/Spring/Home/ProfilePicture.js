@@ -1,6 +1,6 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
-import "../../Home/Home.css";
+// import "../../Home/Home.css";
 import ProfilePicture from "../../Images/SlackEditTrans3.png";
 
 export default function Name() {

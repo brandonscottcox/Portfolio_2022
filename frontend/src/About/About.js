@@ -10,15 +10,8 @@ export default function Home() {
   return (
     <div className="AboutBackground">
       <Header sidebar={sidebar} setSidebar={setSidebar} />
-
       <div className={sidebar ? "move" : "origin"}>
-        <body className="HomeBody">
-          <span content="A">A</span>
-          <span content="b">b</span>
-          <span content="o">o</span>
-          <span content="u">u</span>
-          <span content="t">t</span>
-        </body>
+        <body></body>
       </div>
     </div>
   );
