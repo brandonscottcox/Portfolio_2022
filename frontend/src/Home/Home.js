@@ -6,6 +6,9 @@ import ProfilePicture from "../Spring/Home/ProfilePicture";
 import ColoradoMap from "../Spring/Home/ColoradoMap";
 import Skills from "../Spring/Home/Skills/Skills.js";
 import Song from "../Howler/Song";
+import About from "../About/About"
+import Contact from "../Contact/Contact"
+
 
 export default function Home({ musicOn, setMusicOn }) {
   const [sidebar, setSidebar] = useState(false);
@@ -19,10 +22,10 @@ export default function Home({ musicOn, setMusicOn }) {
   return (
     <>
     
-      <div className="HomeBackground">
       <div>
         <Header sidebar={sidebar} setSidebar={setSidebar} />
       </div>
+      <div className="HomeBackground">
         <div className={sidebar ? "moveImg" : "originImg"}>
           <div className="IntroductionText">
             <div>
@@ -61,10 +64,10 @@ export default function Home({ musicOn, setMusicOn }) {
             <div className="SkillsAnim">
               <Skills open={open} set={set} />
             </div>
-          <div className={sidebar ? "origin" : "origin"}>
-            <div className="t">
-            </div>
-          </div>
+          {/* <div className={sidebar ? "origin" : "origin"}>
+          </div> */}
+          {/* <About />
+          <Contact /> */}
         </div>
       </div>
     </>

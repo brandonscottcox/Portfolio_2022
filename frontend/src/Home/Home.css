@@ -1,4 +1,238 @@
-@media all and (min-width: 2000px) {
+@media all and (min-width: 1200px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .mapZoom {
+    display: inline-block;
+    position: relative;
+    right: 105px;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+  }
+
+  .mapZoom:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+  }
+
+  .mapImg {
+    display: inline-block;
+    position: relative;
+    left: 950px;
+    bottom: 150px;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+  }
+
+  .mapPosition {
+    display: inline;
+    background-attachment: fixed;
+    align-self: flex-start;
+    margin: auto;
+  }
+
+  .MapText {
+    display: inline;
+    position: relative;
+    bottom: 250px;
+    left: 1793px;
+  }
+
+  .profileInline {
+    display: inline;
+  }
+
+  .ProfilePosition {
+    display: inline;
+    position: relative;
+    bottom: 425px;
+    left: 0px;
+    background-attachment: fixed;
+    align-self: flex-start;
+    margin: auto;
+  }
+
+  .ProfileImg {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 706px;
+    filter: drop-shadow(16px 16px 20px rgba(47, 47, 47, 0.5)) brightness(0.8);
+    display: inline-block;
+    transition: 600ms;
+  }
+
+  .ProfileImg:hover {
+    cursor: pointer;
+    filter: drop-shadow(4px 10px 20px rgb(255, 255, 255, 0.6)) brightness(1);
+    transition: 850ms;
+  }
+
+  .HomeBackground {
+    background-image: url(../Images/Blue1.jpg);
+    background-size: contain;
+    min-height: 100%;
+
+  }
+
+  .IntroductionText {
+    display: flex;
+    position: relative;
+    top: 90px;
+    left: 400px;
+  }
+
+  .SkillsText {
+    position: relative;
+    bottom: 500px;
+    left: 600px;
+  }
+
+  .SkillsAnim {
+    position: relative;
+    bottom: 180px;
+    left: 550px;
+    height: 20vh;
+    width: 30%;
+  }
+
+  .t {
+    height: 30vh;
+  }
+
+  .SkillsText h1 {
+    color: azure;
+    font-family: "Archivo", sans-serif;
+    font-size: 30px;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    position: relative;
+    top: 300px;
+    right: 120px;
+  }
+
+  .SkillsText p {
+    position: relative;
+    top: 520px;
+    left: 80px;
+  }
+
+  .IntroductionText h1 {
+    color: azure;
+    font-family: "Archivo", sans-serif;
+    font-size: 45px;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+  }
+
+  p {
+    color: azure;
+    font-size: 20px;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    position: relative;
+    bottom: 30px;
+    margin: 0;
+    font-family: "Heebo", sans-serif;
+  }
+
+  .Music p {
+    text-align: right;
+    position: relative;
+    top: 250px;
+    left: 400px;
+  }
+
+  .Music img {
+    position: relative;
+    left: 1700px;
+    top: 300px;
+    height: 10vh;
+    border-radius: 100%;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+
+  }
+
+  .Music img:hover {
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+
+
+  .origin {
+  }
+
+  .originImg {
+    position: sticky;
+    transition: 450ms;
+    
+  }
+
+  .moveImg {
+    padding-left: 201px;
+    transition: 850ms;
+
+  }
+  .originPic {
+    position: relative;
+    top: 0;
+    transition: 850ms;
+  }
+
+  .originPic div {
+    position: fixed;
+  }
+  .movePic {
+    position: relative;
+    top: 335px;
+    transition: 850ms;
+  }
+  
+  .movePic div {
+    position: fixed;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+OLD CSS BEFORE SCREEN RESOLUTION CHANGE ISSUE
+
+@media all and (min-width: 1200px) {
   html,
   body {
     width: 100%;
@@ -74,12 +308,10 @@
   }
 
   .HomeBackground {
-    /* background-image: url(../Images/Home6.jpg); */
-    background: linear-gradient(to left, #111835, #424a6d);
-    /* background: linear-gradient(to left, #6976ac, #111835); */
-
+    background-image: url(../Images/Blue1.jpg);
     background-size: cover;
     min-height: 100%;
+
   }
 
   .IntroductionText {
@@ -101,7 +333,6 @@
     left: 800px;
     height: 25vh;
     width: 35%;
-    /* border: 1px solid red; */
   }
 
   .t {
@@ -146,7 +377,6 @@
     position: relative;
     top: 250px;
     left: 400px;
-    /* border: 1px solid red; */
   }
 
   .Music img {
@@ -161,7 +391,6 @@
     -ms-transition: 0.7s;
     -o-transition: 0.7s;
 
-    /* box-shadow: 1px 1px 25px rgb(0, 0, 0); */
   }
 
   .Music img:hover {
@@ -178,14 +407,11 @@
     cursor: pointer;
   }
 
-  /* Sidebar */
 
   .origin {
-    border: 1px solid red;
   }
 
   .originImg {
-    /* border: 1px solid red; */
     position: sticky;
     transition: 450ms;
     
@@ -209,7 +435,6 @@
     position: relative;
     top: 525px;
     transition: 850ms;
-    /* height: 50vh; */
   }
   
   .movePic div {
@@ -217,8 +442,71 @@
   }
 
 }
+*/
 
-@media all and (min-width: 240px) and (max-width: 480px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media all and (min-width: 240px) and (max-width: 480px) {
   .HomeBackground img {
     margin: auto;
     top: 0;
@@ -371,7 +659,6 @@
     font-size: 32px;
   }
 
-  /* Sidebar */
 
   .origin {
   }
@@ -499,7 +786,6 @@
     font-size: 32px;
   }
 
-  /* Sidebar */
 
   .origin {
   }
@@ -626,7 +912,6 @@
     font-size: 32px;
   }
 
-  /* Sidebar */
 
   .origin {
   }
@@ -662,173 +947,215 @@
   }
 }
 
-  @media all and (min-width: 1201px) and (max-width: 1999px) {
+  @media all and (min-width: 1201px) and (max-width: 2100px) {
 
-  html,
-  body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-
-  .mapZoom {
-    display: inline-block;
-    position: relative;
-    right: 200px;
-    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
-    transition: 850ms;
-  }
-
-  .mapZoom:hover {
-    cursor: pointer;
-    transform: scale(0.97);
-  }
-
-  .mapImg {
-    display: inline-block;
-    position: relative;
-    left: 1300px;
-    bottom: 240px;
-    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
-  }
-
-  .mapPosition {
-    display: inline;
-    background-attachment: fixed;
-    align-self: flex-start;
-    margin: auto;
-  }
-
-  .profileInline {
-    display: inline;
-  }
-
-  .ProfilePosition {
-    display: inline;
-    position: relative;
-    bottom: 553px;
-    left: 0px;
-    background-attachment: fixed;
-    align-self: flex-start;
-    margin: auto;
-  }
-
-  .ProfileImg {
-    margin: 0;
-    padding: 0;
-    position: sticky;
-    top: 956px;
-    filter: drop-shadow(16px 16px 20px rgba(47, 47, 47, 0.5)) brightness(0.8);
-    display: inline-block;
-    transition: 600ms;
-  }
-
-  .ProfileImg:hover {
-    cursor: pointer;
-    filter: drop-shadow(4px 10px 20px rgb(255, 255, 255, 0.6)) brightness(1);
-    transition: 850ms;
-  }
-
-  .HomeBackground {
-    background-image: url(../Images/Home6.jpg);
-    background-size: cover;
-    min-height: 100%;
-  }
-
-  .IntroductionText {
-    display: flex;
-    position: relative;
-    top: 90px;
-    left: 600px;
-  }
-
-  .SkillsText {
-    display: flex;
-    position: relative;
-    left: 600px;
-  }
-
-  .SkillsAnim {
-    position: relative;
-    top: 600px;
-    left: 800px;
-    height: 25%;
-    width: 35%;
-  }
-
-  .MapText {
-    display: inline;
-    /* movement issue caused from text-align */
-    text-align: right;
-    position: relative;
-    bottom: 290px;
-    right: 210px;
-  }
-
-  .SkillsText h1 {
-    color: azure;
-    font-family: "Archivo", sans-serif;
-    font-size: 50px;
-    text-shadow: 3px 2px 5px rgb(0, 0, 0);
-    position: relative;
-    top: 520px;
-    left: 80px;
-  }
-
-  .SkillsText p {
-    position: relative;
-    top: 520px;
-    left: 80px;
-  }
-
-  .IntroductionText h1 {
-    color: azure;
-    font-family: "Archivo", sans-serif;
-    font-size: 85px;
-    text-shadow: 3px 2px 5px rgb(0, 0, 0);
-  }
-
-  p {
-    color: azure;
-    font-size: 26px;
-    text-shadow: 3px 2px 5px rgb(0, 0, 0);
-    position: relative;
-    bottom: 30px;
-    margin: 0;
-    font-family: "Heebo", sans-serif;
-  }
-
-  /* Sidebar */
-
-  .origin {
-  }
-
-  .originImg {
-    position: sticky;
-    transition: 450ms;
-  }
-
-  .moveImg {
-    padding-left: 201px;
-    transition: 850ms;
-  }
-  .originPic {
-    position: relative;
-    top: 0;
-    transition: 850ms;
-  }
-
-  .originPic div {
-    position: fixed;
-  }
-  .movePic {
-    position: relative;
-    top: 525px;
-    transition: 850ms;
-  }
-  .movePic div {
-    position: fixed;
-  }
-}
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+  
+    .mapZoom {
+      display: inline-block;
+      position: relative;
+      right: 200px;
+      filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+      transition: 850ms;
+    }
+  
+    .mapZoom:hover {
+      cursor: pointer;
+      transform: scale(0.97);
+    }
+  
+    .mapImg {
+      display: inline-block;
+      position: relative;
+      left: 1300px;
+      bottom: 240px;
+      filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    }
+  
+    .mapPosition {
+      display: inline;
+      background-attachment: fixed;
+      align-self: flex-start;
+      margin: auto;
+    }
+  
+    .MapText {
+      display: inline;
+      position: relative;
+      bottom: 250px;
+      left: 1793px;
+    }
+  
+    .profileInline {
+      display: inline;
+    }
+  
+    .ProfilePosition {
+      display: inline;
+      position: relative;
+      bottom: 575px;
+      left: 0px;
+      background-attachment: fixed;
+      align-self: flex-start;
+      margin: auto;
+    }
+  
+    .ProfileImg {
+      margin: 0;
+      padding: 0;
+      position: sticky;
+      top: 931px;
+      filter: drop-shadow(16px 16px 20px rgba(47, 47, 47, 0.5)) brightness(0.8);
+      display: inline-block;
+      transition: 600ms;
+    }
+  
+    .ProfileImg:hover {
+      cursor: pointer;
+      filter: drop-shadow(4px 10px 20px rgb(255, 255, 255, 0.6)) brightness(1);
+      transition: 850ms;
+    }
+  
+    .HomeBackground {
+      background-image: url(../Images/Blue1.jpg);
+ 
+  
+      background-size:contain;
+      min-height: 100%;
+    }
+  
+    .IntroductionText {
+      display: flex;
+      position: relative;
+      top: 90px;
+      left: 600px;
+    }
+  
+    .SkillsText {
+      position: relative;
+      bottom: 900px;
+      left: 600px;
+    }
+  
+    .SkillsAnim {
+      position: relative;
+      bottom: 350px;
+      left: 800px;
+      height: 25vh;
+      width: 35%;
+    }
+  
+    .t {
+      height: 30vh;
+    }
+  
+    .SkillsText h1 {
+      color: azure;
+      font-family: "Archivo", sans-serif;
+      font-size: 50px;
+      text-shadow: 3px 2px 5px rgb(0, 0, 0);
+      position: relative;
+      top: 520px;
+      left: 80px;
+    }
+  
+    .SkillsText p {
+      position: relative;
+      top: 520px;
+      left: 80px;
+    }
+  
+    .IntroductionText h1 {
+      color: azure;
+      font-family: "Archivo", sans-serif;
+      font-size: 85px;
+      text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    }
+  
+    p {
+      color: azure;
+      font-size: 26px;
+      text-shadow: 3px 2px 5px rgb(0, 0, 0);
+      position: relative;
+      bottom: 30px;
+      margin: 0;
+      font-family: "Heebo", sans-serif;
+    }
+  
+    .Music p {
+      text-align: right;
+      position: relative;
+      top: 250px;
+      left: 400px;
+    }
+  
+    .Music img {
+      position: relative;
+      left: 1700px;
+      top: 300px;
+      height: 10vh;
+      border-radius: 100%;
+      transition: 0.7s;
+      -webkit-transition: 0.7s;
+      -moz-transition: 0.7s;
+      -ms-transition: 0.7s;
+      -o-transition: 0.7s;
+  
+    }
+  
+    .Music img:hover {
+      transition: 0.7s;
+      -webkit-transition: 0.7s;
+      -moz-transition: 0.7s;
+      -ms-transition: 0.7s;
+      -o-transition: 0.7s;
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+      cursor: pointer;
+    }
+  
+  
+    .origin {
+    }
+  
+    .originImg {
+      position: sticky;
+      transition: 450ms;
+      
+    }
+  
+    .moveImg {
+      padding-left: 201px;
+      transition: 850ms;
+  
+    }
+    .originPic {
+      position: relative;
+      top: 0;
+      transition: 850ms;
+    }
+  
+    .originPic div {
+      position: fixed;
+    }
+    .movePic {
+      position: relative;
+      top: 525px;
+      transition: 850ms;
+    }
+    
+    .movePic div {
+      position: fixed;
+    }
+  
+  } */
