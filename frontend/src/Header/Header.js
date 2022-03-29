@@ -60,7 +60,7 @@ export default function Header({ sidebar, setSidebar }) {
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>
-                  <Link to={item.path} smooth={true} offset={50} duration={500}>
+                  <Link to={item.path} smooth={true} offset={0} duration={500}>
                     {item.icon}
                     <span>{item.title}</span>
                   </Link>

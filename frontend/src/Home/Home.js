@@ -20,10 +20,7 @@ export default function Home({ musicOn, setMusicOn }) {
 
   return (
     <>
-      <div className="border">
-        <div>
-          <Header sidebar={sidebar} setSidebar={setSidebar} />
-        </div>
+      <div className="border" id="home">
         <div className={sidebar ? "moveImg" : "originImg"}>
           <div className="profileInline">
             <div className="ProfileImg">
@@ -36,12 +33,14 @@ export default function Home({ musicOn, setMusicOn }) {
               </div>
             </div>
           </div>
-          {/* BREAK */}
-          <div className="HomeBackground" id="home">
+          <div>
+            <Header sidebar={sidebar} setSidebar={setSidebar} />
+          </div>
+          <div className="HomeBackground">
             <div className="IntroductionText">
               <div>
                 <h1>Brandon Cox</h1>
-                <div className="p">
+                <div className="Home-P">
                   <p>I'm a Frontend Developer from Boulder, Colorado.</p>
                   <p>I specialize in JavaScript and React development</p>
                   <p>and have a passion for creating/designing </p>
@@ -69,8 +68,10 @@ export default function Home({ musicOn, setMusicOn }) {
           </div>
         </div>
         <div className={sidebar ? "movePages" : "originPages"}>
-          <About />
-          <Contact />
+          <div className="SnapScroll">
+            <About />
+            <Contact />
+          </div>
         </div>
       </div>
     </>

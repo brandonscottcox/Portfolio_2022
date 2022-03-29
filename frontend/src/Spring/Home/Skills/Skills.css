@@ -5,10 +5,20 @@ body,
   width: 100%;
 }
 
+.text p {
+  color: azure;
+  font-size: 20px;
+  text-shadow: 3px 2px 5px rgb(0, 0, 0);
+  position: relative;
+  bottom: 30px;
+  margin: 0;
+  font-family: "Heebo", sans-serif;
+}
+
 .SkillTitle {
   position: relative;
-  left: 22px;
-  top: 0px;
+  left: 14px;
+  bottom: 3px;
 }
 
 .SkillFlex {
@@ -46,38 +56,38 @@ body,
 
 .React {
   position: relative;
-  bottom: 100px;
-  right: 330px;
+  bottom: 55px;
+  right: 204px;
 }
 
 .CSS {
   position: relative;
-  bottom: 100px;
-  right: 195px;
+  bottom: 55px;
+  right: 133px;
 }
 
 .JavaScript {
   position: relative;
-  bottom: 100px;
-  right: 85px;
+  bottom: 55px;
+  right: 83px;
 }
 
 .HTML {
   position: relative;
-  bottom: 100px;
-  left: 15px;
+  bottom: 55px;
+  right: 37px;
 }
 
 .Node {
   position: relative;
-  top: 45px;
-  right: 645px;
+  top: 16px;
+  right: 445px;
 }
 
 .Bootstrap {
   position: relative;
-  top: 45px;
-  right: 550px;
+  top: 16px;
+  right: 405px;
 }
 
 .text p {

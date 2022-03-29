@@ -8,13 +8,17 @@
   }
 
   .border {
-    border: 1px solid red;
+    scroll-snap-type: y mandatory;
+  }
+
+  .SnapScroll {
+    scroll-snap-align: start;
   }
 
   .mapZoom {
     display: inline-block;
     position: relative;
-    right: 105px;
+    right: 85px;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
     transition: 850ms;
   }
@@ -27,8 +31,8 @@
   .mapImg {
     display: inline-block;
     position: relative;
-    left: 950px;
-    bottom: 150px;
+    left: 865px;
+    bottom: 140px;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
   }
 
@@ -54,7 +58,7 @@
     display: inline;
     position: relative;
     left: 0px;
-    top: 142px;
+    top: 196px;
     background-attachment: fixed;
     align-self: flex-start;
     margin: auto;
@@ -62,21 +66,22 @@
 
   .ProfileImg {
     position: sticky;
-    /* filter: drop-shadow(16px 16px 20px rgba(47, 47, 47, 0.5)) brightness(0.8); */
     transition: 600ms;
   }
 
   .ProfileImg:hover {
     cursor: pointer;
-    /* filter: drop-shadow(4px 10px 20px rgb(255, 255, 255, 0.6)) brightness(1); */
     transition: 850ms;
   }
 
   .HomeBackground {
-    background-image: url(../Images/Home9.jpg);
+    background-image: url(../Images/Home12.jpg);
     background-size: cover;
     min-height: 100%;
-    border: 1px solid red;
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 1px 0px 4px rgb(0, 0, 0);
+    scroll-snap-align: start;
   }
 
   .IntroductionText {
@@ -98,10 +103,6 @@
     left: 550px;
     height: 20vh;
     width: 30%;
-  }
-
-  .t {
-    height: 30vh;
   }
 
   .SkillsText h1 {
@@ -127,7 +128,7 @@
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
   }
 
-  p {
+  .IntroductionText p {
     color: azure;
     font-size: 20px;
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
@@ -200,7 +201,7 @@
 
   .originPic div {
     transition: 600ms;
-    position: fixed;
+    position:fixed;
     filter: drop-shadow(16px 16px 20px rgba(47, 47, 47, 0.5)) brightness(0.8);
   }
   .originPic div:hover {

@@ -5,11 +5,10 @@
 
 header {
   height: 8vh;
-  border:1px solid red;
+  /* border:1px solid red; */
 }
 
 .Header {
-  
   background: linear-gradient(to left, #6976ac, #111835);
   margin-bottom: 0;
   box-shadow: 10px 2px 5px rgb(0, 0, 0);

@@ -1,64 +1,23 @@
-.App {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-  }
 
   .ContactBackground {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    background-image: url(../Images/VectorEdit.jpg);
+    background-image: url(../Images/Contact2.jpg);
     background-size: cover;
     min-height: 100%;
+    box-shadow: 1px 0px 4px rgb(0, 0, 0);
   }
 
-.HomeBody {
-    display: inline-block;
+   .ContactText h1 {
+    font-size: 45px;
     position: relative;
+    margin: 0;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    font-family: "Archivo", sans-serif;
+    left: 665px;
+    top: 200px
   }
   
   span {
     font-size: 3em;
-    position: relative;
   }
-  span:after {
-    position: absolute;
-    content: attr(content);
-    top: 0;
-    left: 0;
-    -webkit-transition: all 750ms;
-    -moz-transition: all 750ms;
-    -o-transition: all 750ms;
-    transition: all 750ms;
-    -webkit-transform-origin: bottom left;
-    -ms-transform-origin: bottom left;
-    transform-origin: bottom left;
-  }
-  span:hover:after {
-    -webkit-transform: skew(10deg, 25deg);
-    -ms-transform: skew(10deg, 25deg);
-    transform: skew(10deg, 25deg);
-  }
-
-  /* Sidebar */
-
-/* .origin {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  .move {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    padding-left: 200px;
-  } */
-
-  

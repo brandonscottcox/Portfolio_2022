@@ -1,12 +1,9 @@
 .AboutBackground {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  background-image: url(../Images/Black.jpg);
+  background-image: url(../Images/Home11.jpg);
   background-size: cover;
   min-height: 100%;
-  border:1px solid red;
-
 }
 
 
