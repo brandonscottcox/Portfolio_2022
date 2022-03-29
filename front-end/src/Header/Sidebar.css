@@ -40,7 +40,6 @@
   .nav-text a:hover {
     background-color: #1a83ff;
     box-shadow: 1px 2px 5px rgb(0, 0, 0);
-    cursor: pointer;
   }
   
   .nav-menu-items {

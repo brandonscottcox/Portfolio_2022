@@ -8,9 +8,9 @@ export default function Home() {
   const [sidebar, setSidebar] = useState(false);
 
   return (
-    <div className="AboutBackground">
-      <div className={sidebar ? "move" : "origin"}>
-        <body></body>
+    <div className="AboutBackground" id="about">
+      <div >
+        <body>YOOOOO</body>
       </div>
     </div>
   );

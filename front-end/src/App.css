@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 /* .WelcomeBackground {
   width: 100vw;
   height: 100vh;
@@ -6,7 +11,7 @@
   background-size: cover;
   min-height: 100%;
   
-}
+} */
 
 .WelcomeName {
   display: inline;
@@ -47,4 +52,21 @@
 
 .WelcomeNav:hover {
   color: #8a8be7;
-} */
+}
+
+/* Footer */
+
+footer {
+  background: linear-gradient(to right, rgb(255, 255, 255), #111835);
+  box-shadow: 10px 2px 5px rgb(0, 0, 0);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.FooterFlex {
+  padding-right: 80px;
+  padding-left: 80px;
+  display: flex;
+  justify-content: space-between;
+}

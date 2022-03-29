@@ -5,6 +5,14 @@
   background-image: url(../Images/Black.jpg);
   background-size: cover;
   min-height: 100%;
+  border:1px solid red;
+
+}
+
+
+
+body {
+  color: white;
 }
 
 /* Sidebar */

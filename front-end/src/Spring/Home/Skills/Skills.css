@@ -1,0 +1,92 @@
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.SkillTitle {
+  position: relative;
+  left: 22px;
+  top: 0px;
+}
+
+.SkillFlex {
+  max-height: 10px;
+  display: flex;
+  justify-content: space-between;
+  transition: 1000ms;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex.fill {
+  height: 100%;
+}
+
+.flex.center {
+  justify-content: center;
+}
+
+.text {
+  max-height: 10px;
+  display: flex;
+  justify-content: space-between;
+  transition: 1000ms;
+}
+
+.noText {
+  display: none;
+  transition: 1000ms;
+}
+
+
+.React {
+  position: relative;
+  bottom: 100px;
+  right: 330px;
+}
+
+.CSS {
+  position: relative;
+  bottom: 100px;
+  right: 195px;
+}
+
+.JavaScript {
+  position: relative;
+  bottom: 100px;
+  right: 85px;
+}
+
+.HTML {
+  position: relative;
+  bottom: 100px;
+  left: 15px;
+}
+
+.Node {
+  position: relative;
+  top: 45px;
+  right: 645px;
+}
+
+.Bootstrap {
+  position: relative;
+  top: 45px;
+  right: 550px;
+}
+
+.text p {
+  transition: 700ms;
+  text-decoration: none;
+}
+
+.SkillFlex p:hover {
+  color: #00f7ff;
+  transition: 700ms;
+  transform: scale(0.98);
+}

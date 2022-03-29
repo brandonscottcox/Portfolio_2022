@@ -4,11 +4,10 @@ import HeaderLogo from "../Images/HeaderLogo.png";
 import Github from "../Images/GithubCropTrans.png";
 import Linkedin from "../Images/LinkedinTrans.png";
 import * as AiIcons from "react-icons/ai";
-import { Link } from "react-scroll";
+import {Link} from 'react-scroll'
 import { SidebarData } from "./SidebarData";
 import "./Sidebar.css";
 import { IconContext } from "react-icons";
-import Song from "../Howler/Song"
 
 
 export default function Header({ sidebar, setSidebar }) {
@@ -60,7 +59,7 @@ export default function Header({ sidebar, setSidebar }) {
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>
-                  <Link to={item.path} smooth={true} offset={50} duration={500}>
+                  <Link to={item.path}>
                     {item.icon}
                     <span>{item.title}</span>
                   </Link>

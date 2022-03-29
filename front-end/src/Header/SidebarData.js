@@ -5,19 +5,19 @@ import * as AiIcons from "react-icons/ai"
 export const SidebarData = [
     {
         title: 'Home',
-        path: 'home',
+        path: '/home',
         icon: <AiIcons.AiFillHome />,
         cName: 'nav-text'
     },
     {
         title: 'About',
-        path: 'about',
+        path: '/about',
         icon: <AiIcons.AiOutlineInfoCircle />,
         cName: 'nav-text'
     },
     {
         title: 'Contact',
-        path: 'contact',
+        path: '/contact',
         icon: <AiIcons.AiFillMail />,
         cName: 'nav-text'
     }

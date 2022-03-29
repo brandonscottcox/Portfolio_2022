@@ -7,7 +7,7 @@ export default function Home() {
   const [sidebar, setSidebar] = useState(false);
 
   return (
-    <div className="ContactBackground">
+    <div className="ContactBackground" id="contact">
       <div className={sidebar ? "move" : "origin"}>
       <p id="about">t</p>
 

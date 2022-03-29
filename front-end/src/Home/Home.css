@@ -1,14 +1,11 @@
 @media all and (min-width: 1200px) {
+  html,
   body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-  }
-
-  .border {
-    border: 1px solid red;
   }
 
   .mapZoom {
@@ -53,30 +50,34 @@
   .ProfilePosition {
     display: inline;
     position: relative;
+    bottom: 425px;
     left: 0px;
-    top: 142px;
     background-attachment: fixed;
     align-self: flex-start;
     margin: auto;
   }
 
   .ProfileImg {
+    margin: 0;
+    padding: 0;
     position: sticky;
-    /* filter: drop-shadow(16px 16px 20px rgba(47, 47, 47, 0.5)) brightness(0.8); */
+    top: 706px;
+    filter: drop-shadow(16px 16px 20px rgba(47, 47, 47, 0.5)) brightness(0.8);
+    display: inline-block;
     transition: 600ms;
   }
 
   .ProfileImg:hover {
     cursor: pointer;
-    /* filter: drop-shadow(4px 10px 20px rgb(255, 255, 255, 0.6)) brightness(1); */
+    filter: drop-shadow(4px 10px 20px rgb(255, 255, 255, 0.6)) brightness(1);
     transition: 850ms;
   }
 
   .HomeBackground {
-    background-image: url(../Images/Home9.jpg);
+    background-image: url(../Images/Blue1.jpg);
     background-size: cover;
     min-height: 100%;
-    border: 1px solid red;
+
   }
 
   .IntroductionText {
@@ -155,6 +156,7 @@
     -moz-transition: 0.7s;
     -ms-transition: 0.7s;
     -o-transition: 0.7s;
+
   }
 
   .Music img:hover {
@@ -171,26 +173,20 @@
     cursor: pointer;
   }
 
+
   .origin {
-  }
-
-  .originPages {
-    transition: 450ms;
-  }
-
-  .movePages {
-    padding-left: 201px;
-    transition: 850ms;
   }
 
   .originImg {
     position: sticky;
     transition: 450ms;
+    
   }
 
   .moveImg {
     padding-left: 201px;
     transition: 850ms;
+
   }
   .originPic {
     position: relative;
@@ -199,32 +195,38 @@
   }
 
   .originPic div {
-    transition: 600ms;
     position: fixed;
-    filter: drop-shadow(16px 16px 20px rgba(47, 47, 47, 0.5)) brightness(0.8);
   }
-  .originPic div:hover {
-    transition: 850ms;
-    filter: drop-shadow(4px 10px 20px rgb(255, 255, 255, 0.6)) brightness(1);
-  }
-
   .movePic {
     position: relative;
     top: 335px;
     transition: 850ms;
   }
-
+  
   .movePic div {
-    transition: 600ms;
-
     position: fixed;
-    filter: drop-shadow(16px 16px 20px rgba(47, 47, 47, 0.5)) brightness(0.8);
   }
-  .movePic div:hover {
-    transition: 850ms;
-    filter: drop-shadow(4px 10px 20px rgb(255, 255, 255, 0.6)) brightness(1);
-  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 
@@ -441,6 +443,68 @@ OLD CSS BEFORE SCREEN RESOLUTION CHANGE ISSUE
 
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* @media all and (min-width: 240px) and (max-width: 480px) {
   .HomeBackground img {
