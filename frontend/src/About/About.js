@@ -12,7 +12,7 @@ export default function Home() {
     <div>
       <div className="AboutBackground" id="about">
         <div>
-          <body>YOOOOO</body>
+          <body>Skills</body>
         </div>
       </div>
     </div>

@@ -5,7 +5,6 @@
 
 header {
   height: 8vh;
-  /* border:1px solid red; */
 }
 
 .Header {
@@ -82,7 +81,7 @@ header {
   transition: 400ms;
 }
 
-button {
+.Resume button {
   border-radius: 10%;
   height: 60%;
   width: 65px;
@@ -93,14 +92,14 @@ button {
   transition: 400ms;
 }
 
-button:hover {
+.Resume button:hover {
   background: #ffffff36;
   transition: 300ms;
   box-shadow: 1px 1px 25px rgb(255, 255, 255);
   cursor: pointer;
 }
 
-button:active {
+.Resume button:active {
   border: 0px solid #000000;
   box-shadow: 1px 1px 25px rgb(0, 0, 0);
   color: rgb(0, 0, 0);

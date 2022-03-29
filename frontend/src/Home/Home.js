@@ -8,6 +8,7 @@ import Skills from "../Spring/Home/Skills/Skills.js";
 import Song from "../Howler/Song";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
+import Footer from "../Footer/Footer"
 
 export default function Home({ musicOn, setMusicOn }) {
   const [sidebar, setSidebar] = useState(false);
@@ -40,7 +41,7 @@ export default function Home({ musicOn, setMusicOn }) {
             <div className="IntroductionText">
               <div>
                 <h1>Brandon Cox</h1>
-                <div className="Home-P">
+                <div>
                   <p>I'm a Frontend Developer from Boulder, Colorado.</p>
                   <p>I specialize in JavaScript and React development</p>
                   <p>and have a passion for creating/designing </p>

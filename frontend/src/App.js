@@ -1,5 +1,13 @@
+import Home from "./Home/Home"
+import Footer from "./Footer/Footer"
+
 function App() {
-  return <></>;
+  return (
+    <>
+    <Home />
+    <Footer />
+    </>
+  )
 }
 
 export default App;
