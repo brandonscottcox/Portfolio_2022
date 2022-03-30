@@ -4,6 +4,8 @@
   background-image: url(../Images/Home11.jpg);
   background-size: cover;
   min-height: 100%;
+  box-shadow: 1px 0px 4px rgb(0, 0, 0);
+
 }
 
 

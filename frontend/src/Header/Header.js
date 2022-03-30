@@ -51,16 +51,14 @@ export default function Header({ sidebar, setSidebar }) {
         </div>
 
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-          <ul className="nav-menu-items" onClick={showSidebar}>
+          <ul className="nav-menu-items">
             <li className="navbar-toggle">
-              <Link to="#" className="menu-bars">
-                <AiIcons.AiOutlineClose />
-              </Link>
+                <AiIcons.AiOutlineClose onClick={showSidebar} />
             </li>
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>
-                  <Link to={item.path} smooth={true} offset={0} duration={500}>
+                  <Link to={item.path} smooth={true} offset={0} duration={700}>
                     {item.icon}
                     <span>{item.title}</span>
                   </Link>

@@ -18,7 +18,7 @@ body,
 .SkillTitle {
   position: relative;
   left: 14px;
-  bottom: 3px;
+  top: -2px;
 }
 
 .SkillFlex {
@@ -56,25 +56,25 @@ body,
 
 .React {
   position: relative;
-  bottom: 55px;
+  top: -55px;
   right: 204px;
 }
 
 .CSS {
   position: relative;
-  bottom: 55px;
+  top: -55px;
   right: 133px;
 }
 
 .JavaScript {
   position: relative;
-  bottom: 55px;
+  top: -55px;
   right: 83px;
 }
 
 .HTML {
   position: relative;
-  bottom: 55px;
+  top: -55px;
   right: 37px;
 }
 

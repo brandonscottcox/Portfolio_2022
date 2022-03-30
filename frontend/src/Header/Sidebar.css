@@ -9,6 +9,8 @@
     top: 0;
     left: -100%;
     transition: 850ms;
+    transition-delay: 0.30s;
+
   }
   
   .nav-menu.active {
@@ -48,12 +50,14 @@
   }
   
   .navbar-toggle {
-    background: linear-gradient(to left, #262d47, #111835);
     width: 100%;
     height: 80px;
-    display: flex;
-    justify-content: start;
+    display: inline;
+    justify-content: flex-start;
     align-items: center;
+  }
+  .navbar-toggle:hover {
+    cursor: pointer;
   }
   
   span {

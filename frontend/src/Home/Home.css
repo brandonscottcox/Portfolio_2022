@@ -46,8 +46,9 @@
   .MapText {
     display: inline;
     position: relative;
-    bottom: 250px;
-    left: 1793px;
+    bottom: 180px;
+    left: 1070px;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
   }
 
   .profileInline {
@@ -65,7 +66,6 @@
   }
 
   .ProfileImg {
-    position: sticky;
     transition: 600ms;
   }
 
@@ -185,18 +185,20 @@
   }
 
   .originImg {
-    position: sticky;
     transition: 450ms;
   }
 
   .moveImg {
-    padding-left: 201px;
+    padding-left: 200px;
     transition: 850ms;
+    transition-delay: 0.20s;
+    
   }
   .originPic {
     position: relative;
     top: 0;
     transition: 850ms;
+    
   }
 
   .originPic div {
@@ -256,7 +258,6 @@
   .ProfileImg {
     margin: 0;
     padding: 0;
-    position: sticky;
     top: 208px;
     filter: drop-shadow(16px 16px 20px rgba(185, 185, 185, 0.603))
       brightness(0.9);
@@ -340,7 +341,6 @@
   .ProfileImg {
     margin: 0;
     padding: 0;
-    position: sticky;
     top: 865px;
     filter: drop-shadow(16px 16px 20px rgba(185, 185, 185, 0.603))
       brightness(0.8);
@@ -387,7 +387,6 @@
   }
 
   .originImg {
-    position: sticky;
     transition: 450ms;
   }
 
@@ -467,7 +466,6 @@
   .ProfileImg {
     margin: 0;
     padding: 0;
-    position: sticky;
     top: 865px;
     filter: drop-shadow(16px 16px 20px rgba(185, 185, 185, 0.603))
       brightness(0.8);
@@ -514,7 +512,6 @@
   }
 
   .originImg {
-    position: sticky;
     transition: 450ms;
   }
 
@@ -610,7 +607,6 @@
   }
 
   .ProfileImg {
-    position: sticky;
     transition: 600ms;
   }
 
@@ -730,7 +726,6 @@
   }
 
   .originImg {
-    position: sticky;
     transition: 450ms;
   }
 

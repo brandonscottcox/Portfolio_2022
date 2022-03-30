@@ -1,10 +1,18 @@
-import React from 'react'
-import "./Footer.css"
+import React from "react";
+import "./Footer.css";
+import Arrow from "../Images/UpArrowTrans.png";
+import { Link } from "react-scroll";
 
 function Footer() {
   return (
-      <footer>test</footer>
-  )
+    <footer id="contact">
+      <div className="arrow">
+      <Link to="home" smooth={true} offset={0} duration={1000}>
+          <img src={Arrow} />
+        </Link>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

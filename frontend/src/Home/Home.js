@@ -8,7 +8,7 @@ import Skills from "../Spring/Home/Skills/Skills.js";
 import Song from "../Howler/Song";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
-import Footer from "../Footer/Footer"
+import Footer from "../Footer/Footer";
 
 export default function Home({ musicOn, setMusicOn }) {
   const [sidebar, setSidebar] = useState(false);
@@ -45,7 +45,7 @@ export default function Home({ musicOn, setMusicOn }) {
                   <p>I'm a Frontend Developer from Boulder, Colorado.</p>
                   <p>I specialize in JavaScript and React development</p>
                   <p>and have a passion for creating/designing </p>
-                  <p>Frontend Applications.</p>
+                  <p>frontend applications.</p>
                 </div>
               </div>
             </div>
@@ -64,8 +64,6 @@ export default function Home({ musicOn, setMusicOn }) {
             <div className="SkillsAnim">
               <Skills open={open} set={set} />
             </div>
-            {/* <div className={sidebar ? "origin" : "origin"}>
-          </div> */}
           </div>
         </div>
         <div className={sidebar ? "movePages" : "originPages"}>
@@ -73,6 +71,7 @@ export default function Home({ musicOn, setMusicOn }) {
             <About />
             <Contact />
           </div>
+          <Footer />
         </div>
       </div>
     </>

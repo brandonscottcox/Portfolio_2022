@@ -1,13 +1,31 @@
 footer {
-    background: linear-gradient(to right, rgb(255, 255, 255), #111835);
-    box-shadow: 10px 2px 5px rgb(0, 0, 0);
-    bottom: 0;
-    width: 100%;
-  }
-  
-  /* .FooterFlex {
-    padding-right: 80px;
-    padding-left: 80px;
-    display: flex;
-    justify-content: space-between;
-  } */
+  background: #737373b6;
+  box-shadow: 10px 2px 5px rgb(0, 0, 0);
+  bottom: 0;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.arrow {
+  position: absolute;
+}
+
+footer img {
+  position: absolute;
+  transition: 400ms;
+  background: linear-gradient(to right, #9B9B9B, #9B9B9B);
+  bottom: -25px;
+  border-radius: 100%;
+  height: 50px;
+}
+
+footer img:hover {
+  bottom: -24px;
+  transition: 400ms;
+  cursor: pointer;
+}

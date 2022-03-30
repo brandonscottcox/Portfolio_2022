@@ -6,7 +6,7 @@ export default function Home() {
   const [sidebar, setSidebar] = useState(false);
 
   return (
-    <div className="ContactBackground" id="contact">
+    <div className="ContactBackground">
       <div className="ContactFlex">
         <div>
           <div className="ContactText">

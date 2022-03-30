@@ -10,7 +10,7 @@ import {
 import data from "./SkillsData";
 import styles from "./styles.module.css";
 import "./Skills.css";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 export default function Skills({ open, set }) {
   const springApi = useSpringRef();
@@ -49,7 +49,7 @@ export default function Skills({ open, set }) {
           <p className="SkillTitle">Skills</p>
         </div>
         {transition((style, item) => (
-          <Link to="/about">
+          <Link to="about" smooth={true} offset={0} duration={500}>
             <animated.div
               className={styles.item}
               style={{ ...style, background: item.css }}
@@ -58,26 +58,26 @@ export default function Skills({ open, set }) {
         ))}
         <div className={open ? "text" : "noText"}>
         <div className="SkillFlex">
-          <Link to="/about" style={{ textDecoration: "none" }}>
+          <Link to="about" smooth={true} offset={0} duration={500} style={{ textDecoration: "none" }}>
             <p className="React">React</p>
           </Link>
-          <Link to="/about" style={{ textDecoration: "none" }}>
+          <Link to="about" smooth={true} offset={0} duration={500} style={{ textDecoration: "none" }}>
             <p className="CSS">CSS</p>
           </Link>
 
-          <Link to="/about" style={{ textDecoration: "none" }}>
+          <Link to="about" smooth={true} offset={0} duration={500} style={{ textDecoration: "none" }}>
             <p className="JavaScript">JavaScript</p>
           </Link>
 
-          <Link to="/about" style={{ textDecoration: "none" }}>
+          <Link to="about" smooth={true} offset={0} duration={500} style={{ textDecoration: "none" }}>
             <p className="HTML">HTML</p>
           </Link>
 
-          <Link to="/about" style={{ textDecoration: "none" }}>
+          <Link to="about" smooth={true} offset={0} duration={500} style={{ textDecoration: "none" }}>
             <p className="Node">Node.js</p>
           </Link>
 
-          <Link to="/about" style={{ textDecoration: "none" }}>
+          <Link to="about" smooth={true} offset={0} duration={500} style={{ textDecoration: "none" }}>
             <p className="Bootstrap">Bootstrap</p>
           </Link>
         </div>

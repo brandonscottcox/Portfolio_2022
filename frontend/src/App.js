@@ -1,13 +1,17 @@
-import Home from "./Home/Home"
-import Footer from "./Footer/Footer"
+import Home from "./Home/Home";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
     <>
-    <Home />
-    <Footer />
+      <div>
+        <Home />
+      </div>
+      <div>
+        <Footer />
+      </div>
     </>
-  )
+  );
 }
 
 export default App;

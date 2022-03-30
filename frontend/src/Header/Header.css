@@ -3,9 +3,9 @@
   flex: 1;
 }
 
-header {
+/* header {
   height: 8vh;
-}
+} */
 
 .Header {
   background: linear-gradient(to left, #6976ac, #111835);
@@ -20,9 +20,21 @@ header {
   height: 8vh;
 }
 
-.HeaderImgFlex {
-  display: flex;
-  flex-shrink: 0;
+.HeaderLogoFlex img {
+  height: 75px;
+  position: relative;
+  bottom: 12px;
+  left: 25px;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 0;
+}
+
+.HeaderLogoFlex img:hover {
+  background-color: #344899a9;
+  border-radius: 500px;
+  box-shadow: 2px 2px 100px rgb(0, 0, 0);
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .Linkedin {
@@ -115,23 +127,6 @@ header {
   position: relative;
   right: 40px;
   top: 10px;
-}
-
-.HeaderLogoFlex img {
-  max-width: 7%;
-  position: relative;
-  bottom: 12px;
-  left: 25px;
-  transition: all 0.2s ease-in-out;
-  margin-bottom: 0;
-}
-
-.HeaderLogoFlex img:hover {
-  background-color: #344899a9;
-  border-radius: 500px;
-  box-shadow: 2px 2px 100px rgb(0, 0, 0);
-  transform: scale(1.1);
-  cursor: pointer;
 }
 
 .Renew {

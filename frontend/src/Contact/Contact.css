@@ -19,7 +19,8 @@
   top: 10px;
   justify-content: space-between;
   display: flex;
-  font-size: 15px;
+  text-shadow: 3px 2px 5px rgb(0, 0, 0);
+
 }
 
 .phoneFlex2 {
@@ -27,16 +28,16 @@
   bottom: 15px;
   justify-content: space-between;
   display: flex;
-  font-size: 15px;
-}
+  text-shadow: 3px 2px 5px rgb(0, 0, 0);
 
+}
 
 .buttonFlex {
   display: flex;
   justify-content: center;
 }
 
-.phoneText{
+.phoneText {
   display: flex;
   justify-content: flex-start;
 }
@@ -44,17 +45,19 @@
 .emailText {
   display: flex;
   justify-content: flex-end;
-
+  
 }
 
+
+
 .ContactText button {
-  border-radius: 10%;
+  border-radius: 5%;
   height: 40px;
   width: 75px;
   color: #00f7ff;
   font-family: "Heebo", sans-serif;
   background: #6774a9;
-  border: 2px solid #00f7ff;
+  border: 1px solid #00f7ff;
   transition: 400ms;
   position: relative;
   top: 10px;
@@ -83,7 +86,6 @@
   margin: 0;
   text-shadow: 3px 2px 5px rgb(0, 0, 0);
   font-family: "Archivo", sans-serif;
-
 }
 
 .ContactText p {
