@@ -8,6 +8,7 @@
 }
 
 .ContactFlex {
+  color: azure;
   display: inline-flex;
   position: relative;
   left: 500px;
@@ -97,8 +98,4 @@
   position: relative;
   margin: 0;
   font-family: "Heebo", sans-serif;
-}
-
-span {
-  font-size: 3em;
 }

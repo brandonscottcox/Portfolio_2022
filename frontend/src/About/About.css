@@ -1,30 +1,132 @@
 .AboutBackground {
   width: 100vw;
-  height: 100vh;
-  background-image: url(../Images/Home11.jpg);
+  height: 200vh;
+  background-image: url(../Images/Home11Edit.jpg);
   background-size: cover;
   min-height: 100%;
   box-shadow: 1px 0px 4px rgb(0, 0, 0);
-
 }
 
-
-
-body {
-  color: white;
+.aboutSkillsTitle {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  position: relative;
+  left: 200px;
+  top: 10px;
+  text-shadow: 3px 2px 5px rgb(0, 0, 0);
+  font-family: "Great Vibes", cursive;
 }
 
-/* Sidebar */
-
-/* .origin {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+.box {
+  color: azure;
+  text-shadow: 3px 2px 5px rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 400px;
+  height: 450px;
+  padding: 10px;
+  position: relative;
+  left: 200px;
+  border-radius: 0%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.move {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  padding-left: 200px;
-} */
+.box h1 {
+  opacity: 1;
+}
+
+.aboutFlex {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutTextFlex {
+  position: relative;
+  top: 60px;
+  left: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutTextFlex p {
+  color: azure;
+  text-shadow: 3px 2px 5px rgb(0, 0, 0);
+  line-height: 0.5em;
+}
+
+.EducationTitle {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  position: relative;
+  left: 200px;
+  top: 50px;
+  text-shadow: 3px 2px 5px rgb(0, 0, 0);
+  font-family: "News Cycle", sans-serif;
+}
+
+.EducationTitle hr {
+  position: relative;
+  bottom: 40px;
+}
+
+.EducationFlex {
+  position: relative;
+  left: 400px;
+  display: flex;
+}
+.ProgressBar {
+  position: relative;
+  bottom: 30px;
+}
+
+.CSSTitle {
+  position: relative;
+  bottom: 50px;
+}
+
+.JavaScriptTitle {
+  position: relative;
+  bottom: 90px;
+}
+
+.HTMLTitle {
+  position: relative;
+  bottom: 130px;
+}
+
+.ReactIMG {
+  height: 40px;
+}
+
+.ReactIMGFlex {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.CSSIMG {
+  height: 50px;
+}
+
+.JSIMG {
+  height: 37px;
+}
+
+.HTMLIMG {
+  height: 34px;
+}
+
+.skillsImgFlex {
+  display: flex;
+}
+
+.thinkful {
+  height: 150px;
+  position: relative;
+  top: 10px;
+}
+.ThinkfulFlex {
+  display: flex;
+  align-items: center;
+  color: azure;
+  text-shadow: 3px 2px 5px rgb(0, 0, 0);
+}

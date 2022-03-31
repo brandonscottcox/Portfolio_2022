@@ -43,7 +43,7 @@ export default function Skills({ open, set }) {
     <div className={styles.wrapper} onClick={() => set((open) => !open)}>
       <animated.div
         style={{ ...rest, width: size, height: size }}
-        className={open ? styles.hidden: styles.container}
+        className={open ? styles.hidden : styles.container}
       >
         <div className={open ? "noText" : "text"}>
           <p className="SkillTitle">Skills</p>
@@ -54,34 +54,14 @@ export default function Skills({ open, set }) {
               className={styles.item}
               style={{ ...style, background: item.css }}
             />
+            <div className={open ? "full" : "empty"}>
+              <div className="columnText">
+                {item.name}
+              </div>
+            </div>
           </Link>
         ))}
-        <div className={open ? "text" : "noText"}>
-        <div className="SkillFlex">
-          <Link to="about" smooth={true} offset={0} duration={500} style={{ textDecoration: "none" }}>
-            <p className="React">React</p>
-          </Link>
-          <Link to="about" smooth={true} offset={0} duration={500} style={{ textDecoration: "none" }}>
-            <p className="CSS">CSS</p>
-          </Link>
 
-          <Link to="about" smooth={true} offset={0} duration={500} style={{ textDecoration: "none" }}>
-            <p className="JavaScript">JavaScript</p>
-          </Link>
-
-          <Link to="about" smooth={true} offset={0} duration={500} style={{ textDecoration: "none" }}>
-            <p className="HTML">HTML</p>
-          </Link>
-
-          <Link to="about" smooth={true} offset={0} duration={500} style={{ textDecoration: "none" }}>
-            <p className="Node">Node.js</p>
-          </Link>
-
-          <Link to="about" smooth={true} offset={0} duration={500} style={{ textDecoration: "none" }}>
-            <p className="Bootstrap">Bootstrap</p>
-          </Link>
-        </div>
-        </div>
       </animated.div>
     </div>
   );

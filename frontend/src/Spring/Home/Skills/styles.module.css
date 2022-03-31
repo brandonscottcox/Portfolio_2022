@@ -2,16 +2,14 @@
   height: 100vh;
   width: 100vh;
   padding: 20px;
-  border: 1px solid red;
-  display:contents;
+  display: contents;
   transition: 300ms;
-
 }
 
 .hidden {
-  position:relative;
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
   grid-gap: 15px;
   padding: 25px;
   background: white;
@@ -21,13 +19,12 @@
   will-change: width, height;
   border: 2px solid white;
   transition: 400ms;
-
 }
 
 .container {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
   grid-gap: 15px;
   padding: 25px;
   background: white;
@@ -55,13 +52,12 @@
   will-change: transform, opacity;
   box-shadow: 0px 0px 5px 0px rgb(83, 83, 83);
   border: 2px outset rgb(255, 255, 255);
-  transition: 1100ms;
-  
+  transition: 700ms;
 }
 
 .item:hover {
   box-shadow: 0px 1px 10px 1px #ffffff;
-
   border: 2px outset #00f7ff;
   transition: 700ms;
 }
+

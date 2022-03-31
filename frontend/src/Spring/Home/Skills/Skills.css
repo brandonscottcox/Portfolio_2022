@@ -17,8 +17,10 @@ body,
 
 .SkillTitle {
   position: relative;
-  left: 14px;
-  top: -2px;
+  right: 1px;
+  top: -15px;
+  transition: 500ms;
+
 }
 
 .SkillFlex {
@@ -53,50 +55,33 @@ body,
   transition: 1000ms;
 }
 
-
-.React {
+.columnText {
+  color: azure;
+  display: flex;
+  justify-content: center;
   position: relative;
-  top: -55px;
-  right: 204px;
+  bottom: 50px;
+  text-shadow: 1px 1px 5px rgb(71, 71, 71);
+  vertical-align: top;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  opacity: 1;
 }
 
-.CSS {
-  position: relative;
-  top: -55px;
-  right: 133px;
-}
-
-.JavaScript {
-  position: relative;
-  top: -55px;
-  right: 83px;
-}
-
-.HTML {
-  position: relative;
-  top: -55px;
-  right: 37px;
-}
-
-.Node {
-  position: relative;
-  top: 16px;
-  right: 445px;
-}
-
-.Bootstrap {
-  position: relative;
-  top: 16px;
-  right: 405px;
-}
-
-.text p {
-  transition: 700ms;
-  text-decoration: none;
-}
-
-.SkillFlex p:hover {
+.columnText:hover {
   color: #00f7ff;
-  transition: 700ms;
-  transform: scale(0.98);
+  transition: 500ms;
 }
+
+.full {
+  color: black;
+  transition: 500ms;
+  transition-delay: 10.30s;
+}
+.empty {
+  display: none;
+  transition: 300ms;
+  
+
+}
+
