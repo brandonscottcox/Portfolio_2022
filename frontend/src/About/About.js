@@ -7,6 +7,9 @@ import CSSIMG from "../Images/CSSTrans.png";
 import JSIMG from "../Images/JavaScriptTrans.png";
 import HTMLIMG from "../Images/HTMLTrans.png";
 import Thinkful from "../Images/ThinkfulWhiteTrans.png";
+import bnb from "../Images/ThinkfulbnbAbout.png";
+import ThinkfulCapstone from "../Images/ThinkfulCapstoneEditSize.png";
+import Flashcard from "../Images/Flashcard.png";
 
 export default function Home() {
   const [sidebar, setSidebar] = useState(false);
@@ -26,7 +29,7 @@ export default function Home() {
               <div className="skillsImgFlex">
                 <div className="ReactIMGFlex">
                   <img className="ReactIMG" src={ReactIMG} />
-                  <h1>React</h1>
+                  <h1  className="ReactText">React</h1>
                 </div>
               </div>
               <div className="ProgressBar">
@@ -48,7 +51,7 @@ export default function Home() {
               <div className="skillsImgFlex">
                 <div className="ReactIMGFlex">
                   <img className="CSSIMG" src={CSSIMG} />
-                  <h1>CSS</h1>
+                  <h1 className="CSSText">CSS</h1>
                 </div>
               </div>
               <div className="ProgressBar">
@@ -70,7 +73,7 @@ export default function Home() {
               <div className="skillsImgFlex">
                 <div className="ReactIMGFlex">
                   <img className="JSIMG" src={JSIMG} />
-                  <h1>JavaScript</h1>
+                  <h1 className="JSText">JavaScript</h1>
                 </div>
               </div>
               <div className="ProgressBar">
@@ -92,7 +95,7 @@ export default function Home() {
               <div className="skillsImgFlex">
                 <div className="ReactIMGFlex">
                   <img className="HTMLIMG" src={HTMLIMG} />
-                  <h1>HTML</h1>
+                  <h1 className="HTMLText">HTML</h1>
                 </div>
               </div>
               <div className="ProgressBar">
@@ -134,11 +137,74 @@ export default function Home() {
               <img className="thinkful" src={Thinkful} />
             </div>
             <div>
-              <p>Coding Bootcamp:</p>
-              <p>Centered and formatted around full-stack web development.</p>
-              <p>Javascript, React, CSS, HTML, Express.js, Git</p>
+              <p>Coding Bootcamp: 2021</p>
+              <p>Centered and formatted around full-stack web development</p>
+              <p>
+                Javascript, React, CSS, HTML, PostgreSQL, Express.js, Knex.js,
+                Git
+              </p>
             </div>
           </div>
+        </div>
+        <div className="cardFlex">
+          <a
+            style={{ textDecoration: "none" }}
+            target="_blank"
+            href="https://brandonscottcox.github.io/starter-thinkfulbnb/"
+          >
+            <div className="bnbCard">
+              <div>
+                <img src={bnb} />
+              </div>
+              <div className="cardText">
+                <p className="cardTitle">Thinkfulbnb</p>
+                <p className="cardP">
+                  Frontend vacation rental application, focused around css
+                  styling
+                </p>
+                <p className="cardP">Technologies: React.js, CSS, HTML</p>
+              </div>
+            </div>
+          </a>
+          <a
+            style={{ textDecoration: "none" }}
+            target="_blank"
+            href="https://bcox-front-reservation.herokuapp.com/dashboard"
+          >
+            <div className="capstoneCard">
+              <div>
+                <img src={ThinkfulCapstone} />
+              </div>
+              <div className="cardText">
+                <p className="cardTitle">Final Capstone</p>
+                <p className="cardP">
+                  Restaurant reservation application, utilizing HTTP API.
+                </p>
+                <p className="cardP">
+                  Technologies: React.js, Node.js, PostgreSQL, Express.js, &
+                  Knex.js
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            style={{ textDecoration: "none" }}
+            target="_blank"
+            href="https://github.com/brandonscottcox/Project_Flashcard"
+          >
+            <div className="FlashcardCard">
+              <div>
+                <img src={Flashcard} />
+              </div>
+              <div className="cardText">
+                <p className="cardTitle">Flashcard-O-Matic</p>
+                <p className="cardP">
+                  Card based application, using bootstrap styling.
+                </p>
+                <p className="cardP">Technologies: React.js, Bootstrap, CSS</p>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </>

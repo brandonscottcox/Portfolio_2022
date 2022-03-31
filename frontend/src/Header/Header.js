@@ -68,7 +68,6 @@ export default function Header({ sidebar, setSidebar }) {
           </ul>
         </nav>
       </IconContext.Provider>
-      <div>its different</div>
     </header>
   );
 }

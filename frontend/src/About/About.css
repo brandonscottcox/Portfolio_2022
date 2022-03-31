@@ -1,6 +1,6 @@
 .AboutBackground {
   width: 100vw;
-  height: 200vh;
+  height: 220vh;
   background-image: url(../Images/Home11Edit.jpg);
   background-size: cover;
   min-height: 100%;
@@ -54,6 +54,7 @@
 }
 
 .EducationTitle {
+  transform: scale(1.2, 1);
   color: rgb(255, 255, 255);
   font-size: 30px;
   position: relative;
@@ -93,26 +94,49 @@
   bottom: 130px;
 }
 
-.ReactIMG {
-  height: 40px;
-}
-
 .ReactIMGFlex {
   align-items: center;
   justify-content: center;
   display: flex;
 }
 
+.ReactIMG {
+  height: 40px;
+}
+
+.ReactText {
+  position: relative;
+  left: 09px;
+}
+
 .CSSIMG {
+  position: relative;
+  right: 7px;
   height: 50px;
 }
 
+.CSSText {
+  position: relative;
+}
+
 .JSIMG {
+  position: relative;
+  right: 15px;
   height: 37px;
+}
+
+.JSText {
+  position: relative;
+  right: 15px;
 }
 
 .HTMLIMG {
   height: 34px;
+}
+
+.HTMLText {
+  position: relative;
+  left: 14px;
 }
 
 .skillsImgFlex {
@@ -122,11 +146,113 @@
 .thinkful {
   height: 150px;
   position: relative;
-  top: 10px;
+  top: 3px;
 }
 .ThinkfulFlex {
   display: flex;
   align-items: center;
   color: azure;
   text-shadow: 3px 2px 5px rgb(0, 0, 0);
+}
+
+.cardFlex {
+  justify-content: center;
+  display: flex;
+  padding: 50px;
+}
+
+.bnbCard {
+  color: azure;
+  text-shadow: 3px 2px 5px rgb(0, 0, 0);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 200px;
+  height: 270px;
+  padding: 10px;
+  left: 170px;
+  border-radius: 0%;
+  filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+  transition: 850ms;
+  position: relative;
+  bottom: 0;
+}
+.capstoneCard {
+  color: azure;
+  text-shadow: 3px 2px 5px rgb(0, 0, 0);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 200px;
+  height: 270px;
+  padding: 10px;
+  left: 210px;
+  border-radius: 0%;
+  filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+  transition: 850ms;
+  position: relative;
+  bottom: 0;
+}
+
+.FlashcardCard {
+  color: azure;
+  text-shadow: 3px 2px 5px rgb(0, 0, 0);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 200px;
+  height: 270px;
+  padding: 10px;
+  left: 250px;
+  border-radius: 0%;
+  filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+  transition: 850ms;
+  position: relative;
+  bottom: 0;
+}
+
+.bnbCard:hover {
+  bottom: 10px;
+  transition: 700ms;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.capstoneCard:hover {
+  bottom: 10px;
+  transition: 700ms;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.FlashcardCard:hover {
+  bottom: 10px;
+  transition: 700ms;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.cardFlex img {
+  height: 180px;
+  width: 180px;
+}
+
+.cardTitle {
+  font-size: 15px;
+}
+
+.cardP {
+  font-size: 10px;
+}
+
+.cardText {
+  position: relative;
+  bottom: 15px;
+}
+
+.cardText p + p {
+  position: relative;
+  bottom: 10px;
+}
+
+.cardText p + p + p {
+  position: relative;
+  bottom: 20px;
 }
