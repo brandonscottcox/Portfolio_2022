@@ -9,6 +9,7 @@ import Song from "../Howler/Song";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
+import Slider from "../Slider/Slider";
 
 export default function Home({ musicOn, setMusicOn }) {
   const [sidebar, setSidebar] = useState(false);
@@ -49,15 +50,17 @@ export default function Home({ musicOn, setMusicOn }) {
                 </div>
               </div>
             </div>
-
-            <div className="mapImg">
+              <div>
+                <Slider />
+              </div>
+            {/* <div className="mapImg">
               <div className="mapPosition">
                 <ColoradoMap />
               </div>
             </div>
             <div className="MapText">
               <p>-Boulder, CO</p>
-            </div>
+            </div> */}
             <div className="SkillsText">
               <h1>Interested in my skills?</h1>
             </div>

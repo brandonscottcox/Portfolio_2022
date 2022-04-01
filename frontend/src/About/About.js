@@ -8,8 +8,8 @@ import JSIMG from "../Images/JavaScriptTrans.png";
 import HTMLIMG from "../Images/HTMLTrans.png";
 import Thinkful from "../Images/ThinkfulWhiteTrans.png";
 import bnb from "../Images/ThinkfulbnbAbout.png";
-import ThinkfulCapstone from "../Images/ThinkfulCapstoneEditSize.png";
-import Flashcard from "../Images/Flashcard.png";
+import ThinkfulCapstone from "../Images/ThinkfulCapstoneEdit1.png";
+import Flashcard from "../Images/FlashcardEditSize.png";
 
 export default function Home() {
   const [sidebar, setSidebar] = useState(false);
