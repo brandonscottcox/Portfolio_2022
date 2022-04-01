@@ -1,41 +1,47 @@
 .sliderBox {
-    background-color: rgba(255, 255, 255, 0.1);
-    height: 270px;
-    width: 370px;
-    position: relative;
-    border-radius: 0%;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    bottom: 150px;
-    left: 835px;
+  background-color: rgba(255, 255, 255, 0.418);
+  height: 250px;
+  width: 350px;
+  position: relative;
+  border-radius: 0%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  bottom: 125px;
+  left: 837px;
+  transition: 1000ms;
 }
 
 :root {
   --heights: 50vh;
   --widths: 100%;
+  transition: 1000ms;
 }
 
 .slider-container {
-  height: 250px;
-  width: 350px;
+  height: 230px;
+  width: 330px;
   position: relative;
   margin: auto;
   overflow: hidden;
+  transition: 1000ms;
+  box-shadow: 0 0px 5px rgba(141, 141, 141, 0.5);
 
 }
 
-.active {
+/* .active {
   display: inline-block;
-}
+} */
 
 .inactive {
   display: none;
+  transition: 1000ms;
 }
 
 .slides {
   height: var(--heights);
   width: var(--widths);
   position: relative;
+  transition: 1000ms;
 }
 
 .slide-image {
@@ -43,6 +49,8 @@
   height: 100%;
   position: absolute;
   object-fit: cover;
+  transition: 1000ms;
+
 }
 
 .slide-title,
@@ -50,16 +58,21 @@
   width: 100%;
   height: 100%;
   color: white;
-  font-size: 50px;
+  font-size: 16px;
   position: absolute;
   text-align: center;
-  top: 40%;
+  top: 60%;
+  left: 35%;
   z-index: 10;
+  transition: 1000ms;
+  text-shadow: 3px 2px 5px rgb(0, 0, 0);
+
 }
 
 .slide-text {
   top: 65%;
   font-size: 2rem;
+  transition: 1000ms;
 }
 
 .prev,
@@ -74,6 +87,7 @@
   font-size: 40px;
   font-weight: bold;
   border-radius: 0px 5px 5px 0px;
+  transition: 1000ms;
 }
 
 .prev:hover,
@@ -86,6 +100,7 @@
 .next {
   right: 0;
   border-radius: 5px 0px 0px 5px;
+  transition: 1000ms;
 }
 
 .all-dots {
@@ -96,19 +111,25 @@
   top: 90%;
   justify-content: center;
   z-index: 200;
+  transition: 1000ms;
 }
 
 .dot {
   cursor: pointer;
-  height: 1.0rem;
-  width: 1.0rem;
+  height: 1rem;
+  width: 1rem;
   margin: 0px 3px;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   display: inline-block;
+  transition: 1000ms;
+  
 }
 
 .active-dot,
 .dot:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.87);
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+
+  transition: 1000ms;
 }

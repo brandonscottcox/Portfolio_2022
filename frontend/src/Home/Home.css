@@ -88,13 +88,13 @@
     display: flex;
     position: relative;
     top: 90px;
-    left: 400px;
+    left: 380px;
   }
 
   .SkillsText {
     position: relative;
-    bottom: 500px;
-    left: 600px;
+    bottom: 480px;
+    left: 580px;
   }
 
   .SkillsAnim {
@@ -638,13 +638,13 @@
     left: 600px;
   }
 
-  .SkillsAnim {
+  /* .SkillsAnim {
     position: relative;
     bottom: 180px;
     left: 550px;
     height: 20vh;
     width: 30%;
-  }
+  } */
 
   .SkillsText h1 {
     color: azure;

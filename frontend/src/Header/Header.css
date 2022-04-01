@@ -172,3 +172,20 @@ header {
   transform: rotate(180deg);
   cursor: pointer;
 }
+
+.HeaderActive{
+  position: fixed;
+  top: 0px;
+  transition: 0.3s linear;
+  z-index: 40;
+
+}
+.HeaderHidden{
+
+  z-index: 40;
+
+  position: fixed;
+  top: -80px;
+  transition: 0.3s linear;
+
+}

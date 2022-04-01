@@ -126,7 +126,7 @@ export default function Home() {
         <div>
           <div className="aboutFlex">
             <div className="EducationTitle">
-              <h1>Education</h1>
+              <h1 id="projects">Education</h1>
               <hr />
             </div>
           </div>

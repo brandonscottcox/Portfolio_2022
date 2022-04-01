@@ -4,17 +4,17 @@ import Third from "../Images/Denver1.jpg";
 
 export default [
   {
-    title: "First Slide",
+    title: "- Boulder",
     description: "This is the first slider Image of our carousel",
     urls: First,
   },
   {
-    title: "Second Slide",
+    title: "- Flatirons",
     description: "This is the second slider Image of our carousel",
     urls: Second,
   },
   {
-    title: "Third Slide",
+    title: "- Denver",
     description: "This is the Third slider Image of our carousel",
     urls: Third,
   }

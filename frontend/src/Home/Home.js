@@ -53,14 +53,6 @@ export default function Home({ musicOn, setMusicOn }) {
               <div>
                 <Slider />
               </div>
-            {/* <div className="mapImg">
-              <div className="mapPosition">
-                <ColoradoMap />
-              </div>
-            </div>
-            <div className="MapText">
-              <p>-Boulder, CO</p>
-            </div> */}
             <div className="SkillsText">
               <h1>Interested in my skills?</h1>
             </div>

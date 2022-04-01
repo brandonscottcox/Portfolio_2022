@@ -49,7 +49,7 @@ export default function Skills({ open, set }) {
           <p className="SkillTitle">Skills</p>
         </div>
         {transition((style, item) => (
-          <Link to="about" smooth={true} offset={0} duration={500}>
+          <Link to="projects" smooth={true} offset={0} duration={500}>
             <animated.div
               className={styles.item}
               style={{ ...style, background: item.css }}
