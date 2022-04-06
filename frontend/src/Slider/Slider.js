@@ -18,10 +18,11 @@ function Slider(props) {
   }, [activeIndex]);
 
   return (
-    <div className="sliderBox">
-      <div className="slider-container">
-        <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
-        {/* <Arrows
+    <div className="sliderFlex">
+      <div className="sliderBox">
+        <div className="slider-container">
+          <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
+          {/* <Arrows
           prevSlide={() =>
             setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
           }
@@ -29,11 +30,12 @@ function Slider(props) {
             setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
           }
         /> */}
-        <Dots
-          activeIndex={activeIndex}
-          sliderImage={sliderImage}
-          onclick={(activeIndex) => setActiveIndex(activeIndex)}
-        />
+          <Dots
+            activeIndex={activeIndex}
+            sliderImage={sliderImage}
+            onclick={(activeIndex) => setActiveIndex(activeIndex)}
+          />
+        </div>
       </div>
     </div>
   );

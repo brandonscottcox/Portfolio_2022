@@ -3,7 +3,7 @@ export default [
       name: 'React',
       description: '#a8edea → #fed6e3',
       css: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
-      height: 200,
+      height: 400,
     },
     {
       name: 'CSS',

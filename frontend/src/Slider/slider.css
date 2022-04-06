@@ -7,8 +7,14 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   padding: 10px;
   bottom: 125px;
-  left: 837px;
+  left: 410px;
   transition: 1000ms;
+  transition: ease all .5s;
+}
+
+.sliderFlex {
+  display: flex;
+  justify-content: center;
 }
 
 :root {
@@ -25,7 +31,7 @@
   overflow: hidden;
   transition: 1000ms;
   box-shadow: 0 0px 5px rgba(141, 141, 141, 0.5);
-
+  transition: ease all .5s;
 }
 
 /* .active {
@@ -50,7 +56,6 @@
   position: absolute;
   object-fit: cover;
   transition: 1000ms;
-
 }
 
 .slide-title,
@@ -130,6 +135,37 @@
 .dot:hover {
   background-color: rgba(255, 255, 255, 0.87);
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
-
   transition: 1000ms;
+}
+
+@media all and (min-width: 1025px) and (max-width: 1200px) {
+  .sliderBox {
+    background-color: rgba(255, 255, 255, 0.418);
+    height: 200px;
+    width: 300px;
+    position: relative;
+    border-radius: 0%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    bottom: 80px;
+    left: 347px;
+    transition: 1000ms;
+    transition: ease all .5s;
+
+  }
+
+  .slider-container {
+    height: 180px;
+    width: 280px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    transition: 1000ms;
+    box-shadow: 0 0px 5px rgba(141, 141, 141, 0.5);
+    transition: ease all .5s;
+  }
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  
 }

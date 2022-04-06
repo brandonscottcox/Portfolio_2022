@@ -50,9 +50,9 @@ export default function Home({ musicOn, setMusicOn }) {
                 </div>
               </div>
             </div>
-              <div>
-                <Slider />
-              </div>
+            <div>
+              <Slider />
+            </div>
             <div className="SkillsText">
               <h1>Interested in my skills?</h1>
             </div>

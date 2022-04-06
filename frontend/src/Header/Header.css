@@ -10,14 +10,14 @@ header {
 .Header {
   background: linear-gradient(to left, #6976ac, #111835);
   margin-bottom: 0;
-  box-shadow: 10px 2px 5px rgb(0, 0, 0);
+  box-shadow: -1px 2px 5px rgb(0, 0, 0);
   position: relative;
 }
 
 .HeaderFlex {
   display: flex;
   flex-direction: row;
-  height: 8vh;
+  height: 50px;
 }
 
 .HeaderLogoFlex img {
@@ -101,12 +101,14 @@ header {
   font-family: "Heebo", sans-serif;
   background: #6774a9;
   border: 2px solid #00f7ff;
-  transition: 400ms;
+  transition: 700ms;
 }
 
 .Resume button:hover {
-  background: #ffffff36;
-  transition: 300ms;
+  border: 2px solid rgb(255, 255, 255);
+  color: azure;
+  background: #6774A9;
+  transition: 700ms;
   box-shadow: 1px 1px 25px rgb(255, 255, 255);
   cursor: pointer;
 }
@@ -181,11 +183,8 @@ header {
 
 }
 .HeaderHidden{
-
   z-index: 40;
-
   position: fixed;
   top: -80px;
   transition: 0.3s linear;
-
 }

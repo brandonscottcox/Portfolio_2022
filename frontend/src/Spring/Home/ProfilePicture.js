@@ -18,11 +18,10 @@ export default function Name() {
 
   return (
     <animated.h1 style={anim}>
-      <img
-        height="425"
-        width="425"
-        src={ProfilePicture}
-      />
+      <div className="ProfileSize">
+        <img src={ProfilePicture} />
+        {/* <img height="425" width="425" src={ProfilePicture} /> */}
+      </div>
     </animated.h1>
   );
 }
