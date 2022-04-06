@@ -23,6 +23,9 @@ export default function Home({ musicOn, setMusicOn }) {
   return (
     <>
       <div className="border" id="home">
+        <div>
+          <Header sidebar={sidebar} setSidebar={setSidebar} />
+        </div>
         <div className={sidebar ? "moveImg" : "originImg"}>
           <div className="profileInline">
             <div className="ProfileImg">
@@ -35,9 +38,7 @@ export default function Home({ musicOn, setMusicOn }) {
               </div>
             </div>
           </div>
-          <div>
-            <Header sidebar={sidebar} setSidebar={setSidebar} />
-          </div>
+
           <div className="HomeBackground">
             <div className="IntroductionText">
               <div>

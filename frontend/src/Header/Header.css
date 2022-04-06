@@ -45,7 +45,7 @@ header {
 }
 
 .Linkedin a {
-  height: 8vh;
+  height: 50px;
   display: flex;
   align-items: center;
 }
