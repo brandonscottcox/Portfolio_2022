@@ -16,6 +16,7 @@
     top: 10px;
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
     font-family: "Great Vibes", cursive;
+    transition: 850ms;
   }
   
   .box {
@@ -29,6 +30,7 @@
     left: 200px;
     border-radius: 0%;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: 850ms;
   }
   
   .box h1 {
@@ -38,15 +40,15 @@
   .aboutFlex {
     display: flex;
     justify-content: center;
-    border: 1px solid red;
   }
   
   .aboutTextFlex {
     position: relative;
     top: 60px;
-    left: 500px;
+    left: 212px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    transition: 850ms;
   }
   
   .aboutTextFlex p {
@@ -64,6 +66,7 @@
     top: 50px;
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
     font-family: "News Cycle", sans-serif;
+    transition: 850ms;
   }
   
   .EducationTitle hr {
@@ -76,7 +79,9 @@
     left: 170px;
     display: flex;
     justify-content: center;
+    transition: 850ms;
   }
+
   .ProgressBar {
     position: relative;
     bottom: 30px;
@@ -163,7 +168,6 @@
     justify-content: center;
     display: flex;
     padding: 50px;
-  
   }
   
   .bnbCard {
@@ -180,8 +184,9 @@
     transition: 850ms;
     position: relative;
     bottom: 0;
-  
+    transition: 850ms;
   }
+
   .capstoneCard {
     color: azure;
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
@@ -196,6 +201,7 @@
     transition: 850ms;
     position: relative;
     bottom: 0;
+    transition: 850ms;
   }
   
   .FlashcardCard {
@@ -212,6 +218,7 @@
     transition: 850ms;
     position: relative;
     bottom: 0;
+    transition: 850ms;
   }
   
   .bnbCard:hover {
@@ -238,6 +245,7 @@
   .cardFlex img {
     height: 180px;
     width: 180px;
+    transition: 850ms;
   }
   
   .cardTitle {
@@ -265,6 +273,248 @@
   }
 
 
-@media all and (min-width: 1025px) and (max-width: 1200px) {
+@media all and (min-width: 1025px) and (max-width: 1130px) {
+  .bnbCard {
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 180px;
+    height: 270px;
+    padding: 10px;
+    left: 170px;
+    border-radius: 0%;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+    position: relative;
+    bottom: 0;
+  }
+  
+  .capstoneCard {
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 180px;
+    height: 270px;
+    padding: 10px;
+    left: 210px;
+    border-radius: 0%;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+    position: relative;
+    bottom: 0;
+  }
+
+  .FlashcardCard {
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 180px;
+    height: 270px;
+    padding: 10px;
+    left: 250px;
+    border-radius: 0%;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+    position: relative;
+    bottom: 0;
+  }
+
+  .cardFlex img {
+    height: 180px;
+    width: 160px;
+    transition: 850ms;
+  }
+}
+
+@media all and (min-width: 950px) and (max-width: 1024px) {
+  .bnbCard {
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 160px;
+    height: 270px;
+    padding: 10px;
+    left: 170px;
+    border-radius: 0%;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+    position: relative;
+    bottom: 0;
+  }
+
+  .capstoneCard {
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 160px;
+    height: 270px;
+    padding: 10px;
+    left: 210px;
+    border-radius: 0%;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+    position: relative;
+    bottom: 0;
+  }
+
+  .FlashcardCard {
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 160px;
+    height: 270px;
+    padding: 10px;
+    left: 250px;
+    border-radius: 0%;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+    position: relative;
+    bottom: 0;
+  }
+
+  .cardFlex img {
+    height: 175px;
+    width: 140px;
+    transition: 850ms;
+  }
+}
+
+/*@media all and (min-width: 860px) and (max-width: 949px) */
+@media all and (min-width: 240px) and (max-width: 949px) {
+  .bnbCard {
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 200px;
+    height: 270px;
+    padding: 10px;
+    left: -40px;
+    border-radius: 0%;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+    position: relative;
+    bottom: 0;
+    transition: 850ms;
+  }
+
+  .capstoneCard {
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 200px;
+    height: 270px;
+    padding: 10px;
+    left: 0px;
+    border-radius: 0%;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+    position: relative;
+    bottom: 0;
+    transition: 850ms;
+  }
+  
+  .FlashcardCard {
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 200px;
+    height: 270px;
+    padding: 10px;
+    left: 40px;
+    border-radius: 0%;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+    position: relative;
+    bottom: 0;
+    transition: 850ms;
+  }
+
+  .aboutSkillsTitle {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    position: relative;
+    left: 0px;
+    top: 10px;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    font-family: "Great Vibes", cursive;
+    transition: 850ms;
+  }
+
+  .box {
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 400px;
+    height: 450px;
+    padding: 10px;
+    position: relative;
+    left: 0px;
+    border-radius: 0%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: 850ms;
+  }
+
+  .EducationTitle {
+    transform: scale(1.2, 1);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    position: relative;
+    left: 0px;
+    top: 50px;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    font-family: "News Cycle", sans-serif;
+    transition: 850ms;
+  }
+
+  .EducationFlex {
+    position: relative;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    transition: 850ms;
+  }
+
+  .aboutTextFlex {
+    position: relative;
+    top: 60px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    transition: 850ms;
+  }
+
+  .cardFlex img {
+    height: 180px;
+    width: 180px;
+    transition: 850ms;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 860px) {
+
+}
+
+@media all and (min-width: 709px) and (max-width: 768px) {
+
+}
+
+@media all and (min-width: 512px) and (max-width: 709px) {
+
+}
+
+@media all and (min-width: 480px) and (max-width: 512px) {
+
+}
+
+@media all and (min-width: 240px) and (max-width: 480px) {
 
 }
