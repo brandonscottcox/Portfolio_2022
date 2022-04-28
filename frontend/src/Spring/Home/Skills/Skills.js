@@ -11,6 +11,7 @@ import data from "./SkillsData";
 import styles from "./styles.module.css";
 import "./Skills.css";
 import { Link } from "react-scroll";
+import * as AiIcons from "react-icons/ai";
 
 export default function Skills({ open, set }) {
   const springApi = useSpringRef();
@@ -40,27 +41,34 @@ export default function Skills({ open, set }) {
   ]);
 
   return (
-    <div className="SkillBoxFlex">
-      <div className={styles.wrapper} onClick={() => set((open) => !open)}>
-        <animated.div
-          style={{ ...rest, width: size, height: size }}
-          className={open ? styles.hidden : styles.container}
-        >
-          <div className={open ? "noText" : "text"}>
-            <p className="SkillTitle">Skills</p>
+    <div className="Reactive">
+      <div className="SkillBoxFlex">
+        <div className={open ? "full" : "empty"}>
+          <div className="skillsCloseButton">
+            <AiIcons.AiOutlineClose onClick={() => set((open) => !open)} />
           </div>
-          {transition((style, item) => (
-            <Link to="projects" smooth={true} offset={0} duration={500}>
-              <animated.div
-                className={styles.item}
-                style={{ ...style, background: item.css }}
-              />
-              <div className={open ? "full" : "empty"}>
-                <div className="columnText">{item.name}</div>
-              </div>
-            </Link>
-          ))}
-        </animated.div>
+        </div>
+        <div className={styles.wrapper} onClick={() => set((open) => !open)}>
+          <animated.div
+            style={{ ...rest, width: size, height: size }}
+            className={open ? styles.hidden : styles.container}
+          >
+            <div className={open ? "noText" : "text"}>
+              <p className="SkillTitle">Skills</p>
+            </div>
+            {transition((style, item) => (
+              <Link to="projects" smooth={true} offset={0} duration={500}>
+                <animated.div
+                  className={styles.item}
+                  style={{ ...style, background: item.css }}
+                />
+                <div className={open ? "full" : "empty"}>
+                  <div className="columnText">{item.name}</div>
+                </div>
+              </Link>
+            ))}
+          </animated.div>
+        </div>
       </div>
     </div>
   );

@@ -5,6 +5,25 @@ body,
   width: 100%;
 }
 
+.skillsCloseButton {
+  top: 30px;
+  left: 180px;
+  position:absolute;
+  display: inline-flex;
+  color: white;
+  border: 1px solid azure;
+  border-radius: 100%;
+  transition: 400ms;
+}
+
+.skillsCloseButton:hover {
+  cursor: pointer;
+  border-radius: 0%;
+  transition: 450ms;
+  border: 1px solid azure;
+
+}
+
 .text p {
   color: azure;
   font-size: 20px;
@@ -15,14 +34,20 @@ body,
   font-family: "Heebo", sans-serif;
 }
 
-.SkillBoxFlex {
+.Reactive {
   display: flex;
   justify-content: center;
 }
 
+.SkillBoxFlex {
+  display: flex;
+  justify-content: flex-start;
+  height: 230px;
+}
+
 .SkillTitle {
   position: relative;
-  right: 1px;
+  right: 11px;
   top: -15px;
   transition: 500ms;
 }
@@ -79,6 +104,11 @@ body,
   transition: 500ms;
 }
 
+.item:hover {
+  opacity: 0;
+  transition: 700ms;
+}
+
 .full {
   transition: 500ms;
   transition-delay: 10.30s;
@@ -86,5 +116,6 @@ body,
 }
 .empty {
   display: none;
+  transition: 500ms;
 }
 

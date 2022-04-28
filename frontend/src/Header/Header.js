@@ -8,7 +8,6 @@ import { Link } from "react-scroll";
 import { SidebarData } from "./SidebarData";
 import "./Sidebar.css";
 import { IconContext } from "react-icons";
-import Song from "../Howler/Song";
 
 export default function Header({ sidebar, setSidebar }) {
   const showSidebar = () => setSidebar(!sidebar);

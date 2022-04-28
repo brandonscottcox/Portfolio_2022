@@ -19,10 +19,10 @@
 .ContactFlex {
   justify-content: center;
   color: azure;
-  display: flex;
+  display: inline-flex;
   position: relative;
   top: 200px;
-  left: 100px;
+  left: 530px;
 }
 
 .phoneFlex1 {

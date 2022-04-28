@@ -76,8 +76,8 @@
   
   .EducationFlex {
     position: relative;
-    left: 170px;
-    display: flex;
+    left: 410px;
+    display: inline-flex;
     justify-content: center;
     transition: 850ms;
   }
@@ -157,6 +157,7 @@
     position: relative;
     top: 3px;
   }
+
   .ThinkfulFlex {
     display: flex;
     align-items: center;
