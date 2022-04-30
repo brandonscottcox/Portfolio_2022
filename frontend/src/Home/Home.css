@@ -1,4 +1,5 @@
-/* @media all and (min-width: 1201px)  { */
+   /* @media all and (min-width: 1881px) { */
+
   .HomeBackground {
     background-image: url(../Images/Home12.jpg);
     background-size: cover;
@@ -34,7 +35,7 @@
     display: inline;
     position: relative;
     left: 0px;
-    top: 196px;
+    top: 328px;
     background-attachment: fixed;
     align-self: flex-start;
     margin: auto;
@@ -48,12 +49,14 @@
   }
 
   .ProfileImg {
+    max-width: 100%;
+    height: auto;
     transition: 600ms;
   }
 
   .ProfileSize img {
-    width: 907px;
-    height: 907px;
+    width: 775px;
+    height: 775px;
   }
 
   .ProfileImg:hover {
@@ -71,34 +74,36 @@
     display: flex;
     justify-content: center;
     position: relative;
+    right: 40px;
+    top: 100px;
   }
 
   .SkillsTextFlex {
     display: flex;
     justify-content: center;
-
   }
 
   .SkillsText {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 450px;
+    bottom: 550px;
+    right: 70px;
   }
 
 
   .SkillsAnim {
     position: relative;
-    bottom: 180px;
-    left: 360px;
-    height: 35vh;
+    bottom: 280px;
+    left: 580px;
     width: 40%;
+    transition: 400ms;
   }
 
   .SkillsText h1 {
     color: azure;
     font-family: "Archivo", sans-serif;
-    font-size: 30px;
+    font-size: 50px;
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
     position: relative;
     top: 300px;
@@ -114,7 +119,7 @@
   .IntroductionText h1 {
     color: azure;
     font-family: "Archivo", sans-serif;
-    font-size: 45px;
+    font-size: 85px;
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
     position: relative;
     top: 90px;
@@ -123,7 +128,7 @@
 
   .IntroductionText p {
     color: azure;
-    font-size: 20px;
+    font-size: 35px;
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
     position: relative;
     margin: 0;
@@ -189,15 +194,87 @@
   }
 
 
+
 /* --------------------------------------------------- */
+
+@media only screen and (min-width: 1026px) and (max-width: 1880px) {
+  .HomeBackground {
+    background-image: url(../Images/Home12.jpg);
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    height: 100vh;
+    box-shadow: 1px 0px 4px rgb(0, 0, 0);
+    scroll-snap-align: start;
+    transition: ease all .5s;
+  }
+
+  .ProfileSize img {
+    width: 675px;
+    height: 675px;
+  }
+
+  .ProfilePosition {
+    display: inline;
+    position: relative;
+    left: 0px;
+    top: 328px;
+    background-attachment: fixed;
+    align-self: flex-start;
+    margin: auto;
+    transition: ease all .5s;
+    transition-delay: 0.20s;
+  }
+
+  .IntroductionText h1 {
+    color: azure;
+    font-family: "Archivo", sans-serif;
+    font-size: 80px;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    position: relative;
+    top: 90px;
+    transition: ease all .5s;
+  }
+
+  .IntroductionText p {
+    color: azure;
+    font-size: 30px;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    position: relative;
+    margin: 0;
+    font-family: "Heebo", sans-serif;
+    position: relative;
+    top: 90px;
+    transition: ease all .5s;
+  }
+
+  .SkillsText h1 {
+    color: azure;
+    font-family: "Archivo", sans-serif;
+    font-size: 45px;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    position: relative;
+    top: 350px;
+    transition: ease all .5s;
+  }
+
+  .SkillsAnim {
+    position: relative;
+    bottom: 230px;
+    left: 500px;
+    width: 40%;
+    transition: 400ms;
+  }
+}
+
 
 
 @media all and (min-width: 1025px) and (max-width: 1200px) {
   .HomeBackground {
-    background-image: url(../Images/Home12.jpg);
+    background-image: url(../Images/Home2.jpg);
     background-size: cover;
     width: 100%;
-    height: 554px;
+    height: 100vh;
     box-shadow: 1px 0px 4px rgb(0, 0, 0);
     scroll-snap-align: start;
     transition: ease all .5s;
@@ -475,7 +552,7 @@
 
  @media all and (min-width: 709px) and (max-width: 768px) {
   .HomeBackground {
-    background-image: url(../Images/Home12.jpg);
+    background-image: url(../Images/Home1.jpg);
     background-size: cover;
     width: 100%;
     height: 554px;
@@ -551,7 +628,7 @@
 
  @media all and (min-width: 512px) and (max-width: 709px) {
   .HomeBackground {
-    background-image: url(../Images/Home12.jpg);
+    background-image: url(../Images/Home1.jpg);
     background-size: cover;
     width: 100%;
     height: 554px;

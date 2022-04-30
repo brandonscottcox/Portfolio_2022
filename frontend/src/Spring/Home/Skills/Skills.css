@@ -21,7 +21,6 @@ body,
   border-radius: 0%;
   transition: 450ms;
   border: 1px solid azure;
-
 }
 
 .text p {
@@ -42,7 +41,7 @@ body,
 .SkillBoxFlex {
   display: flex;
   justify-content: flex-start;
-  height: 230px;
+  height: 350px;
 }
 
 .SkillTitle {

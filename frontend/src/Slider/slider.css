@@ -1,13 +1,13 @@
 .sliderBox {
   background-color: rgba(255, 255, 255, 0.418);
-  height: 250px;
-  width: 350px;
+  height: 450px;
+  width: 650px;
   position: relative;
   border-radius: 0%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   padding: 10px;
-  bottom: 125px;
-  left: 410px;
+  bottom: 200px;
+  left: 700px;
   transition: 1000ms;
   transition: ease all .5s;
 }
@@ -18,14 +18,15 @@
 }
 
 :root {
-  --heights: 50vh;
+  --heights: 37vh;
   --widths: 100%;
   transition: 1000ms;
 }
 
 .slider-container {
-  height: 230px;
-  width: 330px;
+  top: 10px;
+  height: 410px;
+  width: 610px;
   position: relative;
   margin: auto;
   overflow: hidden;
@@ -135,6 +136,35 @@
   background-color: rgba(255, 255, 255, 0.87);
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
   transition: 1000ms;
+}
+
+@media only screen and (min-width: 1026px) and (max-width: 1880px) {
+.sliderBox {
+  background-color: rgba(255, 255, 255, 0.418);
+  height: 380px;
+  width: 580px;
+  position: relative;
+  border-radius: 0%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  bottom: 200px;
+  left: 600px;
+  transition: 1000ms;
+  transition: ease all .5s;
+}
+
+.slider-container {
+  top: 10px;
+  height: 340px;
+  width: 540px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  transition: 1000ms;
+  box-shadow: 0 0px 5px rgba(141, 141, 141, 0.5);
+  transition: ease all .5s;
+}
+
 }
 
 @media all and (min-width: 1025px) and (max-width: 1200px) {

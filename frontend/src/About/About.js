@@ -118,9 +118,8 @@ export default function Home() {
           <div>
             <p>
               I've spent the past two years coding as a web developer and have
-              acquired profficient knowledge in
+              acquired profficient knowledge in frontend technologies such as React, CSS, and HTML.
             </p>
-            <p> frontend technologies such as React, CSS, and HTML.</p>
           </div>
         </div>
         <div>

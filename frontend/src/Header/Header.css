@@ -17,14 +17,14 @@ header {
 .HeaderFlex {
   display: flex;
   flex-direction: row;
-  height: 50px;
+  height: 90px;
 }
 
 .HeaderLogoFlex img {
-  height: 75px;
+  height: 130px;
   position: relative;
-  bottom: 12px;
-  left: 25px;
+  bottom: 20px;
+  left: 45px;
   transition: all 0.2s ease-in-out;
   margin-bottom: 0;
 }
@@ -40,7 +40,7 @@ header {
 .Linkedin {
   display: flex;
   position: relative;
-  right: 25px;
+  right: 65px;
   align-items: center;
 }
 
@@ -51,10 +51,9 @@ header {
 }
 
 .Linkedin Img {
-  max-height: 73%;
+  max-height: 120%;
   position: relative;
   display: inline-block;
-  right: 40px;
   border-radius: 100%;
   transition: 400ms;
 }
@@ -69,7 +68,7 @@ header {
 .Github {
   display: flex;
   position: relative;
-  right: 15px;
+  right: 95px;
 }
 
 .Github a {
@@ -81,7 +80,6 @@ header {
   max-height: 72%;
   position: relative;
   display: inline-block;
-  right: 75px;
   border-radius: 100%;
   transition: 400ms;
 }
@@ -94,9 +92,9 @@ header {
 }
 
 .Resume button {
-  border-radius: 10%;
+  border-radius: 15%;
   height: 60%;
-  width: 65px;
+  width: 85px;
   color: #00f7ff;
   font-family: "Heebo", sans-serif;
   background: #6774a9;
@@ -128,7 +126,7 @@ header {
 .Resume {
   position: relative;
   right: 40px;
-  top: 10px;
+  top: 18px;
 }
 
 .Renew {
@@ -144,37 +142,6 @@ header {
   transform: rotate(360deg);
 }
 
-.MusicSound {
-}
-
-.MusicSound img {
-  height: 10vh;
-  position: relative;
-  display: inline-block;
-  right: 75px;
-  border-radius: 100%;
-  transition: 0.7s;
-  -webkit-transition: 0.7s;
-  -moz-transition: 0.7s;
-  -ms-transition: 0.7s;
-  -o-transition: 0.7s;
-  cursor: pointer;
-}
-
-.MusicSound img:hover {
-  transition: 0.7s;
-  -webkit-transition: 0.7s;
-  -moz-transition: 0.7s;
-  -ms-transition: 0.7s;
-  -o-transition: 0.7s;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-  cursor: pointer;
-}
-
 .HeaderActive{
   position: fixed;
   top: 0px;
@@ -185,6 +152,6 @@ header {
 .HeaderHidden{
   z-index: 40;
   position: fixed;
-  top: -80px;
+  top: -94px;
   transition: 0.3s linear;
 }

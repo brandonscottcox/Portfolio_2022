@@ -5,6 +5,7 @@
   background-size: cover;
   box-shadow: 1px 0px 4px rgb(0, 0, 0);
   transition: ease all .5s;
+  
 }
 
   .aboutTestFlex {
@@ -23,6 +24,7 @@
   position: relative;
   top: 200px;
   left: 530px;
+  zoom: 175%;
 }
 
 .phoneFlex1 {
