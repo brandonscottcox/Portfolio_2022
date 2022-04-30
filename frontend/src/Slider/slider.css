@@ -121,8 +121,8 @@
 
 .dot {
   cursor: pointer;
-  height: 1rem;
-  width: 1rem;
+  height: 30px;
+  width: 30px;
   margin: 0px 3px;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 50%;

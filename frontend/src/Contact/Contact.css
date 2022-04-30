@@ -5,7 +5,6 @@
   background-size: cover;
   box-shadow: 1px 0px 4px rgb(0, 0, 0);
   transition: ease all .5s;
-  
 }
 
   .aboutTestFlex {
@@ -17,13 +16,16 @@
     transition: 850ms;
   }
 
+  .ContactPosition {
+    position: relative;
+    top: 200px;
+    left: 130px;
+  }
+
 .ContactFlex {
   justify-content: center;
   color: azure;
-  display: inline-flex;
-  position: relative;
-  top: 200px;
-  left: 530px;
+  display: flex;
   zoom: 175%;
 }
 
@@ -110,41 +112,10 @@
   font-family: "Heebo", sans-serif;
 }
 
-/* @media all and (min-width: 1025px) and (max-width: 1200px) {
-
-}
-
-@media all and (min-width: 950px) and (max-width: 1024px) {
-
-} */
-
-@media all and (min-width: 240px) and (max-width: 949px) {
-  .ContactFlex {
-    justify-content: center;
-    color: azure;
-    display: flex;
+@media only screen and (min-width: 1026px) and (max-width: 1880px) {
+  .ContactPosition {
     position: relative;
-    top: 200px;
-    left: 0px;
+    top: 150px;
+    left: 130px;
   }
 }
-
-/* @media all and (min-width: 768px) and (max-width: 860px) {
-
-}
-
-@media all and (min-width: 709px) and (max-width: 768px) {
-
-}
-
-@media all and (min-width: 512px) and (max-width: 709px) {
-
-}
-
-@media all and (min-width: 480px) and (max-width: 512px) {
-
-}
-
-@media all and (min-width: 240px) and (max-width: 480px) {
-
-} */

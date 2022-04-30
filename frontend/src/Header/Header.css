@@ -152,6 +152,6 @@ header {
 .HeaderHidden{
   z-index: 40;
   position: fixed;
-  top: -94px;
+  top: -115px;
   transition: 0.3s linear;
 }

@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <div className="ContactBackground">
         <div className="ContactFlex">
-          <div>
+          <div className="ContactPosition">
             <div className="ContactText">
               <h1>Contact</h1>
               <div>
@@ -17,7 +17,7 @@ export default function Home() {
                 <p>Interested in getting in touch?</p>
               </div>
               <div className="buttonFlex">
-                <a href="mailto:brandonscottcox@gmail.com">
+                <a target="_blank" href="mailto:brandonscottcox@gmail.com">
                   <button>Email Me</button>
                 </a>
               </div>

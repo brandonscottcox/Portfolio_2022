@@ -35,7 +35,7 @@
     display: inline;
     position: relative;
     left: 0px;
-    top: 328px;
+    top: 353px;
     background-attachment: fixed;
     align-self: flex-start;
     margin: auto;
@@ -55,8 +55,8 @@
   }
 
   .ProfileSize img {
-    width: 775px;
-    height: 775px;
+    width: 750px;
+    height: 750px;
   }
 
   .ProfileImg:hover {
@@ -95,8 +95,9 @@
   .SkillsAnim {
     position: relative;
     bottom: 280px;
-    left: 580px;
-    width: 40%;
+    left: 870px;
+    width: 10%;
+    height: 10%;
     transition: 400ms;
   }
 
