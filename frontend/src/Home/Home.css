@@ -4,7 +4,7 @@
     background-size: cover;
     min-height: 100%;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     box-shadow: 1px 0px 4px rgb(0, 0, 0);
     scroll-snap-align: start;
     transition: ease all .5s;
@@ -52,8 +52,8 @@
   }
 
   .ProfileSize img {
-    width: 425px;
-    height: 425px;
+    width: 907px;
+    height: 907px;
   }
 
   .ProfileImg:hover {
