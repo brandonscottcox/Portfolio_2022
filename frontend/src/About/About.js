@@ -121,7 +121,6 @@ export default function Home() {
               acquired profficient knowledge in frontend technologies such as
               React, CSS, and HTML.
             </p>
-            <p> frontend technologies such as React, CSS, and HTML.</p>
           </div>
         </div>
         <div>

@@ -155,3 +155,33 @@ header {
   top: -115px;
   transition: 0.3s linear;
 }
+
+@media all and (min-width: 240px) and (max-width: 480px) {
+  .HeaderLogoFlex img {
+    height: 130px;
+    position: relative;
+    bottom: 20px;
+    left: 0px;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 0;
+  }
+
+  .Linkedin {
+    display: none;
+    position: relative;
+    right: 65px;
+    align-items: center;
+  }
+
+  .Github {
+    display: none;
+    position: relative;
+    right: 95px;
+  }
+  .HeaderHidden{
+    z-index: 40;
+    position: fixed;
+    top: 0px;
+    transition: 0.3s linear;
+  }
+}

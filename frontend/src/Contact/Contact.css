@@ -119,3 +119,31 @@
     left: 130px;
   }
 }
+
+@media all and (min-width: 240px) and (max-width: 480px) {
+  .ContactFlex {
+    justify-content: center;
+    color: azure;
+    display: flex;
+    zoom: 100%;
+  }
+
+  .ContactPosition {
+    padding: 20px;
+    position: relative;
+    top: 200px;
+    left: 0px;
+  }
+
+  .ContactText p {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: azure;
+    font-size: 20px;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    position: relative;
+    margin: 0;
+    font-family: "Heebo", sans-serif;
+  }
+}

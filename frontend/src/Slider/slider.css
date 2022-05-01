@@ -128,7 +128,6 @@
   border-radius: 50%;
   display: inline-block;
   transition: 1000ms;
-
 }
 
 .active-dot,
@@ -330,5 +329,43 @@
     transition: 1000ms;
     box-shadow: 0 0px 5px rgba(141, 141, 141, 0.5);
     transition: ease all .5s;
+  }
+}
+
+@media all and (min-width: 240px) and (max-width: 480px) {
+  .sliderBox {
+    background-color: rgba(255, 255, 255, 0.418);
+    height: 330px;
+    width: 400px;
+    position: relative;
+    border-radius: 0%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    top: 300px;
+    left: 0px;
+    transition: 1000ms;
+    transition: ease all .5s;
+  }
+
+  .slider-container {
+    height: 290px;
+    width: 360px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    transition: 1000ms;
+    box-shadow: 0 0px 5px rgba(141, 141, 141, 0.5);
+    transition: ease all .5s;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0px 3px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    display: inline-block;
+    transition: 1000ms;
   }
 }

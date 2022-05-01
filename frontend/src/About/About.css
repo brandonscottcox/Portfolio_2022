@@ -6,7 +6,6 @@
     min-height: 100%;
     box-shadow: 1px 0px 4px rgb(0, 0, 0);
     transition: ease all .5s;
-    /* zoom: 175%; */
   }
   
   
@@ -44,7 +43,6 @@
     display: flex;
     justify-content: center;
     zoom: 175%;
-
   }
   
   .aboutTextFlex {
@@ -171,7 +169,6 @@
     color: azure;
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
     zoom: 175%;
-
   }
   
   .cardFlex {
@@ -184,6 +181,10 @@
   .bnb a {
     position: relative;
     left: 400px;
+  }
+
+  a:link {
+    color: azure;
   }
 
   a:visited {
@@ -279,7 +280,6 @@
   
   .cardTitle {
     font-size: 15px;
-  
   }
   
   .cardP {
@@ -364,7 +364,7 @@
     width: 180px;
     height: 270px;
     padding: 10px;
-    left: 170px;
+    /* left: 170px; */
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
     transition: 850ms;
@@ -380,7 +380,7 @@
     width: 180px;
     height: 270px;
     padding: 10px;
-    left: 210px;
+    /* left: 210px; */
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
     transition: 850ms;
@@ -396,7 +396,7 @@
     width: 180px;
     height: 270px;
     padding: 10px;
-    left: 250px;
+    /* left: 250px; */
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
     transition: 850ms;
@@ -420,7 +420,7 @@
     width: 160px;
     height: 270px;
     padding: 10px;
-    left: 170px;
+    /* left: 170px; */
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
     transition: 850ms;
@@ -436,7 +436,7 @@
     width: 160px;
     height: 270px;
     padding: 10px;
-    left: 210px;
+    /* left: 210px; */
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
     transition: 850ms;
@@ -452,7 +452,7 @@
     width: 160px;
     height: 270px;
     padding: 10px;
-    left: 250px;
+    /* left: 250px; */
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
     transition: 850ms;
@@ -477,7 +477,7 @@
     width: 200px;
     height: 270px;
     padding: 10px;
-    left: -40px;
+    /* left: -40px; */
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
     transition: 850ms;
@@ -494,7 +494,7 @@
     width: 200px;
     height: 270px;
     padding: 10px;
-    left: 0px;
+    /* left: 0px; */
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
     transition: 850ms;
@@ -511,7 +511,7 @@
     width: 200px;
     height: 270px;
     padding: 10px;
-    left: 40px;
+    /* left: 40px; */
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
     transition: 850ms;
@@ -582,22 +582,108 @@
   }
 }
 
-@media all and (min-width: 768px) and (max-width: 860px) {
-
-}
-
-@media all and (min-width: 709px) and (max-width: 768px) {
-
-}
-
-@media all and (min-width: 512px) and (max-width: 709px) {
-
-}
-
-@media all and (min-width: 480px) and (max-width: 512px) {
-
-}
-
 @media all and (min-width: 240px) and (max-width: 480px) {
+  .aboutFlex {
+    display: flex;
+    justify-content: center;
+    zoom: 100%;
+  }
 
+  .aboutTextFlex {
+    padding: 15px;
+    position: relative;
+    margin-left: 0px;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    transition: 850ms;
+    zoom: 100%;
+  }
+
+  .cardFlex {
+    justify-content: center;
+    text-align: center; 
+    display:grid;
+    padding: 30px;
+    zoom: 100%;
+  }
+
+  .ThinkfulFlex {
+    margin-right: 30px;
+    margin-left: 0px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    zoom: 100%;
+  }
+
+  .bnbCard {
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 300px;
+    height: 330px;
+    margin-left: 0px;
+    padding: 10px;
+    border-radius: 0%;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+    position: relative;
+    bottom: 0;
+    transition: 850ms;
+  }
+
+  .capstoneCard {
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 300px;
+    height: 330px;
+    margin-left: 0px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 0%;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+    position: relative;
+    bottom: 0;
+    transition: 850ms;
+  }
+  
+  .FlashcardCard {
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 300px;
+    height: 330px;
+    margin-left: 0px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 0%;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+    position: relative;
+    bottom: 0;
+    transition: 850ms;
+  }
+
+  .cardFlex img {
+    height: 180px;
+    width: 270px;
+    transition: 850ms;
+  }
+
+  .cardTitle {
+    font-size: 23px;
+  }
+
+  .cardP {
+    font-size: 15px;
+  }
 }

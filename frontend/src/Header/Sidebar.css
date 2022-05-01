@@ -69,10 +69,25 @@
     border: 1px solid  rgb(36, 36, 131);
     background-color: #344899a9;
     border-radius: 100%;
-
   }
   
   span {
     margin-left: 16px;
     font-size: 3em;
+  }
+
+  @media all and (min-width: 240px) and (max-width: 480px) {
+    .navbar-toggle {
+      position: relative;
+      left: 6px;
+      width: 32px;
+      height: 32px;
+      justify-content: flex-start;
+      align-items: center;
+      transition: all 0.2s ease-in-out;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 0%;
+      border-image: linear-gradient(to left, #141B38, #121936) 1;
+    }
   }
