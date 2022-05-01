@@ -29,7 +29,7 @@ export default function Home() {
               <div className="skillsImgFlex">
                 <div className="ReactIMGFlex">
                   <img className="ReactIMG" src={ReactIMG} />
-                  <h1  className="ReactText">React</h1>
+                  <h1 className="ReactText">React</h1>
                 </div>
               </div>
               <div className="ProgressBar">
@@ -118,7 +118,8 @@ export default function Home() {
           <div>
             <p>
               I've spent the past two years coding as a web developer and have
-              acquired profficient knowledge in frontend technologies such as React, CSS, and HTML.
+              acquired profficient knowledge in frontend technologies such as
+              React, CSS, and HTML.
             </p>
             <p> frontend technologies such as React, CSS, and HTML.</p>
           </div>
@@ -126,7 +127,7 @@ export default function Home() {
         <div>
           <div className="aboutFlex">
             <div className="EducationTitle">
-              <h1 id="projects">Education</h1>
+              <h1>Education</h1>
               <hr />
             </div>
           </div>
@@ -146,13 +147,14 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div id="projects" className="LinkFix"></div>
         <div className="cardFlex">
-          <a
-            style={{ textDecoration: "none" }}
-            target="_blank"
-            href="https://brandonscottcox.github.io/starter-thinkfulbnb/"
-          >
-            <div className="bnbCard">
+          <div className="bnbCard">
+            <a
+              style={{ textDecoration: "none" }}
+              target="_blank"
+              href="https://brandonscottcox.github.io/starter-thinkfulbnb/"
+            >
               <div>
                 <img src={bnb} />
               </div>
@@ -164,14 +166,14 @@ export default function Home() {
                 </p>
                 <p className="cardP">Technologies: React.js, CSS, HTML</p>
               </div>
-            </div>
-          </a>
-          <a
-            style={{ textDecoration: "none" }}
-            target="_blank"
-            href="https://bcox-front-reservation.herokuapp.com/dashboard"
-          >
-            <div className="capstoneCard">
+            </a>
+          </div>
+          <div className="capstoneCard">
+            <a
+              style={{ textDecoration: "none" }}
+              target="_blank"
+              href="https://bcox-front-reservation.herokuapp.com/dashboard"
+            >
               <div>
                 <img src={ThinkfulCapstone} />
               </div>
@@ -185,14 +187,14 @@ export default function Home() {
                   Knex.js
                 </p>
               </div>
-            </div>
-          </a>
-          <a
-            style={{ textDecoration: "none" }}
-            target="_blank"
-            href="https://github.com/brandonscottcox/Project_Flashcard"
-          >
-            <div className="FlashcardCard">
+            </a>
+          </div>
+          <div className="FlashcardCard">
+            <a
+              style={{ textDecoration: "none" }}
+              target="_blank"
+              href="https://github.com/brandonscottcox/Project_Flashcard"
+            >
               <div>
                 <img src={Flashcard} />
               </div>
@@ -203,8 +205,8 @@ export default function Home() {
                 </p>
                 <p className="cardP">Technologies: React.js, Bootstrap, CSS</p>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </>

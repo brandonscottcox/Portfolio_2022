@@ -6,7 +6,7 @@
     min-height: 100%;
     box-shadow: 1px 0px 4px rgb(0, 0, 0);
     transition: ease all .5s;
-    zoom: 175%;
+    /* zoom: 175%; */
   }
   
   
@@ -43,6 +43,8 @@
   .aboutFlex {
     display: flex;
     justify-content: center;
+    zoom: 175%;
+
   }
   
   .aboutTextFlex {
@@ -52,6 +54,7 @@
     display: flex;
     justify-content: center;
     transition: 850ms;
+    zoom: 175%;
   }
   
   .aboutTextFlex p {
@@ -167,12 +170,33 @@
     align-items: center;
     color: azure;
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    zoom: 175%;
+
   }
   
   .cardFlex {
     justify-content: center;
     display: flex;
     padding: 50px;
+    zoom: 175%;
+  }
+
+  .bnb a {
+    position: relative;
+    left: 400px;
+  }
+
+  a:visited {
+    color: azure;
+  }
+
+  .LinkFix {
+    height: 1px;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    left: 800px;
+    bottom: 500px;
   }
   
   .bnbCard {
