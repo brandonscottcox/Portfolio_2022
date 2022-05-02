@@ -35,9 +35,41 @@
     height: 100%;
     display: flex;
     align-items: center;
-    padding-right: 50px;
+    padding-right: 30px;
     border-radius: 4px;
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  .lowerMovement{
+    margin-right: 0px;
+  }
+
+  .nav-textP {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 25px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 0px;
+    border-radius: 4px;
+  }
+
+  .iconPad {
+    position: relative;
+    left: 15px;
+  }
+
+  hr {
+    position: relative;
+    right: 15px;
+  }
+
+
   
   .nav-text a:hover {
     background-color: #1a83ff;
@@ -51,6 +83,8 @@
   }
   
   .navbar-toggle {
+    position: relative;
+    right: 15px;
     width: 32px;
     height: 32px;
     justify-content: flex-start;
@@ -79,7 +113,7 @@
   @media all and (min-width: 240px) and (max-width: 480px) {
     .navbar-toggle {
       position: relative;
-      left: 6px;
+      right: 15px;
       width: 32px;
       height: 32px;
       justify-content: flex-start;

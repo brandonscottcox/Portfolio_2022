@@ -71,9 +71,9 @@ export default function Header({ sidebar, setSidebar }) {
 
           <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
             <ul className="nav-menu-items">
-              <li className="navbar-toggle">
+              <div className="navbar-toggle">
                 <AiIcons.AiOutlineClose onClick={showSidebar} />
-              </li>
+              </div>
               {SidebarData.map((item, index) => {
                 return (
                   <li key={index} className={item.cName}>
@@ -89,6 +89,33 @@ export default function Header({ sidebar, setSidebar }) {
                   </li>
                 );
               })}
+              <hr />
+              <div className="lowerMovement">
+                <div className="nav-text">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/brandonscottcox/"
+                  >
+                    <li className="nav-textP">
+                        <AiIcons.AiFillLinkedin />
+                      <div className="iconPad">
+                      <p>Linkedin</p>
+                      </div>
+                    </li>
+                  </a>
+                </div>
+                <div className="nav-text">
+                  <a target="_blank" href="https://github.com/brandonscottcox">
+                    <li className="nav-textP">
+                        <AiIcons.AiFillGithub />
+                      <div className="iconPad">
+                      <p>Github</p>
+                      </div>
+                    </li>
+                  </a>
+                </div>
+              </div>
+              <hr />
             </ul>
           </nav>
         </IconContext.Provider>

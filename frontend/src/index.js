@@ -1,6 +1,4 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
-import App from './App';
 import { render } from "react-dom";
 import {
   BrowserRouter,
@@ -9,9 +7,6 @@ import {
 } from "react-router-dom";
 import Home from "./Home/Home"
 import Projects from "./Projects/Projects"
-import About from "./About/About"
-import Contact from "./Contact/Contact"
-import Welcome from "./Welcome.js"
 
 
 
@@ -22,8 +17,6 @@ render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="projects" element={<Projects />} />
-      {/* <Route path="about" element={<About />} />
-      <Route path="contact" element={<Contact />} /> */}
     </Routes>
   </BrowserRouter>,
   rootElement
