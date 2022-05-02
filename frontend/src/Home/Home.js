@@ -3,15 +3,13 @@ import "../Scrollbar.css";
 import "./Home.css";
 import Header from "../Header/Header";
 import ProfilePicture from "../Spring/Home/ProfilePicture";
-import ColoradoMap from "../Spring/Home/ColoradoMap";
 import Skills from "../Spring/Home/Skills/Skills.js";
-import Song from "../Howler/Song";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import Slider from "../Slider/Slider";
 
-export default function Home({ musicOn, setMusicOn }) {
+export default function Home() {
   const [sidebar, setSidebar] = useState(false);
 
   const [picture, setPicture] = useState(false);
@@ -38,27 +36,28 @@ export default function Home({ musicOn, setMusicOn }) {
               </div>
             </div>
           </div>
-
-          <div className="HomeBackground">
-            <div className="IntroductionText">
-              <div>
-                <h1>Brandon Cox</h1>
+          <div className={open ? "moveHome" : "HomeBackground"}>
+            <div>
+              <div className="IntroductionText">
                 <div>
-                  <p>I'm a Frontend Developer from Boulder, Colorado.</p>
-                  <p>I specialize in JavaScript and React development</p>
-                  <p>and have a passion for creating/designing </p>
-                  <p>frontend applications.</p>
+                  <h1>Brandon Cox</h1>
+                  <div>
+                    <p>I'm a Frontend Developer from Boulder, Colorado.</p>
+                    <p>I specialize in JavaScript and React development</p>
+                    <p>and have a passion for creating/designing </p>
+                    <p>frontend applications.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <Slider />
-            </div>
-            <div className="SkillsText">
-              <h1>Interested in my skills?</h1>
-            </div>
-            <div className="SkillsAnim">
-              <Skills open={open} set={set} />
+              <div>
+                <Slider />
+              </div>
+              <div className="SkillsText">
+                <h1>Interested in my skills?</h1>
+              </div>
+              <div className="SkillsAnim">
+                <Skills open={open} set={set} />
+              </div>
             </div>
           </div>
         </div>
