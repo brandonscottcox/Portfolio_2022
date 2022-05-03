@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../Scrollbar.css";
 import "./Contact.css";
 
-export default function Home() {
+export default function Contact() {
   const [sidebar, setSidebar] = useState(false);
 
   return (

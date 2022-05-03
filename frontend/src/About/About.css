@@ -609,10 +609,10 @@
   }
 
   .ThinkfulFlex {
-    margin-right: 30px;
+    margin-right: 0px;
     margin-left: 0px;
     position: relative;
-    display: inline-flex;
+    display:contents;
     justify-content: center;
     align-items: center;
     color: azure;
@@ -626,7 +626,7 @@
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.1);
     width: 300px;
-    height: 330px;
+    height: 400px;
     margin-left: 0px;
     padding: 10px;
     border-radius: 0%;
@@ -643,7 +643,7 @@
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.1);
     width: 300px;
-    height: 330px;
+    height: 400px;
     margin-left: 0px;
     margin-top: 20px;
     padding: 10px;
@@ -661,7 +661,7 @@
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.1);
     width: 300px;
-    height: 330px;
+    height: 400px;
     margin-left: 0px;
     margin-top: 20px;
     padding: 10px;
@@ -674,7 +674,7 @@
   }
 
   .cardFlex img {
-    height: 180px;
+    height: 250px;
     width: 270px;
     transition: 850ms;
   }
@@ -694,5 +694,33 @@
     position: relative;
     left: 0px;
     bottom: 100px;
+  }
+
+  .EducationFlex {
+    display: contents;
+    justify-content: center;
+    transition: 850ms;
+  }
+
+  .ThinkfulFlex p {
+    position: relative;
+    text-align: center;
+    bottom: 15px;
+    padding: 5px;
+  }
+
+  .MobileHeadline {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .MobilePadding {
+    position: relative;
+    bottom: 15px;
+  }
+
+  .MobileImgBorder {
+    display: flex;
+    justify-content: center;
   }
 }

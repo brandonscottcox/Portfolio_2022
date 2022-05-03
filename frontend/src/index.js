@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import Home from "./Home/Home"
 import Projects from "./Projects/Projects"
+import Resume from "./Resume/Resume"
+
 
 
 
@@ -17,6 +19,7 @@ render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="projects" element={<Projects />} />
+      <Route path="resume" element={<Resume />} />
     </Routes>
   </BrowserRouter>,
   rootElement

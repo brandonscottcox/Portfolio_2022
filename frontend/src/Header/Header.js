@@ -89,7 +89,7 @@ export default function Header({ sidebar, setSidebar }) {
                   </li>
                 );
               })}
-              <hr />
+              <hr  />
               <div className="lowerMovement">
                 <div className="nav-text">
                   <a

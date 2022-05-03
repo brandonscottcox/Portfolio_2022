@@ -11,7 +11,7 @@ import bnb from "../Images/ThinkfulbnbAbout.png";
 import ThinkfulCapstone from "../Images/ThinkfulCapstoneEdit1.png";
 import Flashcard from "../Images/FlashcardEditSize.png";
 
-export default function Home() {
+export default function About() {
   const [sidebar, setSidebar] = useState(false);
   const myRef = document.querySelector(".scrollable-div");
 
@@ -133,16 +133,17 @@ export default function Home() {
         </div>
         <div className="EducationFlex">
           <div className="ThinkfulFlex">
-            <div>
+            <div className="MobileImgBorder">
               <img className="thinkful" src={Thinkful} />
             </div>
             <div>
-              <p>Coding Bootcamp: 2021</p>
+              <p className="MobileHeadline">Coding Bootcamp: 2021</p>
               <p>Centered and formatted around full-stack web development</p>
-              <p>
-                Javascript, React, CSS, HTML, PostgreSQL, Express.js, Knex.js,
-                Git
-              </p>
+              <div className="MobilePadding">
+                <p>
+                  Javascript, React, CSS, HTML, PostgreSQL, Express.js, Knex.js
+                </p>
+              </div>
             </div>
           </div>
         </div>
