@@ -6,6 +6,7 @@ import {
   Route,
 } from "react-router-dom";
 import Home from "./Home/Home"
+import About from "./About/About"
 import Projects from "./Projects/Projects"
 import Resume from "./Resume/Resume"
 
@@ -18,6 +19,8 @@ render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="about" element={<Home />} />
+      <Route path="contact" element={<Home />} />
       <Route path="projects" element={<Projects />} />
       <Route path="resume" element={<Resume />} />
     </Routes>

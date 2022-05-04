@@ -1,5 +1,5 @@
 .ResumeBackground {
-    background-image: url(../Images/Home12.jpg);
+    background-image: url(../Images/Resume.jpg);
     background-size: cover;
     min-height: 100%;
     width: 100%;
@@ -7,6 +7,7 @@
     box-shadow: 1px 0px 4px rgb(0, 0, 0);
     scroll-snap-align: start;
     transition: ease all .5s;
+    position:absolute;
 }
 
 .ResumeBackground h1 {
@@ -15,7 +16,23 @@
     color: azure;
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 150px;
-    border: 1px solid red;
+    margin-right: 400px;
+
+}
+
+.ReactPDF {
+    display: flex;
+    justify-content: center;
+}
+
+.ResumeBorder {
+    margin-top: 100px;
+}
+
+.zoomImg {
+    zoom: 200%;
+}
+
+.unzoomImg {
+    zoom: 200%;
 }

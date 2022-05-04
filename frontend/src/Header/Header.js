@@ -4,7 +4,8 @@ import HeaderLogo from "../Images/HeaderLogo.png";
 import Github from "../Images/GithubCropTrans.png";
 import Linkedin from "../Images/LinkedinTrans.png";
 import * as AiIcons from "react-icons/ai";
-import { Link } from "react-scroll";
+import { Link as Link1 } from 'react-scroll';
+import { Link as Link2 } from 'react-router-dom';
 import { SidebarData } from "./SidebarData";
 import "./Sidebar.css";
 import { IconContext } from "react-icons";
@@ -41,9 +42,9 @@ export default function Header({ sidebar, setSidebar }) {
         <IconContext.Provider value={{ color: "#fff", size: "30px" }}>
           <div className="HeaderFlex">
             <div className="HeaderLogoFlex">
-              <Link to="#">
+              <Link1 to="#">
                 <img src={HeaderLogo} alt="Brandon Cox" onClick={showSidebar} />
-              </Link>
+              </Link1>
             </div>
             <div className="divider"></div>
             <div className="Github">
@@ -60,12 +61,9 @@ export default function Header({ sidebar, setSidebar }) {
               </a>
             </div>
             <div className="Resume">
-              <a
-                target="_blank"
-                href="https://docs.google.com/document/d/e/2PACX-1vR0Cm55HM7T8cMfl8j_ty4OdwWGqZGmNile81WxBLrYi_YSY2Xoz5CH8RR_JkftYnbgEcu5GRQGClJ6/pub"
-              >
-                <button>Resume</button>
-              </a>
+                <Link2 to="/resume" target="_blank">
+                  <button>Resume</button>
+                </Link2>
             </div>
           </div>
 
@@ -77,7 +75,7 @@ export default function Header({ sidebar, setSidebar }) {
               {SidebarData.map((item, index) => {
                 return (
                   <li key={index} className={item.cName}>
-                    <Link
+                    <Link1
                       to={item.path}
                       smooth={true}
                       offset={0}
@@ -85,11 +83,11 @@ export default function Header({ sidebar, setSidebar }) {
                     >
                       {item.icon}
                       <span>{item.title}</span>
-                    </Link>
+                    </Link1>
                   </li>
                 );
               })}
-              <hr  />
+              <hr />
               <div className="lowerMovement">
                 <div className="nav-text">
                   <a
@@ -97,9 +95,9 @@ export default function Header({ sidebar, setSidebar }) {
                     href="https://www.linkedin.com/in/brandonscottcox/"
                   >
                     <li className="nav-textP">
-                        <AiIcons.AiFillLinkedin />
+                      <AiIcons.AiFillLinkedin />
                       <div className="iconPad">
-                      <p>Linkedin</p>
+                        <p>Linkedin</p>
                       </div>
                     </li>
                   </a>
@@ -107,9 +105,9 @@ export default function Header({ sidebar, setSidebar }) {
                 <div className="nav-text">
                   <a target="_blank" href="https://github.com/brandonscottcox">
                     <li className="nav-textP">
-                        <AiIcons.AiFillGithub />
+                      <AiIcons.AiFillGithub />
                       <div className="iconPad">
-                      <p>Github</p>
+                        <p>Github</p>
                       </div>
                     </li>
                   </a>
