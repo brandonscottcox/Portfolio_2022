@@ -34,6 +34,17 @@
     scroll-snap-type: y mandatory;
   }
 
+  .darken {
+    filter: brightness(0.5);
+    transition: 400ms;
+    transition-delay: 0.20s;
+  }
+
+  .bright {
+    opacity: 1;
+    transition: 400ms;
+  }
+
   .SnapScroll {
     scroll-snap-align: start;
   }

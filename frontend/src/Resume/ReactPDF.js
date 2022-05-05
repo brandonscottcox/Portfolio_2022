@@ -1,7 +1,16 @@
 import React, { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
+import "./Resume.css";
+import { useMediaQuery } from 'react-responsive'
+
+
 
 export default function ReactPDF({zoom}) {
+  const isMobile = useMediaQuery({ query: '(max-width: 480px)' })
+  const isDesktop = useMediaQuery({ query: '(min-width: 481px)' })
+
+
+
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
   
@@ -27,7 +36,8 @@ export default function ReactPDF({zoom}) {
     return (
       <div>
           <Document file="/Resume.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-            <Page height={zoom ? "2000" : "800"} pageNumber={pageNumber} onLoadSuccess={removeTextLayerOffset} />
+            {isDesktop && <Page height={zoom > 0 ? "2000" : zoom < 0 ? "570" : "800" } pageNumber={pageNumber} onLoadSuccess={removeTextLayerOffset} /> }
+            {isMobile && <Page height={zoom > 0 ? "1000" : zoom < 0 ? "300" : "570" } pageNumber={pageNumber} onLoadSuccess={removeTextLayerOffset} /> }
           </Document>
       </div>
     );

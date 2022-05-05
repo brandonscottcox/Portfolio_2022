@@ -82,7 +82,7 @@ export default function About() {
                   height="10px"
                   rect
                   fontColor="azure"
-                  percentage="60"
+                  percentage="70"
                   rectPadding="1px"
                   rectBorderRadius="20px"
                   trackPathColor="transparent"
