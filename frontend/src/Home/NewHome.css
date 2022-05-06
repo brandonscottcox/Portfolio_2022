@@ -1,0 +1,143 @@
+.HomeBackground {
+    background-image: url(../Images/Home12.jpg);
+    background-size: cover;
+    box-shadow: 1px 0px 4px rgb(0, 0, 0);
+    scroll-snap-align: start;
+    transition: ease all .5s;
+}
+
+.ZeroHeader {
+    background-image: url(../Images/Home12.jpg);
+    margin-bottom: 0;
+    position: relative;
+    height: 90px;
+  }
+
+.border {
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+
+.darken {
+    filter: brightness(0.5);
+    transition: 400ms;
+    transition-delay: 0.20s;
+}
+
+.bright {
+    opacity: 1;
+    transition: 400ms;
+}
+
+.NewPosition {
+    display: flex;
+    align-items: flex-end;
+    height: 92vh;
+    padding: 0px;
+
+}
+
+.NewPosition img {
+    width: 80vw;
+    height: 750px;
+    filter: drop-shadow(1px 10px 20px rgba(0, 0, 0, 0.6)) brightness(0.8);
+}   
+
+body {
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.IntroductionWdith {
+      min-width: 123vh;
+}
+
+
+.IntroductionText {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 20px;
+
+}
+
+.IntroductionText h1 {
+    color: azure;
+    font-family: "Archivo", sans-serif;
+    font-size: 3vw;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    position: relative;
+    transition: ease all .5s;
+}
+
+.IntroductionP {
+    margin-top: 20px;
+}
+
+.IntroductionText p {
+    color: azure;
+    font-size: 1.63vw;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    position: relative;
+    margin: 0;
+    font-family: "Heebo", sans-serif;
+    position: relative;
+    transition: ease all .5s;
+}
+
+.sliderFlex {
+    padding: 50px;
+  }
+
+.SkillsText {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+
+}
+
+.SkillsPadding {
+    padding-right: 130px;
+}
+
+.SkillsText h1 {
+    color: azure;
+    font-family: "Archivo", sans-serif;
+    font-size: 50px;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    position: relative;
+    transition: ease all .5s;
+}
+
+.SkillsAnim {
+    padding-left: 100px;
+    min-width: 123vh;
+    position: relative;
+    width: 10%;
+    height: 10%;
+    transition: 400ms;
+}
+
+.SkillsText button {
+    background-color: transparent;
+    height: 100px;
+    width: 300px;
+    border-radius: 100px 100px 100px 100px;
+    border: 2px solid azure;
+    transition: 400ms;
+}
+
+.SkillsText button:hover {
+    border: 2px solid #00f7ff;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+.SkillsText button  p {
+    color: azure;
+    font-size: 30px;
+}

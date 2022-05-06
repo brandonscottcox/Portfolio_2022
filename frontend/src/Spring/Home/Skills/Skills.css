@@ -1,67 +1,77 @@
-html,
-body,
-#root {
-  height: 100%;
-  width: 100%;
-}
+
+
 
 .skillsCloseButton {
-  top: 20px;
-  left: 20px;
+  position:absolute;
+  display: inline;
+  transition: 400ms;
+  border-radius: 100%;
+  border: 1px solid transparent;
+}
+
+.skillsCloseButtonSize {
   position:absolute;
   display: inline-flex;
   color: white;
   border: 1px solid azure;
   border-radius: 100%;
   transition: 400ms;
+  right: 10px;
 }
+
 
 .skillsCloseButton:hover {
   cursor: pointer;
-  border-radius: 0%;
-  transition: 450ms;
-  border: 1px solid azure;
 }
 
 .text p {
   color: azure;
-  font-size: 20px;
+  font-size: 40px;
+  font-weight: bold;
   text-shadow: 3px 2px 5px rgb(0, 0, 0);
   position: relative;
-  bottom: 30px;
   margin: 0;
-  font-family: "Heebo", sans-serif;
+  font-family: "Archivo", sans-serif;
+  text-decoration: underline;
+  z-index: 100;
+}
+
+.text p:hover {
+  color: rgb(165, 252, 255)
 }
 
 .Reactive {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: flex-end; */
 }
 
 .SkillBoxFlex {
-  margin-left: 300px;
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex;
+  justify-content: flex-start; */
   height: 350px;
 }
 
 .SkillTitle {
-  position: relative;
-  right: 11px;
-  top: -7px;
   transition: 500ms;
+  height: 40px;
+  position: relative;
+}
+
+.SkillTitle:hover {
+  transition: 500ms;
+  cursor: pointer;
 }
 
 .SkillFlex {
   max-height: 10px;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   transition: 1000ms;
 }
 
 .flex {
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
 }
 
 .flex.fill {
@@ -69,7 +79,7 @@ body,
 }
 
 .flex.center {
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .text {
@@ -120,7 +130,7 @@ body,
   transition: 500ms;
 }
 
-@media only screen and (min-width: 1026px) and (max-width: 1880px) {
+/* @media only screen and (min-width: 1026px) and (max-width: 1880px) {
   .skillsCloseButton {
     top: 20px;
     left: 280px;
@@ -211,4 +221,4 @@ body,
     top: 7px;
     transition: 500ms;
   }
-}
+} */

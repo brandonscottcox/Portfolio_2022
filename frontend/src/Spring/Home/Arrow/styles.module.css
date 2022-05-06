@@ -1,0 +1,8 @@
+.arrowFade {
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 3em;
+    will-change: opacity;
+    cursor: pointer;
+  }

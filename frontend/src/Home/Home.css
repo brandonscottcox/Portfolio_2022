@@ -1,6 +1,6 @@
    /* @media all and (min-width: 1881px) { */
 
-  .HomeBackground {
+  /* .HomeBackground {
     background-image: url(../Images/Home12.jpg);
     background-size: cover;
     min-height: 100%;
@@ -191,7 +191,6 @@
 
   .originPic div {
     transition: 600ms;
-    position:fixed;
     filter: drop-shadow(16px 16px 20px rgba(47, 47, 47, 0.5)) brightness(0.8);
   }
 
@@ -214,13 +213,13 @@
   .movePic div:hover {
     transition: 850ms;
     filter: drop-shadow(4px 10px 20px rgb(255, 255, 255, 0.6)) brightness(1);
-  }
+  } */
 
 
 
 /* --------------------------------------------------- */
 
-@media only screen and (min-width: 1026px) and (max-width: 1880px) {
+/* @media only screen and (min-width: 1026px) and (max-width: 1880px) {
   .HomeBackground {
     background-image: url(../Images/Home12.jpg);
     background-size: cover;
@@ -288,11 +287,11 @@
     width: 40%;
     transition: 400ms;
   }
-}
+} */
 
 
 
-@media all and (min-width: 1025px) and (max-width: 1200px) {
+/* @media all and (min-width: 1025px) and (max-width: 1200px) {
   .HomeBackground {
     background-image: url(../Images/Home2.jpg);
     background-size: cover;
@@ -946,4 +945,4 @@
     padding-left: 0px;
     transition: 850ms;
   }
- }
+ } */
