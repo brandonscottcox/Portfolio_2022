@@ -46,23 +46,27 @@ export default function Skills({ open, set }) {
     <div className="Reactive">
       <div className="SkillBoxFlex">
         <div className={open ? "full" : "empty"}>
-        <div className="skillsCloseButton">
+          <div className="skillsCloseButton">
             <div className="skillsCloseButtonSize">
               <AiIcons.AiOutlineClose onClick={() => set((open) => !open)} />
             </div>
           </div>
         </div>
         <div className={styles.wrapper} onClick={() => set((open) => !open)}>
-        <div className={open ? "noText" : "text"}>
-          <RightArrow />
-              <p className="SkillTitle">Interested In My Projects?</p>
-              <LeftArrow/>
+          <div className={open ? "noText" : "text"}>
+            <div className="projectsButton">
+              <button>
+                <p className="SkillTitle">Interested In My Projects?</p>
+              </button>
+              <div className="arrowPadding">
+                <LeftArrow />
+              </div>
             </div>
+          </div>
           <animated.div
             style={{ ...rest, width: size, height: size }}
             className={open ? styles.hidden : styles.container}
           >
-
             {transition((style, item) => (
               <Link to="projects" smooth={true} offset={0} duration={500}>
                 <animated.div

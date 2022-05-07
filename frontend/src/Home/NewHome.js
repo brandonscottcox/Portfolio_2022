@@ -5,14 +5,14 @@ import Header from "../Header/Header";
 import ProfilePicture from "../Spring/Home/ProfilePicture";
 import slack from "../Images/SlackEditTrans3.png";
 import Skills from "../Spring/Home/Skills/Skills.js";
-import LeftArrow from "../Spring/Home/Arrow/LeftArrow.js";
-import RightArrow from "../Spring/Home/Arrow/RightArrow.js";
 import Title from "../Spring/Home/Title/Title.js";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import Slider from "../Slider/Slider";
 import { Link } from "react-scroll";
+import * as AiIcons from "react-icons/md";
+import { IconContext } from "react-icons";
 
 export default function Home() {
   const [sidebar, setSidebar] = useState(false);
@@ -39,29 +39,39 @@ export default function Home() {
                     <h1>Brandon Cox</h1>
                     <Title />
                     <div className="IntroductionP">
-                      <p>Im a Web Developer from Boulder, Colorado. I specialize in JavaScript and React development and have a passion for creating/designing frontend applications.</p>
+                      <p>
+                        Im a Web Developer from Boulder, Colorado. I specialize
+                        in JavaScript and React development and have a passion
+                        for creating/designing frontend applications.
+                      </p>
                     </div>
                   </div>
-                  <div className="SliderFlex">
-                    <Slider />
-                  </div>
+                  <div className="sliderFlex"></div>
                 </div>
                 <div className="SkillsText">
-                  <Skills open={open} set={set} />
+                  <div>
+                    <Skills open={open} set={set} />
+                  </div>
+
                   <div className="SkillsPadding">
-                  <Link
-                      to="contact"
-                      smooth={true}
-                      offset={0}
-                      duration={700}
-                    >
-                    <button>
-                      <p>Contact Me</p>
-                    </button>
+                    <div className="SkillsPaddingFlex">
+                      <Link
+                        to="contact"
+                        smooth={true}
+                        offset={0}
+                        duration={700}
+                      >
+                        <div className="ContactButton">
+                          <button>
+                            <p className="ContactButtonText">Contact Me</p>
+                          </button>
+                        </div>
                       </Link>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div className="socialsBar"></div>
             </div>
           </div>
           <About />
@@ -69,38 +79,6 @@ export default function Home() {
         </div>
         <Footer />
       </div>
-
-      {/* <div className="newBorder" id="home">
-        <div>
-            <Header sidebar={sidebar} setSidebar={setSidebar} /></div>
-        <div className="profileFlex">
-          <div>
-            <img className="backProfile" src={slack2} />
-            <img className="newProfile" src={slack} />
-            <img className="zeroProfile" src={slack} />
-          </div>
-          <div className="HomeBackground">
-          <div className="IntroductionText">
-                      <div>
-                        <h1>Brandon Cox</h1>
-                        <div>
-                          <p>
-                            I'm a Frontend Developer from Boulder, Colorado.
-                          </p>
-                          <p>
-                            I specialize in JavaScript and React development
-                          </p>
-                          <p>and have a passion for creating/designing </p>
-                          <p>frontend applications.</p>
-                        </div>
-                      </div>
-                    </div>
-          </div>
-          
-        </div>
-        <About />
-        <Contact />
-      </div> */}
     </>
   );
 }

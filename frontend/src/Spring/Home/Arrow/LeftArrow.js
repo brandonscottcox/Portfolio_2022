@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
 import styles from "./styles.module.css";
-import * as AiIcons from "react-icons/bi";
+import * as AiIcons from "react-icons/io";
 import { IconContext } from "react-icons";
+import { MdHeight } from "react-icons/md";
 
 
 /*
@@ -27,12 +28,11 @@ export default function App() {
     config: { duration: 2000 },
   });
   return (
-    <IconContext.Provider value={{ size: "50px" }}>
-
+    <IconContext.Provider value={{ size: "2.5vw" }}>
     <animated.div style={color}>
-      <AiIcons.BiLeftArrowAlt />
+      <AiIcons.IoIosArrowBack />
     </animated.div>
-    </IconContext.Provider>
+     </IconContext.Provider>
 
   );
 }

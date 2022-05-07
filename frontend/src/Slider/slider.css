@@ -1,13 +1,26 @@
+.sliderSize {
+  height: 100%;
+}
+
+.imageSize {
+}
+
 .sliderBox {
   background-color: rgba(255, 255, 255, 0.418);
-  height: 450px;
-  width: 450px;
+  height: 470px;
+  width: 22vw;
   position: relative;
   border-radius: 0%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   padding: 10px;
   transition: 1000ms;
   transition: ease all .5s;
+}
+
+.sliderBox img {
+  height: 470px;
+  width: 2vw;
+
 }
 
 :root {
@@ -17,15 +30,11 @@
 }
 
 .slider-container {
-  top: 10px;
-  height: 410px;
-  width: 410px;
+  height: 450px;
+  width: 450px;
   position: relative;
   margin: auto;
   overflow: hidden;
-  transition: 1000ms;
-  box-shadow: 0 0px 5px rgba(141, 141, 141, 0.5);
-  transition: ease all .5s;
 }
 
 /* .active {
@@ -42,14 +51,16 @@
   width: var(--widths);
   position: relative;
   transition: 1000ms;
+
 }
 
 .slide-image {
+  padding-right: 45vw;
   width: 100%;
   height: 100%;
   position: absolute;
   object-fit: cover;
-  transition: 1000ms;
+  zoom: 60%;
 }
 
 .slide-title,

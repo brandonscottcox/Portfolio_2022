@@ -1,9 +1,19 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 .HomeBackground {
     background-image: url(../Images/Home12.jpg);
     background-size: cover;
     box-shadow: 1px 0px 4px rgb(0, 0, 0);
     scroll-snap-align: start;
     transition: ease all .5s;
+    width: 100%;
+    height: auto;
+    padding-top: 0%;
 }
 
 .ZeroHeader {
@@ -15,7 +25,7 @@
 
 .border {
     scroll-snap-type: y mandatory;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .darken {
@@ -32,12 +42,14 @@
 .NewPosition {
     display: flex;
     align-items: flex-end;
-    height: 92vh;
+    height: 100%;
     padding: 0px;
 
 }
 
 .NewPosition img {
+    display: flex;
+    flex-direction: column;
     width: 80vw;
     height: 750px;
     filter: drop-shadow(1px 10px 20px rgba(0, 0, 0, 0.6)) brightness(0.8);
@@ -55,26 +67,29 @@ body {
       min-width: 123vh;
 }
 
-
 .IntroductionText {
+    align-items: flex-end;
     display: flex;
     justify-content: space-between;
     position: relative;
     padding-left: 20px;
+    height: 100%;
 
 }
 
 .IntroductionText h1 {
     color: azure;
     font-family: "Archivo", sans-serif;
-    font-size: 3vw;
+    font-size: 4vw;
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
     position: relative;
     transition: ease all .5s;
+
 }
 
 .IntroductionP {
-    margin-top: 20px;
+    padding-top: 40px;
+
 }
 
 .IntroductionText p {
@@ -86,31 +101,29 @@ body {
     font-family: "Heebo", sans-serif;
     position: relative;
     transition: ease all .5s;
+    padding-right: 40px;
 }
 
 .sliderFlex {
-    padding: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
   }
 
 .SkillsText {
     align-items: flex-start;
     display: flex;
     justify-content: space-between;
-    height: 350px;
-
+    height: 400px;
+    padding-top: 40px;
 }
 
 .SkillsPadding {
     padding-right: 130px;
+    display: flex;
 }
 
-.SkillsText h1 {
-    color: azure;
-    font-family: "Archivo", sans-serif;
-    font-size: 50px;
-    text-shadow: 3px 2px 5px rgb(0, 0, 0);
-    position: relative;
-    transition: ease all .5s;
+.SkillsPaddingFlex {
+    display: flex;
 }
 
 .SkillsAnim {
@@ -122,22 +135,77 @@ body {
     transition: 400ms;
 }
 
-.SkillsText button {
+/* .SkillsTextButton button {
     background-color: transparent;
-    height: 100px;
-    width: 300px;
+    width: 13.9vw;
+    height: 4.62vw;
     border-radius: 100px 100px 100px 100px;
     border: 2px solid azure;
     transition: 400ms;
-}
+    box-shadow: 1px 2px 10px rgb(0, 0, 0);
+} */
 
 .SkillsText button:hover {
     border: 2px solid #00f7ff;
-    transition: 400ms;
+    transition: 850ms;
     cursor: pointer;
+    box-shadow: 1px 1px 25px rgb(255, 255, 255);
+    padding-left: 10px;
 }
 
-.SkillsText button  p {
-    color: azure;
-    font-size: 30px;
+.SkillsText button:active {
+    border: 0px solid #000000;
+    box-shadow: 1px 1px 25px rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
+
+
+.ContactButton button  p {
+    color: azure;
+    font-size: 1.39vw;
+}
+
+.ContactButton button {
+    background-color: transparent;
+    width: 13.9vw;
+    height: 4.62vw;
+    border-radius: 100px 100px 100px 100px;
+    border: 2px solid azure;
+    transition: 400ms;
+    box-shadow: 1px 2px 10px rgb(0, 0, 0);
+}
+
+.ContactButtonText {
+    opacity: 1;
+    transition: 850ms;
+    
+}
+
+ .ContactButtonText:hover {
+     padding-left: 47%;
+    transition: 850ms;
+    color: transparent;
+    text-shadow: 3px 2px 5px transparent;
+}
+
+.arrowButton {
+    padding-left: 330px;
+}
+
+.arrowButton button {
+    background-color: transparent;
+    height: 4.62vw;
+    border-radius: 100px 100px 100px 100px;
+    border: 2px solid azure;
+    transition: 400ms;
+    box-shadow: 1px 2px 10px rgb(0, 0, 0);
+    width: 2vw;
+}
+
+.socialsBar {
+    width: 8vw;
+    height: 77.2vh;
+    /* border-left: solid #2F5262 2px; */
+}
+
+

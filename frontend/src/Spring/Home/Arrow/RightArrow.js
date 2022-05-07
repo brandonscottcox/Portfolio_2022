@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
 import styles from "./styles.module.css";
-import * as AiIcons from "react-icons/bi";
+import * as AiIcons from "react-icons/io";
 import { IconContext } from "react-icons";
 
 
@@ -30,7 +30,7 @@ export default function App() {
     <IconContext.Provider value={{ size: "50px" }}>
 
     <animated.div style={color}>
-      <AiIcons.BiRightArrowAlt />
+      <AiIcons.IoIosArrowForward />
     </animated.div>
     </IconContext.Provider>
 

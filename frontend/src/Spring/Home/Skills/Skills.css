@@ -26,14 +26,32 @@
 
 .text p {
   color: azure;
-  font-size: 40px;
   font-weight: bold;
   text-shadow: 3px 2px 5px rgb(0, 0, 0);
-  position: relative;
-  margin: 0;
+  font-size: 1.39vw;
   font-family: "Archivo", sans-serif;
-  text-decoration: underline;
   z-index: 100;
+  position: relative;
+  bottom: 0.8vw;
+}
+
+.projectsButton {
+  display: flex;
+}
+
+.projectsButton button {
+  background-color: transparent;
+  width: 13.9vw;
+  height: 4.62vw;
+  border-radius: 100px 100px 100px 100px;
+  border: 2px solid azure;
+  transition: 400ms;
+  box-shadow: 1px 2px 10px rgb(0, 0, 0);
+}
+
+.arrowPadding {
+  padding-top: 1.1vw;
+  padding-right: 1vw;
 }
 
 .text p:hover {
@@ -53,8 +71,6 @@
 
 .SkillTitle {
   transition: 500ms;
-  height: 40px;
-  position: relative;
 }
 
 .SkillTitle:hover {
