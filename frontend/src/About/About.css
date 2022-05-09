@@ -1,4 +1,323 @@
-  .AboutBackground {
+ .AboutBackground {
+    background-image: url(../Images/Home11Edit.jpg);
+    background-size: cover;
+    box-shadow: 1px 0px 4px rgb(0, 0, 0);
+    transition: ease all .5s;
+  }
+
+  .aboutFlex {
+    display: flex;
+    /* border: 5px solid red; */
+  }
+
+  .aboutSkillsFlex {
+    padding-left: 50px;
+    padding-right: 50px;
+    zoom: 175%;
+    /* border: 5px solid blue; */
+  }
+
+  .aboutSkillsTitle {
+    color: rgb(255, 255, 255);
+    font-size: 1.4vw;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    font-family: "Great Vibes", cursive;
+    transition: 850ms;
+    display: flex;
+    justify-content: center;
+  }
+
+  .box {
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 18.5vw;
+    height: 22vw;
+    padding: 10px;
+    border-radius: 0%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: 850ms;
+  }
+  
+  .box h1 {
+    opacity: 1;
+    font-size: 1.55vw;
+  }
+
+  .aboutTextFlex {
+    position: relative;
+    margin-left: 420px;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    transition: 850ms;
+    zoom: 175%;
+  }
+  
+  .aboutTextFlex p {
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    line-height: 1.3em;
+  }
+
+  .EducationBorder {
+    /* border: 5px solid purple; */
+    min-width: 0;
+  }
+  
+  .EducationTitle {
+    text-align: center;
+    zoom: 175%;
+    /* transform: scale(1.2, 1); */
+    color: rgb(255, 255, 255);
+    font-size: 1.38vw;
+    /* border: 5px solid green; */
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    font-family: "News Cycle", sans-serif;
+    transition: 850ms;
+  }
+
+  .EducationHR {
+    display:inline-table;
+    /* border: 5px solid pink; */
+  }
+  
+  .EducationTitle hr {
+    position: relative;
+    bottom: 2vw;
+  }
+  
+  .EducationFlex {
+    display: flex;
+    justify-content: center;
+    transition: 850ms;
+  }
+
+  .ThinkfulFlex {
+    padding: 10px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    /* border: 5px solid yellow; */
+    zoom: 175%;
+  }
+
+  .ThinkfulFlex p {
+        font-size: 0.74vw;
+  }
+
+  .ProgressBar {
+    position: relative;
+    bottom: 30px;
+  }
+  
+  .CSSTitle {
+    position: relative;
+    bottom: 50px;
+  }
+  
+  .JavaScriptTitle {
+    position: relative;
+    bottom: 90px;
+  }
+  
+  .HTMLTitle {
+    position: relative;
+    bottom: 130px;
+  }
+  
+  .ReactIMGFlex {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .ReactIMG {
+    height: 1.9vw;
+  }
+  
+  .ReactText {
+    position: relative;
+    left: 09px;
+  }
+  
+  .CSSIMG {
+    position: relative;
+    right: 7px;
+    height: 2.4vw;
+  }
+  
+  .CSSText {
+    position: relative;
+  }
+  
+  .JSIMG {
+    position: relative;
+    right: 15px;
+    height: 1.8vw;
+  }
+  
+  .JSText {
+    position: relative;
+    right: 15px;
+  }
+  
+  .HTMLIMG {
+    height: 1.7vw;
+  }
+  
+  .HTMLText {
+    position: relative;
+    left: 14px;
+  }
+  
+  .skillsImgFlex {
+    display: flex;
+  
+  }
+  
+  .thinkful {
+    height: 6.95vw;
+  }
+  
+  .cardFlex {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    zoom: 175%;
+    /* border: 5px solid orange; */
+    min-width: 0;
+  }
+
+  .bnb a {
+    position: relative;
+    left: 400px;
+  }
+
+  a:link {
+    color: azure;
+  }
+
+  a:visited {
+    color: azure;
+  }
+
+  .LinkFix {
+    height: 1px;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    left: 800px;
+    bottom: 500px;
+  }
+
+  .bnbCard {
+    /* border: 2px solid pink; */
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 9.27vw;
+    height: 24.03vh;
+    padding: 10px;
+    border-radius: 0%;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+    bottom: 0;
+    transition: 850ms;
+  }
+
+  .capstoneCard {
+    /* border: 2px solid pink; */
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 9.27vw;
+    height: 24.03vh;
+    /* margin-left: 2vw; */
+    padding: 10px;
+    border-radius: 0%;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+    position: relative;
+    bottom: 0;
+    transition: 850ms;
+  }
+  
+  .FlashcardCard {
+    /* border: 2px solid pink; */
+    color: azure;
+    text-shadow: 3px 2px 5px rgb(0, 0, 0);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 9.27vw;
+    height: 24.03vh;
+    /* margin-left: 2vw; */
+    padding: 10px;
+    border-radius: 0%;
+    filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
+    transition: 850ms;
+    position: relative;
+    bottom: 0;
+    transition: 850ms;
+  }
+  
+  .bnbCard:hover {
+    bottom: 10px;
+    transition: 700ms;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .capstoneCard:hover {
+    bottom: 10px;
+    transition: 700ms;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .FlashcardCard:hover {
+    bottom: 10px;
+    transition: 700ms;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .cardFlex img {
+    height: 16vh;
+    min-width: 0;
+    transition: 850ms;
+  }
+  
+  .cardTitle {
+    font-size: 0.69vw;
+  }
+  
+  .cardP {
+    font-size: 0.48vw;
+  }
+  
+  .cardText {
+    position: relative;
+    bottom: 15px;
+  }
+  
+  .cardText p + p {
+    position: relative;
+    bottom: 0.5vw;
+  }
+  
+  .cardText p + p + p {
+    position: relative;
+    bottom: 0.6vw;
+  }
+
+
+/* .AboutBackground {
     width: 100%;
     height: 220%;
     background-image: url(../Images/Home11Edit.jpg);
@@ -364,7 +683,6 @@
     width: 180px;
     height: 270px;
     padding: 10px;
-    /* left: 170px; */
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
     transition: 850ms;
@@ -380,7 +698,6 @@
     width: 180px;
     height: 270px;
     padding: 10px;
-    /* left: 210px; */
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
     transition: 850ms;
@@ -396,7 +713,6 @@
     width: 180px;
     height: 270px;
     padding: 10px;
-    /* left: 250px; */
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
     transition: 850ms;
@@ -420,7 +736,6 @@
     width: 160px;
     height: 270px;
     padding: 10px;
-    /* left: 170px; */
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
     transition: 850ms;
@@ -436,7 +751,6 @@
     width: 160px;
     height: 270px;
     padding: 10px;
-    /* left: 210px; */
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
     transition: 850ms;
@@ -452,7 +766,6 @@
     width: 160px;
     height: 270px;
     padding: 10px;
-    /* left: 250px; */
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
     transition: 850ms;
@@ -467,7 +780,6 @@
   }
 }
 
-/*@media all and (min-width: 860px) and (max-width: 949px) */
 @media all and (min-width: 240px) and (max-width: 949px) {
   .bnbCard {
     color: azure;
@@ -477,7 +789,6 @@
     width: 200px;
     height: 270px;
     padding: 10px;
-    /* left: -40px; */
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
     transition: 850ms;
@@ -494,7 +805,6 @@
     width: 200px;
     height: 270px;
     padding: 10px;
-    /* left: 0px; */
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
     transition: 850ms;
@@ -511,7 +821,6 @@
     width: 200px;
     height: 270px;
     padding: 10px;
-    /* left: 40px; */
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
     transition: 850ms;
@@ -723,4 +1032,4 @@
     display: flex;
     justify-content: center;
   }
-}
+} */
