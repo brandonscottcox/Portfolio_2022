@@ -9,91 +9,93 @@ import HTMLIMG from "../Images/HTMLTrans.png";
 export default function ProgressBarComp({ width, percent }) {
   return (
     <>
-      <div>
-        <div className="skillsImgFlex">
-          <div className="ReactIMGFlex">
-            <img className="ReactIMG" src={ReactIMG} />
-            <h1 className="ReactText">React</h1>
+      <div className="ProgressBarBorder">
+        <div className="ReactTitle">
+          <div className="skillsImgFlex">
+            <div className="ReactIMGFlex">
+              <img className="ReactIMG" src={ReactIMG} />
+              <h1 className="ReactText">React</h1>
+            </div>
+          </div>
+          <div className="ProgressBar">
+            <ProgressBar
+              width="14vw"
+              height="0.55vw"
+              rect
+              fontColor="azure"
+              percentage="70"
+              rectPadding="1px"
+              rectBorderRadius="20px"
+              trackPathColor="transparent"
+              bgColor="#333333"
+            />{" "}
           </div>
         </div>
-        <div className="ProgressBar">
-          <ProgressBar
-            width="14vw"
-            height="1vh"
-            rect
-            fontColor="azure"
-            percentage="70"
-            rectPadding="1px"
-            rectBorderRadius="20px"
-            trackPathColor="transparent"
-            bgColor="#333333"
-          />{" "}
-          <hr />
-        </div>
-      </div>
-      <div className="CSSTitle">
-        <div className="skillsImgFlex">
-          <div className="ReactIMGFlex">
-            <img className="CSSIMG" src={CSSIMG} />
-            <h1 className="CSSText">CSS</h1>
+        <hr />
+        <div className="CSSTitle">
+          <div className="skillsImgFlex">
+            <div className="ReactIMGFlex">
+              <img className="CSSIMG" src={CSSIMG} />
+              <h1 className="CSSText">CSS</h1>
+            </div>
+          </div>
+          <div className="ProgressBar">
+            <ProgressBar
+              width="14vw"
+              height="0.55vw"
+              rect
+              fontColor="azure"
+              percentage="75"
+              rectPadding="1px"
+              rectBorderRadius="20px"
+              trackPathColor="transparent"
+              bgColor="#333333"
+            />{" "}
           </div>
         </div>
-        <div className="ProgressBar">
-          <ProgressBar
-            width="14vw"
-            height="1vh"
-            rect
-            fontColor="azure"
-            percentage="75"
-            rectPadding="1px"
-            rectBorderRadius="20px"
-            trackPathColor="transparent"
-            bgColor="#333333"
-          />{" "}
-          <hr />
-        </div>
-      </div>
-      <div className="JavaScriptTitle">
-        <div className="skillsImgFlex">
-          <div className="ReactIMGFlex">
-            <img className="JSIMG" src={JSIMG} />
-            <h1 className="JSText">JavaScript</h1>
+        <hr />
+        <div className="JavaScriptTitle">
+          <div className="skillsImgFlex">
+            <div className="ReactIMGFlex">
+              <img className="JSIMG" src={JSIMG} />
+              <h1 className="JSText">JavaScript</h1>
+            </div>
+          </div>
+          <div className="ProgressBar">
+            <ProgressBar
+              width="14vw"
+              height="0.55vw"
+              rect
+              fontColor="azure"
+              percentage="70"
+              rectPadding="1px"
+              rectBorderRadius="20px"
+              trackPathColor="transparent"
+              bgColor="#333333"
+            />{" "}
           </div>
         </div>
-        <div className="ProgressBar">
-          <ProgressBar
-            width="14vw"
-            height="1vh"
-            rect
-            fontColor="azure"
-            percentage="70"
-            rectPadding="1px"
-            rectBorderRadius="20px"
-            trackPathColor="transparent"
-            bgColor="#333333"
-          />{" "}
-          <hr />
-        </div>
-      </div>
-      <div className="HTMLTitle">
-        <div className="skillsImgFlex">
-          <div className="ReactIMGFlex">
-            <img className="HTMLIMG" src={HTMLIMG} />
-            <h1 className="HTMLText">HTML</h1>
+        <hr />
+        <div className="HTMLTitle">
+          <div className="skillsImgFlex">
+            <div className="ReactIMGFlex">
+              <img className="HTMLIMG" src={HTMLIMG} />
+              <h1 className="HTMLText">HTML</h1>
+            </div>
           </div>
-        </div>
-        <div className="ProgressBar">
-          <ProgressBar
-            width="14vw"
-            height="1vh"
-            rect
-            fontColor="azure"
-            percentage="85"
-            rectPadding="1px"
-            rectBorderRadius="20px"
-            trackPathColor="transparent"
-            bgColor="#333333"
-          />{" "}
+          <div className="ProgressBar">
+            <ProgressBar
+              width="14vw"
+              height="0.6vw"
+              rect
+              fontColor="azure"
+              percentage="85"
+              rectPadding="1px"
+              rectBorderRadius="20px"
+              trackPathColor="transparent"
+              bgColor="#333333"
+            />{" "}
+          </div>
         </div>
       </div>
     </>

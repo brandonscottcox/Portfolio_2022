@@ -6,7 +6,6 @@ import {
   Route,
 } from "react-router-dom";
 import Home from "./Home/Home"
-import NewHome from "./Home/NewHome"
 import About from "./About/About"
 import Projects from "./Projects/Projects"
 import Resume from "./Resume/Resume"
@@ -19,7 +18,7 @@ const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<NewHome />} />
+      <Route path="/" element={<Home />} />
       <Route path="about" element={<Home />} />
       <Route path="contact" element={<Home />} />
       <Route path="projects" element={<Projects />} />

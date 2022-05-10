@@ -11,8 +11,10 @@
   }
 
   .aboutSkillsFlex {
+    margin-top: 1.1vw;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 30px;
     zoom: 175%;
     /* border: 5px solid blue; */
   }
@@ -28,11 +30,12 @@
   }
 
   .box {
+    display: flex;
+    flex-direction: column;
     color: azure;
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.1);
     width: 18.5vw;
-    height: 22vw;
     padding: 10px;
     border-radius: 0%;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -44,15 +47,6 @@
     font-size: 1.55vw;
   }
 
-  .aboutTextFlex {
-    position: relative;
-    margin-left: 420px;
-    top: 60px;
-    display: flex;
-    justify-content: center;
-    transition: 850ms;
-    zoom: 175%;
-  }
   
   .aboutTextFlex p {
     color: azure;
@@ -68,7 +62,7 @@
   .EducationTitle {
     text-align: center;
     zoom: 175%;
-    /* transform: scale(1.2, 1); */
+    transform: scale(1.1, 1);
     color: rgb(255, 255, 255);
     font-size: 1.38vw;
     /* border: 5px solid green; */
@@ -109,24 +103,31 @@
         font-size: 0.74vw;
   }
 
+  .ProgressBarBorder {
+    padding-bottom: 0.8vw;
+  }
+
+
   .ProgressBar {
     position: relative;
-    bottom: 30px;
+    bottom: 1.4vw;
+  }
+
+  .ReactTitle {
+    height: 5vw;
+    
   }
   
   .CSSTitle {
-    position: relative;
-    bottom: 50px;
+    height: 5vw;
   }
   
   .JavaScriptTitle {
-    position: relative;
-    bottom: 90px;
+    height: 5vw;
   }
   
   .HTMLTitle {
-    position: relative;
-    bottom: 130px;
+    height: 5vw;
   }
   
   .ReactIMGFlex {
@@ -141,12 +142,12 @@
   
   .ReactText {
     position: relative;
-    left: 09px;
+    left: 0.4vw;
   }
   
   .CSSIMG {
     position: relative;
-    right: 7px;
+    right: 0.32vw;
     height: 2.4vw;
   }
   
@@ -156,13 +157,13 @@
   
   .JSIMG {
     position: relative;
-    right: 15px;
+    right: 0.7vw;
     height: 1.8vw;
   }
   
   .JSText {
     position: relative;
-    right: 15px;
+    right: 0.7vw;
   }
   
   .HTMLIMG {
@@ -183,14 +184,6 @@
     height: 6.95vw;
   }
   
-  .cardFlex {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    zoom: 175%;
-    /* border: 5px solid orange; */
-    min-width: 0;
-  }
 
   .bnb a {
     position: relative;
@@ -214,14 +207,31 @@
     bottom: 500px;
   }
 
+  .cardFlex {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    zoom: 175%;
+    min-width: 0;
+  }
+
+  .cardFlex img {
+    height: 6vw;
+    width: 7.8vw;
+    min-width: 0;
+    transition: 850ms;
+  }
+
   .bnbCard {
-    /* border: 2px solid pink; */
+    display: flex;
+    justify-content: center;
+    position: relative;
     color: azure;
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.1);
-    width: 9.27vw;
-    height: 24.03vh;
+    width: 9vw;
+    height: 11.4vw;
     padding: 10px;
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
@@ -231,14 +241,14 @@
   }
 
   .capstoneCard {
-    /* border: 2px solid pink; */
+    display: flex;
+    justify-content: center;
     color: azure;
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.1);
-    width: 9.27vw;
-    height: 24.03vh;
-    /* margin-left: 2vw; */
+    width: 9vw;
+    height: 11.4vw;
     padding: 10px;
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
@@ -249,14 +259,14 @@
   }
   
   .FlashcardCard {
-    /* border: 2px solid pink; */
+    display: flex;
+    justify-content: center;
     color: azure;
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.1);
-    width: 9.27vw;
-    height: 24.03vh;
-    /* margin-left: 2vw; */
+    width: 9vw;
+    height: 11.4vw;
     padding: 10px;
     border-radius: 0%;
     filter: drop-shadow(16px 16px 20px rgba(93, 93, 93, 0.603));
@@ -287,12 +297,6 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
   
-  .cardFlex img {
-    height: 16vh;
-    min-width: 0;
-    transition: 850ms;
-  }
-  
   .cardTitle {
     font-size: 0.69vw;
   }
@@ -302,8 +306,11 @@
   }
   
   .cardText {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
     position: relative;
-    bottom: 15px;
+    bottom: 0.5vw;
   }
   
   .cardText p + p {

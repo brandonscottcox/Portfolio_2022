@@ -64,7 +64,7 @@ export default function About() {
                     href="https://brandonscottcox.github.io/starter-thinkfulbnb/"
                   >
                     <div>
-                      {/* <img src={bnb} /> */}
+                      <img src={bnb} />
                     </div>
                     <div className="cardText">
                       <p className="cardTitle">Thinkfulbnb</p>
@@ -83,7 +83,7 @@ export default function About() {
                   href="https://bcox-front-reservation.herokuapp.com/dashboard"
                 >
                   <div>
-                    {/* <img src={ThinkfulCapstone} /> */}
+                    <img src={ThinkfulCapstone} />
                   </div>
                   <div className="cardText">
                     <p className="cardTitle">Final Capstone</p>
@@ -104,7 +104,7 @@ export default function About() {
                   href="https://github.com/brandonscottcox/Project_Flashcard"
                 >
                   <div>
-                    {/* <img src={Flashcard} /> */}
+                    <img src={Flashcard} />
                   </div>
                   <div className="cardText">
                     <p className="cardTitle">Flashcard-O-Matic</p>

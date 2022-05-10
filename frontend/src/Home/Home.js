@@ -3,11 +3,16 @@ import "../Scrollbar.css";
 import "./Home.css";
 import Header from "../Header/Header";
 import ProfilePicture from "../Spring/Home/ProfilePicture";
+import slack from "../Images/SlackEditTrans3.png";
 import Skills from "../Spring/Home/Skills/Skills.js";
+import Title from "../Spring/Home/Title/Title.js";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import Slider from "../Slider/Slider";
+import { Link } from "react-scroll";
+import * as AiIcons from "react-icons/md";
+import { IconContext } from "react-icons";
 
 export default function Home() {
   const [sidebar, setSidebar] = useState(false);
@@ -21,55 +26,58 @@ export default function Home() {
   return (
     <>
       <div className="border" id="home">
-        <div>
-          <Header sidebar={sidebar} setSidebar={setSidebar} />
-        </div>
+        <Header sidebar={sidebar} setSidebar={setSidebar} />
         <div className={sidebar ? "darken" : "bright"}>
-          <div className={sidebar ? "moveImg" : "originImg"}>
-            <div className="profileInline">
-              <div className="ProfileImg">
-                <div className="ProfilePosition">
-                  <div className={picture ? "movePic" : "originPic"}>
-                    <div onClick={showPicture}>
-                      <ProfilePicture />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={open ? "moveHome" : "HomeBackground"}>
-              <div>
+          {/* <div className={open ? "moveHome" : "HomeBackground"}> */}
+          <div className="ZeroHeader"></div>
+          <div className="HomeBackground">
+            <div className="NewPosition">
+              <img src={slack} />
+              <div className="IntroductionWidth">
                 <div className="IntroductionText">
                   <div>
                     <h1>Brandon Cox</h1>
-                    <div>
-                      <p>I'm a Frontend Developer from Boulder, Colorado.</p>
-                      <p>I specialize in JavaScript and React development</p>
-                      <p>and have a passion for creating/designing </p>
-                      <p>frontend applications.</p>
+                    <Title />
+                    <div className="IntroductionP">
+                      <p>
+                        Im a Web Developer from Boulder, Colorado. I specialize
+                        in JavaScript and React development and have a passion
+                        for creating/designing frontend applications.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="sliderFlex"></div>
+                </div>
+                <div className="SkillsText">
+                  <div>
+                    <Skills open={open} set={set} />
+                  </div>
+
+                  <div className="SkillsPadding">
+                    <div className="SkillsPaddingFlex">
+                      <Link
+                        to="contact"
+                        smooth={true}
+                        offset={0}
+                        duration={700}
+                      >
+                        <div className="ContactButton">
+                          <button>
+                            <p className="ContactButtonText">Contact Me</p>
+                          </button>
+                        </div>
+                      </Link>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <Slider />
-                </div>
-                <div className="SkillsText">
-                  <h1>Interested in my skills?</h1>
-                </div>
-                <div className="SkillsAnim">
-                  <Skills open={open} set={set} />
-                </div>
               </div>
+              <div className="socialsBar"></div>
             </div>
           </div>
-          <div className={sidebar ? "movePages" : "originPages"}>
-            <div className="SnapScroll">
-              <About />
-              <Contact />
-            </div>
-            <Footer />
-          </div>
+          <About />
+          <Contact />
         </div>
+        <Footer />
       </div>
     </>
   );
