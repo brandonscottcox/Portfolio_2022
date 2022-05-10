@@ -1,19 +1,13 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+.HomeBorder {
+  width: 100%;
 }
 
 .HomeBackground {
     background-image: url(../Images/Home12.jpg);
     background-size: cover;
     box-shadow: 1px 0px 4px rgb(0, 0, 0);
-    scroll-snap-align: start;
     transition: ease all .5s;
-    width: 100%;
-    height: 46vw;
-    padding-top: 0%;
+
 }
 
 .ZeroHeader {
@@ -25,7 +19,7 @@ body {
 
 .border {
     scroll-snap-type: y mandatory;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 .darken {
@@ -42,14 +36,11 @@ body {
 .NewPosition {
     display: flex;
     align-items: flex-end;
-    height: 100%;
-    padding: 0px;
+    min-width: 0;
 }
 
 .NewPosition img {
     transition: 400ms;
-    display: flex;
-    flex-direction: column;
     width: 70vw;
     height: 34.8vw;
     filter: drop-shadow(1px 10px 20px rgba(0, 0, 0, 0.6)) brightness(0.8);
@@ -63,18 +54,12 @@ body {
     overflow-x: hidden;
 }
 
-.IntroductionWdith {
-      min-width: 123vh;
-}
-
 .IntroductionText {
     align-items: flex-end;
     display: flex;
-    justify-content: space-between;
     position: relative;
-    padding-left: 20px;
-    height: 100%;
-
+    box-sizing: border-box;
+    border: 1px solid transparent;
 }
 
 .IntroductionText h1 {
@@ -87,8 +72,7 @@ body {
 }
 
 .IntroductionP {
-    padding-top: 40px;
-
+  padding-top: 40px;
 }
 
 .IntroductionText p {
@@ -113,26 +97,14 @@ body {
     display: flex;
     justify-content: space-between;
     height: 20.7vw;
-    padding-top: 40px;
-
+    padding-top: 1.87vw;
+    box-sizing: border-box;
 }
 
 .SkillsPadding {
-    padding-right: 130px;
-    display: flex;
-}
-
-.SkillsPaddingFlex {
-    display: flex;
-}
-
-.SkillsAnim {
-    padding-left: 100px;
-    min-width: 123vh;
-    position: relative;
-    width: 10%;
-    height: 10%;
-    transition: 400ms;
+  position: relative;
+  right: 130px;
+  display: flex;
 }
 
 .SkillsText button:hover {
@@ -148,7 +120,6 @@ body {
     box-shadow: 1px 1px 25px rgb(0, 0, 0);
     color: rgb(0, 0, 0);
 }
-
 
 .ContactButton button  p {
     color: azure;
@@ -169,7 +140,6 @@ body {
 .ContactButtonText {
     opacity: 1;
     transition: 850ms;
-    
 }
 
  .ContactButtonText:hover {
@@ -193,11 +163,11 @@ body {
     width: 2vw;
 }
 
-.socialsBar {
+/* .socialsBar {
     width: 8vw;
-    height: 77.2vh;
-    /* border-left: solid #2F5262 2px; */
-}
+    height: 100%;
+    border-left: solid #2F5262 2px;
+} */
 
 
 

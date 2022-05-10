@@ -1,3 +1,7 @@
+ .AboutBorder {
+   width: 100%;
+ }
+ 
  .AboutBackground {
     background-image: url(../Images/Home11Edit.jpg);
     background-size: cover;
@@ -7,17 +11,27 @@
 
   .aboutFlex {
     display: flex;
-    /* border: 5px solid red; */
+    min-width: 0;
   }
 
   .aboutSkillsFlex {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    width: 25vw;
+    box-sizing: border-box;
     margin-top: 1.1vw;
-    padding-left: 50px;
-    padding-right: 50px;
+
     padding-bottom: 30px;
     zoom: 175%;
-    /* border: 5px solid blue; */
   }
+
+  .center {
+    display: flex;
+    justify-content: center;
+
+  }
+
 
   .aboutSkillsTitle {
     color: rgb(255, 255, 255);
@@ -31,7 +45,7 @@
 
   .box {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     color: azure;
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.1);
@@ -55,7 +69,8 @@
   }
 
   .EducationBorder {
-    /* border: 5px solid purple; */
+    display: flex;
+    flex-direction: column;
     min-width: 0;
   }
   
@@ -65,7 +80,6 @@
     transform: scale(1.1, 1);
     color: rgb(255, 255, 255);
     font-size: 1.38vw;
-    /* border: 5px solid green; */
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
     font-family: "News Cycle", sans-serif;
     transition: 850ms;
@@ -73,7 +87,6 @@
 
   .EducationHR {
     display:inline-table;
-    /* border: 5px solid pink; */
   }
   
   .EducationTitle hr {
@@ -81,21 +94,25 @@
     bottom: 2vw;
   }
   
-  .EducationFlex {
+  /* .EducationFlex {
     display: flex;
     justify-content: center;
     transition: 850ms;
+    min-width: 0;
+  } */
+
+  .ThinkfulText {
   }
 
   .ThinkfulFlex {
+    min-width: 0;
     padding: 10px;
     position: relative;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     color: azure;
     text-shadow: 3px 2px 5px rgb(0, 0, 0);
-    /* border: 5px solid yellow; */
     zoom: 175%;
   }
 
@@ -177,13 +194,14 @@
   
   .skillsImgFlex {
     display: flex;
-  
   }
-  
+
+  .MobileImgBorder {
+  }
+
   .thinkful {
     height: 6.95vw;
   }
-  
 
   .bnb a {
     position: relative;
@@ -210,9 +228,9 @@
   .cardFlex {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
     zoom: 175%;
     min-width: 0;
+    padding: 20px;
   }
 
   .cardFlex img {
@@ -223,6 +241,7 @@
   }
 
   .bnbCard {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     position: relative;
@@ -241,6 +260,7 @@
   }
 
   .capstoneCard {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     color: azure;
@@ -259,6 +279,7 @@
   }
   
   .FlashcardCard {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     color: azure;
