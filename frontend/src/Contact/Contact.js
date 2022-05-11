@@ -4,7 +4,6 @@ import "./Contact.css";
 import GoogleMap from "./GoogleMaps/GoogleMap";
 
 export default function Contact() {
-  const [sidebar, setSidebar] = useState(false);
 
   return (
     <>

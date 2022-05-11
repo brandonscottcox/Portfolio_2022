@@ -21,7 +21,6 @@
     width: 25vw;
     box-sizing: border-box;
     margin-top: 1.1vw;
-
     padding-bottom: 30px;
     zoom: 175%;
   }
@@ -29,7 +28,6 @@
   .center {
     display: flex;
     justify-content: center;
-
   }
 
 
@@ -93,16 +91,6 @@
     position: relative;
     bottom: 2vw;
   }
-  
-  /* .EducationFlex {
-    display: flex;
-    justify-content: center;
-    transition: 850ms;
-    min-width: 0;
-  } */
-
-  .ThinkfulText {
-  }
 
   .ThinkfulFlex {
     min-width: 0;
@@ -117,7 +105,7 @@
   }
 
   .ThinkfulFlex p {
-        font-size: 0.74vw;
+    font-size: 0.74vw;
   }
 
   .ProgressBarBorder {
@@ -132,7 +120,6 @@
 
   .ReactTitle {
     height: 5vw;
-    
   }
   
   .CSSTitle {
@@ -194,9 +181,6 @@
   
   .skillsImgFlex {
     display: flex;
-  }
-
-  .MobileImgBorder {
   }
 
   .thinkful {
@@ -327,9 +311,6 @@
   }
   
   .cardText {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
     position: relative;
     bottom: 0.5vw;
   }

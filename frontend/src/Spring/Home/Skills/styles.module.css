@@ -9,7 +9,6 @@
 .hidden {
   position: relative;
   display: grid;
-  /* grid-template-columns: repeat(3, minmax(200px, 1fr)); */
   grid-template-columns: repeat(3, minmax(10.28vw, 1fr));
   grid-gap: 1vw;
   padding: 1vw;

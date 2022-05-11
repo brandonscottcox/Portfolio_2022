@@ -23,7 +23,6 @@
   }
 
 .ContactFlex {
-  border: 5px  red;
   justify-content: space-between;
   color: azure;
   display: flex;
@@ -86,7 +85,6 @@
   border: 1px solid #00f7ff;
   transition: 700ms;
   position: relative;
-  /* top: 25px; */
 }
 
 .ContactText button:hover {

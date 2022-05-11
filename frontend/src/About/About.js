@@ -8,8 +8,6 @@ import ThinkfulCapstone from "../Images/ThinkfulCapstoneEdit1.png";
 import Flashcard from "../Images/FlashcardEditSize.png";
 
 export default function About() {
-  const [sidebar, setSidebar] = useState(false);
-  const myRef = document.querySelector(".scrollable-div");
 
   return (
     <>

@@ -9,8 +9,6 @@ import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import { Link } from "react-scroll";
-import * as AiIcons from "react-icons/md";
-import { IconContext } from "react-icons";
 
 export default function Home() {
   const [sidebar, setSidebar] = useState(false);
@@ -34,8 +32,8 @@ export default function Home() {
                         <Title />
                         <div className="IntroductionP">
                           <p>
-                            Im a Web Developer from Boulder, Colorado. I
-                            specialize in JavaScript and React development and
+                            I am a Web Developer from Boulder, Colorado.
+                            Specialized in JavaScript and React development and
                             have a passion for creating/designing frontend
                             applications.
                           </p>
